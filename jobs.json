@@ -1,26 +1,50 @@
 [
   {
     "title": "Software Engineer",
-    "company": "TechCorp",
-    "description": "Develop scalable web applications.",
-    "tags": ["Entry Level", "Frontend"],
-    "datePosted": "2025-01-20",
-    "link": "https://linkedin.com/jobs/view/12345"
+    "company": "Tesla",
+    "description": "Entry level and internship positions at Tesla.",
+    "tags": ["Entry Level", "Internships"],
+    "datePosted": "2025-01-25",
+    "link": "https://www.linkedin.com/posts/raj-vaibhaav_internship-earlycareer-students-activity-7288951752790290432-FkGc"
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Microsoft",
+    "description": "Senior Software Engineer position at Microsoft",
+    "tags": ["Senior Level", "Azure"],
+    "datePosted": "2025-01-25",
+    "link": "https://www.linkedin.com/posts/mariammalik1_senior-software-engineer-in-austin-texas-activity-7286128232519684096-58B0"
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Salesforce",
+    "description": "Hiring Software Engineer positions at Salesforce",
+    "tags": ["Senior Level", "Mid Level"],
+    "datePosted": "2025-01-25",
+    "link": "https://www.linkedin.com/posts/venkatakrishnanjayapal_salesforce-hiring-platformengineering-activity-7288791809932021760-g0k_"
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Netflix",
+    "description": "Oversee product roadmaps and development cycles.",
+    "tags": ["Entry Level", "Mid-Senior Level"],
+    "datePosted": "2025-01-24",
+    "link": "https://www.linkedin.com/in/michaelburdenjr?utm_source=share&utm_campaign=share_via&utm_content=profile"
+  },
+  {
+    "title": "Software Engineer",
+    "company": "OpenAI",
+    "description": "Hiring for security software engineers",
+    "tags": ["Entry Level", "Mid-Senior Level"],
+    "datePosted": "2025-01-24",
+    "link": "https://www.linkedin.com/posts/haroldnguyen_software-engineer-defensive-security-agent-activity-7288743827790577664-Nv2F"
   },
   {
     "title": "Technical Manager",
-    "company": "InnovateX",
+    "company": "Aircall",
     "description": "Lead a team of engineers to build robust systems.",
-    "tags": ["Manager", "Leadership"],
-    "datePosted": "2025-01-18",
-    "link": "https://linkedin.com/jobs/view/54321"
-  },
-  {
-    "title": "Product Manager",
-    "company": "InnovateX",
-    "description": "Oversee product roadmaps and development cycles.",
-    "tags": ["Product", "Mid-Senior Level"],
-    "datePosted": "2025-01-22",
-    "link": "https://linkedin.com/jobs/view/99999"
+    "tags": ["Manager", "Leadership", "Aircall"],
+    "datePosted": "2025-01-25",
+    "link": "https://www.linkedin.com/posts/markschwerm_aircall-manager-software-engineering-activity-7288652948782358528-6NFG"
   }
 ]
