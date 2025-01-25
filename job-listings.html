@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse tech job listings with unified search and sorting." />
+  <title>Job Listings</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Tech Job Finder</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="job-listings.html">Job Listings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="container my-5">
+    <h1 class="mb-4">Browse Open Positions</h1>
+    <p class="lead">
+      Use the search box to find jobs by title, company, description, or tags.
+      You can also sort by title or date.
+    </p>
+
+    <!-- SEARCH & SORT CONTROLS -->
+    <div class="card p-3 mb-4 shadow-sm">
+      <div class="row g-3">
+        <!-- Single Search Input -->
+        <div class="col-md-8">
+          <label for="searchInput" class="form-label fw-bold">Search Jobs</label>
+          <input
+            type="text"
+            id="searchInput"
+            class="form-control"
+            placeholder="e.g. Software, Manager, Leadership..."
+          />
+        </div>
+        <!-- Sort Dropdown -->
+        <div class="col-md-4">
+          <label for="sortSelect" class="form-label fw-bold">Sort</label>
+          <select id="sortSelect" class="form-select">
+            <option value="">No Sorting</option>
+            <option value="titleAsc">Title (A-Z)</option>
+            <option value="titleDesc">Title (Z-A)</option>
+            <option value="dateAsc">Date (Oldest First)</option>
+            <option value="dateDesc">Date (Newest First)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- JOBS TABLE -->
+    <div class="table-responsive shadow-sm">
+      <table class="table table-striped align-middle mb-0">
+        <thead class="table-primary">
+          <tr>
+            <th>Title</th>
+            <th>Company</th>
+            <th>Description</th>
+            <th>Tags</th>
+            <th>Date Posted</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody id="jobTable"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-primary text-white text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2025 Tech Job Finder. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Inline JS for Searching & Sorting -->
+  <script>
+    let allJobs = [];
+
+    // Initial load
+    document.addEventListener('DOMContentLoaded', () => {
+      loadData();
+      document.getElementById('searchInput').addEventListener('input', updateJobs);
+      document.getElementById('sortSelect').addEventListener('change', updateJobs);
+    });
+
+    // 1. Load Data
+    async function loadData() {
+      try {
+        const response = await fetch('jobs.json'); // Fetch updated JSON
+        allJobs = await response.json();
+        updateJobs();
+      } catch (err) {
+        console.error('Error loading job data:', err);
+      }
+    }
+
+    // 2. Filter + Sort + Render
+    function updateJobs() {
+      const filtered = filterBySearch(allJobs);
+      const sorted = sortJobs(filtered);
+      renderJobs(sorted);
+    }
+
+    // a) Single search across title, company, description, and tags
+    function filterBySearch(jobs) {
+      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      if (!q) return jobs;
+
+      return jobs.filter(job => {
+        const title = job.title.toLowerCase();
+        const company = job.company.toLowerCase();
+        const description = job.description.toLowerCase();
+        const tags = (job.tags || []).map(tag => tag.toLowerCase());
+
+        return (
+          title.includes(q) ||
+          company.includes(q) ||
+          description.includes(q) ||
+          tags.some(tag => tag.includes(q))
+        );
+      });
+    }
+
+    // b) Sort
+    function sortJobs(jobs) {
+      const sortVal = document.getElementById('sortSelect').value;
+      if (!sortVal) return jobs;
+
+      const sorted = [...jobs];
+      switch (sortVal) {
+        case 'titleAsc':
+          sorted.sort((a, b) => a.title.localeCompare(b.title));
+          break;
+        case 'titleDesc':
+          sorted.sort((a, b) => b.title.localeCompare(a.title));
+          break;
+        case 'dateAsc':
+          sorted.sort((a, b) => new Date(a.datePosted) - new Date(b.datePosted));
+          break;
+        case 'dateDesc':
+          sorted.sort((a, b) => new Date(b.datePosted) - new Date(a.datePosted));
+          break;
+      }
+      return sorted;
+    }
+
+    // c) Render
+    function renderJobs(jobs) {
+      const tableBody = document.getElementById('jobTable');
+      let rows = '';
+
+      jobs.forEach(job => {
+        rows += `
+          <tr>
+            <td>${job.title}</td>
+            <td>${job.company}</td>
+            <td>${job.description}</td>
+            <td>${(job.tags || []).join(', ')}</td>
+            <td>${job.datePosted}</td>
+            <td>
+              <a href="${job.link}" target="_blank" class="btn btn-sm btn-outline-primary">
+                View
+              </a>
+            </td>
+          </tr>
+        `;
+      });
+
+      tableBody.innerHTML = rows;
+    }
+  </script>
+</body>
+</html>

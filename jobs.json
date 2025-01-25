@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Software Engineer",
+    "company": "TechCorp",
+    "description": "Develop scalable web applications.",
+    "tags": ["Entry Level", "Frontend"],
+    "datePosted": "2025-01-20",
+    "link": "https://linkedin.com/jobs/view/12345"
+  },
+  {
+    "title": "Technical Manager",
+    "company": "InnovateX",
+    "description": "Lead a team of engineers to build robust systems.",
+    "tags": ["Manager", "Leadership"],
+    "datePosted": "2025-01-18",
+    "link": "https://linkedin.com/jobs/view/54321"
+  },
+  {
+    "title": "Product Manager",
+    "company": "InnovateX",
+    "description": "Oversee product roadmaps and development cycles.",
+    "tags": ["Product", "Mid-Senior Level"],
+    "datePosted": "2025-01-22",
+    "link": "https://linkedin.com/jobs/view/99999"
+  }
+]
