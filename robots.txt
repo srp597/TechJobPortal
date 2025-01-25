@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://github.com/srp597/TechJobPortal/sitemap.xml
+Sitemap: https://srp597.github.io/TechJobPortal/sitemap.xml
