@@ -2,54 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Discover tech job opportunities." />
-  <title>Job Listings</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <!-- SEO Meta Tags -->
+  <meta
+    name="description"
+    content="Discover technology jobs and valuable interview resources. Filter jobs by level, role, and stay ahead in your tech career."
+  />
+  <meta
+    name="keywords"
+    content="tech jobs, high-paying jobs, LinkedIn jobs, job seekers, interview preparation, software jobs"
+  />
+  <meta name="author" content="Your Name" />
+
+  <title>Tech Job Finder | Home</title>
 
   <!-- Bootstrap CSS -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
   />
-  <style>
-    th.sortable {
-      cursor: pointer;
-      position: relative;
-    }
-    th.sortable::after {
-      content: '\25BC'; /* Down arrow */
-      position: absolute;
-      right: 10px;
-      font-size: 0.8em;
-    }
-    th.sortable.sort-asc::after {
-      content: '\25B2'; /* Up arrow */
-    }
-    th.sortable.sort-desc::after {
-      content: '\25BC'; /* Down arrow */
-    }
-  </style>
+  <!-- Optional Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Tech Job Finder</a>
       <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="job-listings.html">Job Listings</a>
+            <a class="nav-link" href="job-listings.html">Job Listings</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="resources.html">Resources</a>
@@ -59,199 +53,58 @@
     </div>
   </nav>
 
-  <!-- MAIN CONTENT -->
-  <main class="container my-5">
-    <h1 class="mb-4">Browse Open Positions</h1>
-    <p class="lead">
-      Use the search box to find jobs by title, company, description, or tags.
-    </p>
+  <!-- HERO SECTION -->
+  <section class="bg-light text-dark py-5 text-center">
+    <div class="container">
+      <h1 class="display-4">Welcome to Tech Job Finder</h1>
+      <p class="lead">
+        Your one-stop platform to discover technology jobs that are currently
+        hiring and prepare for your next big career move.
+      </p>
+      <a href="job-listings.html" class="btn btn-primary btn-lg mt-3"
+        >Explore Jobs</a
+      >
+    </div>
+  </section>
 
-    <!-- SEARCH CONTROL -->
-    <div class="card p-3 mb-4 shadow-sm">
-      <div class="row g-3">
-        <div class="col-md-12">
-          <label for="searchInput" class="form-label fw-bold">Search Jobs</label>
-          <input
-            type="text"
-            id="searchInput"
-            class="form-control"
-            placeholder="e.g., Software, Manager, Leadership..."
-          />
-        </div>
+  <!-- ABOUT / INTRO SECTION -->
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About Us</h2>
+        <p>
+          At <strong>Tech Job Finder</strong>, we are passionate about
+          connecting talented tech professionals with top-tier companies.
+          Whether you're just starting your career or you're a seasoned
+          engineer, our curated job listings ensure you never miss an
+          opportunity to land a high-paying role.
+        </p>
+        <p>
+          We also understand the importance of thorough interview
+          preparation. Our resources page provides tips, coding
+          challenges, and system design best practices to help you
+          succeed in even the toughest technical interviews.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <!-- Optional image or illustration -->
+        <img
+          src="https://via.placeholder.com/600x400"
+          class="img-fluid rounded"
+          alt="Tech discussion illustration"
+        />
       </div>
     </div>
-
-    <!-- JOBS TABLE -->
-    <div class="table-responsive shadow-sm">
-      <table class="table table-striped align-middle mb-0">
-        <thead class="table-primary">
-          <tr>
-            <th class="sortable sort-desc" onclick="sortTable('title', this)">Title</th>
-            <th class="sortable" onclick="sortTable('company', this)">Company</th>
-            <th>Description</th>
-            <th>Tags</th>
-            <th class="sortable" onclick="sortTable('datePosted', this)">Date Posted</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody id="jobTable"></tbody>
-      </table>
-    </div>
-  </main>
+  </section>
 
   <!-- FOOTER -->
-  <footer class="bg-primary text-white text-center py-3 mt-5">
-    <p class="mb-0">&copy; 2025 Tech Job Finder. All Rights Reserved.</p>
+  <footer class="bg-primary text-white text-center py-3">
+    <p class="mb-0">
+      &copy; 2025 Tech Job Finder. All Rights Reserved.
+    </p>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Inline JS for Job Listings and Schema -->
-  <script>
-    let allJobs = [];
-    let currentSort = { column: 'datePosted', direction: 'desc' }; // Default to descending by datePosted
-
-    document.addEventListener('DOMContentLoaded', () => {
-      loadJobs();
-
-      // Add event listener for search
-      document.getElementById('searchInput').addEventListener('input', updateJobs);
-    });
-
-    async function loadJobs() {
-      try {
-        const response = await fetch('jobs.json'); // Load job data
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        allJobs = await response.json();
-
-        // Dynamically generate schema for each job
-        generateSchema(allJobs);
-
-        // Render job table
-        updateJobs();
-      } catch (err) {
-        console.error('Error loading job data:', err);
-      }
-    }
-
-    function updateJobs() {
-      const filtered = filterBySearch(allJobs);
-      const sorted = sortJobs(filtered);
-      renderJobs(sorted);
-    }
-
-    function filterBySearch(jobs) {
-      const query = document.getElementById('searchInput').value.toLowerCase().trim();
-      if (!query) return jobs;
-
-      return jobs.filter(job => {
-        const title = job.title.toLowerCase();
-        const company = job.company.toLowerCase();
-        const description = job.description.toLowerCase();
-        const tags = (job.tags || []).map(tag => tag.toLowerCase());
-
-        return (
-          title.includes(query) ||
-          company.includes(query) ||
-          description.includes(query) ||
-          tags.some(tag => tag.includes(query))
-        );
-      });
-    }
-
-    function sortJobs(jobs) {
-      if (!currentSort.column) return jobs;
-
-      const sorted = [...jobs];
-      const { column, direction } = currentSort;
-
-      sorted.sort((a, b) => {
-        const valA = a[column]?.toLowerCase ? a[column].toLowerCase() : a[column];
-        const valB = b[column]?.toLowerCase ? b[column].toLowerCase() : b[column];
-
-        if (valA < valB) return direction === 'asc' ? -1 : 1;
-        if (valA > valB) return direction === 'asc' ? 1 : -1;
-        return 0;
-      });
-
-      return sorted;
-    }
-
-    function renderJobs(jobs) {
-      const tableBody = document.getElementById('jobTable');
-      let rows = '';
-
-      jobs.forEach(job => {
-        rows += `
-          <tr>
-            <td>${job.title}</td>
-            <td>${job.company}</td>
-            <td>${job.description}</td>
-            <td>${(job.tags || []).join(', ')}</td>
-            <td>${job.datePosted}</td>
-            <td>
-              <a href="${job.link}" target="_blank" class="btn btn-sm btn-outline-primary">
-                View
-              </a>
-            </td>
-          </tr>
-        `;
-      });
-
-      tableBody.innerHTML = rows;
-    }
-
-    function sortTable(column, element) {
-      const headers = document.querySelectorAll('th.sortable');
-      headers.forEach(header => header.classList.remove('sort-asc', 'sort-desc'));
-
-      if (currentSort.column === column) {
-        currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
-      } else {
-        currentSort.column = column;
-        currentSort.direction = 'desc'; // Default to descending
-      }
-
-      element.classList.add(currentSort.direction === 'asc' ? 'sort-asc' : 'sort-desc');
-      updateJobs();
-    }
-
-    function generateSchema(jobs) {
-      const head = document.querySelector('head');
-
-      jobs.forEach(job => {
-        const schema = {
-          "@context": "https://schema.org/",
-          "@type": "JobPosting",
-          "title": job.title,
-          "description": job.description,
-          "datePosted": job.datePosted,
-          "employmentType": "FULL_TIME", // Assume full-time; customize if needed
-          "hiringOrganization": {
-            "@type": "Organization",
-            "name": job.company,
-            "sameAs": "https://www.example.com" // Replace with company URL if available
-          },
-          "jobLocation": {
-            "@type": "Place",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Remote",
-              "addressCountry": "US"
-            }
-          },
-          "url": job.link
-        };
-
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.textContent = JSON.stringify(schema, null, 2);
-        head.appendChild(script);
-      });
-    }
-  </script>
 </body>
 </html>
