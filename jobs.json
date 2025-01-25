@@ -3,7 +3,7 @@
     "title": "Software Engineer",
     "company": "Tesla",
     "description": "Entry level and internship positions at Tesla.",
-    "tags": ["Entry Level", "Internships"],
+    "tags": ["Entry Level", "Internships", "Tesla"],
     "datePosted": "2025-01-25",
     "link": "https://www.linkedin.com/posts/raj-vaibhaav_internship-earlycareer-students-activity-7288951752790290432-FkGc"
   },
@@ -11,7 +11,7 @@
     "title": "Senior Software Engineer",
     "company": "Microsoft",
     "description": "Senior Software Engineer position at Microsoft",
-    "tags": ["Senior Level", "Azure"],
+    "tags": ["Senior Level", "Azure", "Microsoft"],
     "datePosted": "2025-01-25",
     "link": "https://www.linkedin.com/posts/mariammalik1_senior-software-engineer-in-austin-texas-activity-7286128232519684096-58B0"
   },
@@ -38,6 +38,46 @@
     "tags": ["Entry Level", "Mid-Senior Level"],
     "datePosted": "2025-01-24",
     "link": "https://www.linkedin.com/posts/haroldnguyen_software-engineer-defensive-security-agent-activity-7288743827790577664-Nv2F"
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Google",
+    "description": "Hiring for software engineers Google USA",
+    "tags": ["Mid-Senior Level", "Google"],
+    "datePosted": "2025-01-24",
+    "link": "https://www.linkedin.com/posts/coachshreyamehta_google-us-is-hiring-here-are-the-7-roles-activity-7288596731619856384-ryLx"
+  },
+   {
+    "title": "Software Engineer",
+    "company": "Harmon",
+    "description": "Hiring for Principal backend engineers at Harmon",
+    "tags": ["Principal", "Harmon"],
+    "datePosted": "2025-01-24",
+    "link": "https://jobsearch.harman.com/en_US/careers/JobDetail/Principal-Backend-Software-Engineer-Data-Team-ROON/24676?li_fat_id=899b0f69-2e21-44b0-b6ee-bd3ae0985466&CREATIVE_ID=552361784&CAMPAIGN_NAME=Backend-2-Jan&utm_medium=cpc&CAMPAIGN_GROUP_NAME=Roon2-Traffic&utm_source=linkedin"
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Lowe's",
+    "description": "Hiring for Principal software engineers at Lowe's",
+    "tags": ["Principal", "Lowe's"],
+    "datePosted": "2025-01-24",
+    "link": "https://www.linkedin.com/posts/tobypace_principal-software-engineer-in-lowes-charlotte-activity-7288634698111541248-DOtr?utm_source=share&utm_medium=member_ios"
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Zillow",
+    "description": "Hiring for Principal software engineers at Zillow",
+    "tags": ["Principal", "AI", "Zillow"],
+    "datePosted": "2025-01-23",
+    "link": "https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-WA/Principal-Software-Development-Engineer---AI-Platform_P745426"
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Netflix",
+    "description": "Hiring for software engineers at Netflix",
+    "tags": ["Mid-Senior Level", "Streaming Algorithms", "Netflix"],
+    "datePosted": "2025-01-22",
+    "link": "https://www.linkedin.com/posts/huangty_software-engineer-4-streaming-algorithms-activity-7287692917702303744-ntRD"
   },
   {
     "title": "Technical Manager",
