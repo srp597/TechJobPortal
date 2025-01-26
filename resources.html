@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Curated resources for technical interviews, coding, system design, and career preparation.">
-  <meta name="keywords" content="technical resources, coding prep, system design, interview preparation, tech career">
-  <meta name="author" content="Tech Job Finder">
+  <meta name="description" content="Curated resources for technical interview preparation, coding, system design, and more." />
   <title>Resources | Tech Job Finder</title>
 
   <!-- Bootstrap CSS -->
@@ -14,31 +12,40 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
   />
   <style>
-    /* Fix for the navbar overlapping content */
     body {
-      margin-top: 70px; /* Adjust this value based on the navbar height */
+      margin-top: 5rem; /* Prevent overlap with fixed navbar */
     }
-  
     .navbar {
-      z-index: 1030; /* Ensure the navbar appears on top of all elements */
+      padding: 1rem;
+      z-index: 1000;
     }
-  
-    /* Tweak for smaller screens */
-    @media (max-width: 576px) {
-      body {
-        margin-top: 56px; /* Adjust for smaller navbar on mobile */
-      }
+    .navbar.bg-primary {
+      background-color: #007bff !important;
     }
-  
-    .navbar-brand {
+    .resource-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .resource-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .resource-card-title {
+      font-size: 1.25rem;
       font-weight: bold;
+      color: #333;
     }
-  
-    .navbar-nav .nav-link.active {
-      font-weight: bold;
-      text-decoration: underline;
+    .resource-tags {
+      margin-top: 0.5rem;
     }
-  </style>  
+    .resource-tags .badge {
+      margin-right: 0.5rem;
+    }
+  </style>
 </head>
 <body>
   <!-- NAVBAR -->
@@ -67,7 +74,7 @@
         </ul>
       </div>
     </div>
-  </nav>  
+  </nav>
 
   <!-- MAIN CONTENT -->
   <main class="container my-5">
