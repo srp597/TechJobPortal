@@ -1,0 +1,73 @@
+[
+      {
+        "name": "Cracking the Coding Interview",
+        "description": "Comprehensive guide to technical interview preparation with coding problems and solutions.",
+        "category": "Books",
+        "tags": ["coding", "interview prep", "algorithms"],
+        "link": "https://www.crackingthecodinginterview.com/"
+      },
+      {
+        "name": "LeetCode",
+        "description": "Platform for practicing coding problems and preparing for technical interviews.",
+        "category": "Online Platforms",
+        "tags": ["coding", "practice", "interview prep"],
+        "link": "https://leetcode.com/"
+      },
+      {
+        "name": "System Design Primer",
+        "description": "Open-source guide to system design concepts, patterns, and preparation.",
+        "category": "System Design",
+        "tags": ["system design", "architecture", "interview prep"],
+        "link": "https://github.com/donnemartin/system-design-primer"
+      },
+      {
+        "name": "Grokking the System Design Interview",
+        "description": "Structured approach to learning system design for interviews.",
+        "category": "System Design",
+        "tags": ["system design", "interview prep", "architecture"],
+        "link": "https://www.educative.io/courses/grokking-the-system-design-interview"
+      },
+      {
+        "name": "Exercism",
+        "description": "Free coding practice and mentorship for learning new programming languages.",
+        "category": "Coding Practice",
+        "tags": ["coding", "practice", "mentorship"],
+        "link": "https://exercism.org/"
+      },
+      {
+        "name": "CodeSignal",
+        "description": "Comprehensive platform for technical assessment and interview practice.",
+        "category": "Online Platforms",
+        "tags": ["coding", "assessment", "interview prep"],
+        "link": "https://codesignal.com/"
+      },
+      {
+        "name": "Refactoring Guru",
+        "description": "Detailed explanations of design patterns and refactoring techniques.",
+        "category": "Software Design",
+        "tags": ["design patterns", "refactoring", "software development"],
+        "link": "https://refactoring.guru/"
+      },
+      {
+        "name": "CS50's Introduction to Computer Science",
+        "description": "Harvard's popular computer science course available online for free.",
+        "category": "Courses",
+        "tags": ["computer science", "education", "programming"],
+        "link": "https://cs50.harvard.edu/x/"
+      },
+      {
+        "name": "Interviewing.io",
+        "description": "Practice mock technical interviews with experienced interviewers.",
+        "category": "Interview Practice",
+        "tags": ["mock interviews", "practice", "technical"],
+        "link": "https://interviewing.io/"
+      },
+      {
+        "name": "Hired In Tech",
+        "description": "Guide to system design interviews and concepts.",
+        "category": "System Design",
+        "tags": ["system design", "interview prep", "architecture"],
+        "link": "https://www.hiredintech.com/system-design"
+      }
+]
+  
