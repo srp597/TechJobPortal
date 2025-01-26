@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://srp597.github.io/TechJobPortal/sitemap.xml
+Sitemap: https://www.swejobpostings.com/sitemap.xml
