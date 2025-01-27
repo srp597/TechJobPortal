@@ -68,6 +68,13 @@
         "category": "System Design",
         "tags": ["system design", "interview prep", "architecture"],
         "link": "https://www.hiredintech.com/system-design"
+      },
+      {
+      "name": "Levels.fyi",
+      "description": "Compare salaries across companies and roles.",
+      "category": "Salary Data",
+      "tags": ["salaries", "compensation", "career"],
+      "link": "https://www.levels.fyi/"
       }
 ]
   
