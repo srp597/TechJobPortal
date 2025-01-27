@@ -80,6 +80,70 @@
     "link": "https://www.linkedin.com/posts/huangty_software-engineer-4-streaming-algorithms-activity-7287692917702303744-ntRD"
   },
   {
+    "title": "Junior Software Engineer",
+    "company": "CGI",
+    "description": "Junior software engineer hiring at CGI",
+    "tags": ["Mid-Level", "Remote", "C#"],
+    "datePosted": "2025-01-26",
+    "link": "https://cgi.njoyn.com/corp/xweb/xweb.asp?page=jobdetails&jobid=j0125-0298&brid=1182519&clid=021001&_ccid=1737943101912dam1yozl5"
+  },
+  {
+    "title": "Full Stack Software Engineer",
+    "company": "CGI",
+    "description": "Full Stack software engineer hiring at CGI",
+    "tags": ["Mid-Level", "Remote", "Full Stack"],
+    "datePosted": "2025-01-26",
+    "link": "https://cgi.njoyn.com/corp/xweb/xweb.asp?page=jobdetails&jobid=j0125-1842&brid=1187132&clid=021001&_ccid=1737943101912dam1yozl5"
+  },
+  {
+    "title": "Test Engineer",
+    "company": "CGI",
+    "description": "Hiring for a test engineer",
+    "tags": ["Remote", "Testing"],
+    "datePosted": "2025-01-26",
+    "link": "https://cgi.njoyn.com/corp/xweb/xweb.asp?page=jobdetails&jobid=j0125-0619&brid=1182826&clid=021001&_ccid=1737943101912dam1yozl5"
+  },
+  {
+    "title": "Engineering Manager",
+    "company": "Netflix",
+    "description": "Hiring for an engineering manager",
+    "tags": ["Manager", "Netflix"],
+    "datePosted": "2025-01-26",
+    "link": "https://explore.jobs.netflix.net/careers/job/790300307476"
+  },
+  {
+    "title": "Staff Software Engineer",
+    "company": "SoFi",
+    "description": "Sofi is hiring for Staff Software Engineer",
+    "tags": ["Staff Engineer", "SoFi"],
+    "datePosted": "2025-01-26",
+    "link": "https://www.linkedin.com/jobs/view/staff-software-engineer-chat-at-sofi-4133656902?trk=public_post_feed-job-posting-content"
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Atlassian",
+    "description": "Atlassian is hiring for Machine Learning Engineer",
+    "tags": ["Machine Learning Engineer", "Remote"],
+    "datePosted": "2025-01-26",
+    "link": "https://www.linkedin.com/jobs/view/machine-learning-engineer-at-atlassian-4124958939?trk=public_post_feed-job-posting-content"
+  },
+  {
+    "title": "Software Development Engineer in Test",
+    "company": "Apple",
+    "description": "Apple is hiring for junior test engineer",
+    "tags": ["Test Engineer", "Entry-Mid Level"],
+    "datePosted": "2025-01-26",
+    "link": "https://jobs.apple.com/en-us/details/200579886/software-development-engineer-in-test-software-updates?team=SFTWR"
+  },
+  {
+    "title": "Senior Software Development Engineer in Test",
+    "company": "Apple",
+    "description": "Apple is hiring for senior test engineer",
+    "tags": ["Test Engineer", "Senior Level"],
+    "datePosted": "2025-01-26",
+    "link": "https://jobs.apple.com/en-us/details/200579886/software-development-engineer-in-test-software-updates?team=SFTWR"
+  },
+  {
     "title": "Technical Manager",
     "company": "Aircall",
     "description": "Lead a team of engineers to build robust systems.",
