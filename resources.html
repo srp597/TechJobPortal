@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Curated resources for technical interview preparation, coding, system design, and more." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore a curated collection of resources for technical interviews, coding practice, system design, and career growth. Boost your tech career today!" />
+  <meta name="keywords" content="coding resources, technical interview prep, system design, career growth, tech jobs, programming resources, coding challenges, algorithm tutorials, data structures, tech interview questions, online coding platforms, job interview preparation, salary comparison tools, career advice, tech career resources, remote tech jobs, developer tools, system design patterns, tech books, software engineering guides, mock interview platforms, career growth in technology, high-paying tech jobs, job resources for developers" />
+  <meta name="author" content="Tech Job Finder" />
   <title>Resources | Tech Job Finder</title>
-
+  
   <!-- Bootstrap CSS -->
   <link
     rel="stylesheet"
@@ -13,43 +15,60 @@
   />
   <style>
     body {
-      margin-top: 5rem; /* Prevent overlap with fixed navbar */
+      margin-top: 5rem;
+      background-color: #f8f9fa;
+      font-family: 'Arial', sans-serif;
     }
     .navbar {
+      background-color: #004085;
       padding: 1rem;
       z-index: 1000;
     }
-    .navbar.bg-primary {
-      background-color: #007bff !important;
+    .navbar .navbar-brand {
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .navbar .nav-link {
+      color: #ffffff;
+    }
+    .navbar .nav-link.active {
+      text-decoration: underline;
     }
     .resource-card {
-      border: 1px solid #e0e0e0;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
       border-radius: 10px;
-      padding: 1rem;
-      margin-bottom: 1.5rem;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      padding: 1.5rem;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
     .resource-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
     }
     .resource-card-title {
       font-size: 1.25rem;
       font-weight: bold;
       color: #333;
     }
-    .resource-tags {
-      margin-top: 0.5rem;
+    footer {
+      background-color: #004085;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
     }
-    .resource-tags .badge {
-      margin-right: 0.5rem;
+    .filter-section {
+      margin-bottom: 1.5rem;
+    }
+    .filter-input {
+      margin-bottom: 0.5rem;
     }
   </style>
 </head>
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">Tech Job Finder</a>
       <button
@@ -71,35 +90,42 @@
           <li class="nav-item">
             <a class="nav-link active" href="resources.html">Resources</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- MAIN CONTENT -->
-  <main class="container my-5">
-    <h1 class="mb-4">Curated Resources</h1>
+  <main class="container mt-5">
+    <h1 class="mb-4">Resources for Your Tech Career</h1>
+
     <p class="lead">
-      Browse through our handpicked resources to help you ace your technical interviews, enhance your skills, and stay ahead in your career.
+      Explore curated resources to boost your career in technology. Use the filters below to find resources tailored to your needs.
     </p>
 
-    <div class="input-group mb-4">
+    <!-- Filter Section -->
+    <div class="filter-section">
       <input
         type="text"
         id="searchInput"
-        class="form-control"
-        placeholder="Search resources by name, category, or tags..."
+        class="form-control filter-input"
+        placeholder="Search by keywords (e.g., coding, system design, salary)..."
       />
+      <small class="text-muted">You can enter multiple keywords separated by commas.</small>
     </div>
 
+    <!-- Resources Grid -->
     <div id="resourcesContainer" class="row">
       <!-- Resource cards will be dynamically inserted here -->
     </div>
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-primary text-white text-center py-3 mt-5">
-    <p class="mb-0">&copy; 2025 Tech Job Finder. All Rights Reserved.</p>
+  <footer>
+    <p>&copy; 2025 Tech Job Finder. All Rights Reserved.</p>
   </footer>
 
   <!-- Bootstrap JS -->
@@ -112,92 +138,93 @@
     document.addEventListener('DOMContentLoaded', () => {
       loadResources();
 
-      // Add event listener for search
-      document.getElementById('searchInput').addEventListener('input', updateResources);
+      // Add event listener for multi-keyword filtering
+      document.getElementById('searchInput').addEventListener('input', () => {
+        const query = document.getElementById('searchInput').value;
+        filterResources(query);
+      });
+
+      // Add dynamic schema generation
+      generateDynamicSchema();
     });
 
     async function loadResources() {
       try {
-        const response = await fetch('resources.json'); // Load resource data
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
+        const response = await fetch('resources.json');
+        if (!response.ok) throw new Error('Failed to fetch resources');
         resources = await response.json();
-
-        // Render resource cards
-        updateResources();
-
-        // Generate JSON-LD schema
-        generateSchema(resources);
-      } catch (err) {
-        console.error('Error loading resources:', err);
-        document.getElementById('resourcesContainer').innerHTML = `
-          <div class="col-12">
-            <p class="text-danger">Failed to load resources. Please try again later.</p>
-          </div>`;
+        renderResources(resources);
+      } catch (error) {
+        console.error(error);
+        document.getElementById('resourcesContainer').innerHTML = '<p class="text-danger">Failed to load resources.</p>';
       }
     }
 
-    function updateResources() {
-      const query = document.getElementById('searchInput').value.toLowerCase().trim();
-      const filteredResources = resources.filter(resource => {
-        const name = resource.name.toLowerCase();
-        const category = resource.category.toLowerCase();
-        const tags = (resource.tags || []).join(' ').toLowerCase();
+    function renderResources(filteredResources) {
+      const container = document.getElementById('resourcesContainer');
+      container.innerHTML = '';
 
-        return (
-          name.includes(query) ||
-          category.includes(query) ||
-          tags.includes(query)
-        );
+      filteredResources.forEach(resource => {
+        const card = `
+          <div class="col-md-4 mb-4">
+            <div class="resource-card">
+              <h3 class="resource-card-title">${resource.name}</h3>
+              <p>${resource.description}</p>
+              <p class="text-muted">Category: ${resource.category}</p>
+              <div class="resource-tags">
+                ${resource.tags.map(tag => `<span class="badge bg-secondary">${tag}</span>`).join(' ')}
+              </div>
+              <a href="${resource.link}" class="btn btn-primary mt-3" target="_blank">Visit Resource</a>
+            </div>
+          </div>
+        `;
+        container.innerHTML += card;
+      });
+    }
+
+    function filterResources(query) {
+      const keywords = query.toLowerCase().split(',').map(keyword => keyword.trim());
+      const filteredResources = resources.filter(resource => {
+        return keywords.every(keyword => {
+          return (
+            resource.name.toLowerCase().includes(keyword) ||
+            resource.description.toLowerCase().includes(keyword) ||
+            resource.category.toLowerCase().includes(keyword) ||
+            (resource.tags || []).some(tag => tag.toLowerCase().includes(keyword))
+          );
+        });
       });
 
       renderResources(filteredResources);
     }
 
-    function renderResources(resources) {
-      const container = document.getElementById('resourcesContainer');
-      container.innerHTML = '';
+    function generateDynamicSchema() {
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Resources | Tech Job Finder",
+        "description": "Explore curated resources for technical interviews, coding practice, system design, and career growth.",
+        "url": "https://www.yourdomain.com/resources.html",
+        "keywords": ["coding resources", "technical interview prep", "system design", "career growth", "tech jobs"],
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": resources.map((resource, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "item": {
+              "@type": "CreativeWork",
+              "name": resource.name,
+              "description": resource.description,
+              "url": resource.link
+            }
+          }))
+        }
+      };
 
-      resources.forEach(resource => {
-        const card = document.createElement('div');
-        card.className = 'col-md-4';
-
-        card.innerHTML = `
-          <div class="resource-card">
-            <h3 class="resource-card-title">${resource.name}</h3>
-            <p>${resource.description}</p>
-            <p class="text-muted">Category: ${resource.category}</p>
-            <div class="resource-tags">
-              ${(resource.tags || []).map(tag => `<span class="badge bg-secondary">${tag}</span>`).join(' ')}
-            </div>
-            <a href="${resource.link}" target="_blank" class="btn btn-primary mt-3">Visit Resource</a>
-          </div>
-        `;
-
-        container.appendChild(card);
-      });
-    }
-
-    function generateSchema(resources) {
-      const head = document.querySelector('head');
-
-      resources.forEach(resource => {
-        const schema = {
-          "@context": "https://schema.org/",
-          "@type": "CreativeWork",
-          "name": resource.name,
-          "description": resource.description,
-          "about": resource.category,
-          "keywords": resource.tags.join(', '),
-          "url": resource.link
-        };
-
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.textContent = JSON.stringify(schema, null, 2);
-        head.appendChild(script);
-      });
+      const scriptTag = document.createElement('script');
+      scriptTag.type = 'application/ld+json';
+      scriptTag.textContent = JSON.stringify(schema, null, 2);
+      document.head.appendChild(scriptTag);
     }
   </script>
 </body>
