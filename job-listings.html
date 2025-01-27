@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Find high-paying tech jobs. Browse job listings and prepare for your dream tech career.">
-  <meta name="keywords" content="tech jobs, remote jobs, high-paying jobs, software engineer, product manager">
-  <meta name="author" content="Tech Job Finder">
-  <title>Job Listings</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse high-paying tech job listings with easy filtering options to find your perfect role in the technology industry." />
+  <meta name="keywords" content="tech jobs, software engineer jobs, remote jobs, high-paying jobs, job board" />
+  <meta name="author" content="Tech Job Finder" />
+  <title>Job Listings | Tech Job Finder</title>
 
   <!-- Bootstrap CSS -->
   <link
@@ -14,37 +14,47 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
   />
   <style>
-    th.sortable {
-      cursor: pointer;
-      position: relative;
-      padding-right: 20px;
-    }
-    th.sortable::after {
-      content: '\25B2'; /* Default Up Arrow */
-      position: absolute;
-      right: 5px;
-      font-size: 0.8em;
-      color: #000;
-      opacity: 0.5;
-    }
-    th.sortable.sort-desc::after {
-      content: '\25BC'; /* Down Arrow */
-    }
-    .table th, .table td {
-      vertical-align: middle;
-      text-align: left;
+    body {
+      margin-top: 5rem;
+      background-color: #f8f9fa;
+      font-family: 'Arial', sans-serif;
     }
     .navbar {
-      padding: 1rem;
+      background-color: #004085;
     }
-    .search-bar {
-      margin-bottom: 20px;
+    .navbar .navbar-brand {
+      color: white;
+      font-weight: bold;
+    }
+    .job-card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .job-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+    .job-card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #333;
+    }
+    footer {
+      background-color: #004085;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
     }
   </style>
 </head>
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">Tech Job Finder</a>
       <button
@@ -66,204 +76,162 @@
           <li class="nav-item">
             <a class="nav-link" href="resources.html">Resources</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- MAIN CONTENT -->
-  <main class="container my-5">
-    <h1 class="mb-4">Browse Open Positions</h1>
-    <p class="lead">
-      Use the search box to find jobs by title, company, description, or tags.
-    </p>
+  <main class="container mt-5">
+    <h1 class="mb-4">Find Your Dream Tech Job</h1>
 
-    <!-- SEARCH CONTROL -->
-    <div class="card p-3 mb-4 shadow-sm search-bar">
-      <div class="row g-3">
-        <div class="col-md-12">
-          <label for="searchInput" class="form-label fw-bold">Search Jobs</label>
-          <input
-            type="text"
-            id="searchInput"
-            class="form-control"
-            placeholder="e.g., Software, Manager, Leadership..."
-          />
-        </div>
-      </div>
+    <div class="mb-4">
+      <input
+        type="text"
+        id="searchInput"
+        class="form-control"
+        placeholder="Search jobs by title, company, or keywords..."
+      />
     </div>
 
-    <!-- JOBS TABLE -->
-    <div class="table-responsive shadow-sm">
-      <table class="table table-striped align-middle mb-0">
-        <thead class="table-primary">
-          <tr>
-            <th class="sortable sort-desc" onclick="sortTable('title', this)">Title</th>
-            <th class="sortable" onclick="sortTable('company', this)">Company</th>
-            <th>Description</th>
-            <th>Tags</th>
-            <th class="sortable" onclick="sortTable('datePosted', this)">Date Posted</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody id="jobTable"></tbody>
-      </table>
+    <div id="jobListingsContainer" class="row">
+      <!-- Job cards will be dynamically inserted here -->
+    </div>
+
+    <div class="text-center mt-4">
+      <button id="showMoreBtn" class="btn btn-primary">Show More</button>
     </div>
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-primary text-white text-center py-3 mt-5">
-    <p class="mb-0">&copy; 2025 Tech Job Finder. All Rights Reserved.</p>
+  <footer>
+    <p>&copy; 2025 Tech Job Finder. All Rights Reserved.</p>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Inline JS for Job Listings and Schema -->
+  <!-- Inline JS for Job Listings -->
   <script>
-    let allJobs = [];
-    let currentSort = { column: 'datePosted', direction: 'desc' }; // Default to descending by datePosted
+    let jobListings = [];
+    const maxListingsToShow = 6; // Number of jobs to show initially
+    let currentlyDisplayed = 0;
 
     document.addEventListener('DOMContentLoaded', () => {
-      loadJobs();
+      loadJobListings();
 
-      // Add event listener for search
-      document.getElementById('searchInput').addEventListener('input', updateJobs);
+      // Add search functionality
+      document.getElementById('searchInput').addEventListener('input', () => {
+        const query = document.getElementById('searchInput').value;
+        filterJobListings(query);
+      });
+
+      // Add Show More button functionality
+      document.getElementById('showMoreBtn').addEventListener('click', () => {
+        renderJobListings(jobListings, currentlyDisplayed + maxListingsToShow);
+      });
     });
 
-    async function loadJobs() {
+    async function loadJobListings() {
       try {
-        const response = await fetch('jobs.json'); // Load job data
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        allJobs = await response.json();
-
-        // Dynamically generate schema for each job
-        generateSchema(allJobs);
-
-        // Render job table
-        updateJobs();
-      } catch (err) {
-        console.error('Error loading job data:', err);
+        const response = await fetch('jobs.json');
+        if (!response.ok) throw new Error('Failed to fetch job listings');
+        jobListings = await response.json();
+        renderJobListings(jobListings, maxListingsToShow);
+      } catch (error) {
+        console.error(error);
+        document.getElementById('jobListingsContainer').innerHTML = '<p class="text-danger">Failed to load job listings.</p>';
       }
     }
 
-    function updateJobs() {
-      const filtered = filterBySearch(allJobs);
-      const sorted = sortJobs(filtered);
-      renderJobs(sorted);
-    }
+    function renderJobListings(filteredJobs, limit) {
+      const container = document.getElementById('jobListingsContainer');
+      container.innerHTML = '';
+      const jobsToShow = filteredJobs.slice(0, limit);
 
-    function filterBySearch(jobs) {
-      const query = document.getElementById('searchInput').value.toLowerCase().trim();
-      if (!query) return jobs;
-
-      return jobs.filter(job => {
-        const title = job.title.toLowerCase();
-        const company = job.company.toLowerCase();
-        const description = job.description.toLowerCase();
-        const tags = (job.tags || []).map(tag => tag.toLowerCase());
-
-        return (
-          title.includes(query) ||
-          company.includes(query) ||
-          description.includes(query) ||
-          tags.some(tag => tag.includes(query))
-        );
-      });
-    }
-
-    function sortJobs(jobs) {
-      if (!currentSort.column) return jobs;
-
-      const sorted = [...jobs];
-      const { column, direction } = currentSort;
-
-      sorted.sort((a, b) => {
-        const valA = a[column]?.toLowerCase ? a[column].toLowerCase() : a[column];
-        const valB = b[column]?.toLowerCase ? b[column].toLowerCase() : b[column];
-
-        if (valA < valB) return direction === 'asc' ? -1 : 1;
-        if (valA > valB) return direction === 'asc' ? 1 : -1;
-        return 0;
-      });
-
-      return sorted;
-    }
-
-    function renderJobs(jobs) {
-      const tableBody = document.getElementById('jobTable');
-      let rows = '';
-
-      jobs.forEach(job => {
-        rows += `
-          <tr>
-            <td>${job.title}</td>
-            <td>${job.company}</td>
-            <td>${job.description}</td>
-            <td>${(job.tags || []).join(', ')}</td>
-            <td>${job.datePosted}</td>
-            <td>
-              <a href="${job.link}" target="_blank" class="btn btn-sm btn-outline-primary">
-                View
-              </a>
-            </td>
-          </tr>
+      jobsToShow.forEach(job => {
+        const card = `
+          <div class="col-md-4 mb-4">
+            <div class="job-card">
+              <h3 class="job-card-title">${job.title}</h3>
+              <p><strong>Company:</strong> ${job.company}</p>
+              <p>${job.description}</p>
+              <a href="${job.link}" class="btn btn-primary mt-3" target="_blank">Apply Now</a>
+            </div>
+          </div>
         `;
+        container.innerHTML += card;
       });
 
-      tableBody.innerHTML = rows;
+      currentlyDisplayed = jobsToShow.length;
+      toggleShowMoreButton(filteredJobs.length);
     }
 
-    function sortTable(column, element) {
-      const headers = document.querySelectorAll('th.sortable');
-      headers.forEach(header => header.classList.remove('sort-asc', 'sort-desc'));
+    function filterJobListings(query) {
+      const keywords = query.toLowerCase().split(',').map(keyword => keyword.trim());
+      const filteredJobs = jobListings.filter(job => {
+        return keywords.every(keyword => {
+          return (
+            job.title.toLowerCase().includes(keyword) ||
+            job.company.toLowerCase().includes(keyword) ||
+            job.description.toLowerCase().includes(keyword)
+          );
+        });
+      });
 
-      if (currentSort.column === column) {
-        currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+      renderJobListings(filteredJobs, maxListingsToShow);
+    }
+
+    function toggleShowMoreButton(totalJobs) {
+      const showMoreBtn = document.getElementById('showMoreBtn');
+      if (currentlyDisplayed >= totalJobs) {
+        showMoreBtn.style.display = 'none';
       } else {
-        currentSort.column = column;
-        currentSort.direction = 'desc'; // Default to descending
+        showMoreBtn.style.display = 'block';
       }
-
-      element.classList.add(currentSort.direction === 'asc' ? 'sort-asc' : 'sort-desc');
-      updateJobs();
     }
+  </script>
 
-    function generateSchema(jobs) {
-      const head = document.querySelector('head');
-
-      jobs.forEach(job => {
-        const schema = {
-          "@context": "https://schema.org/",
-          "@type": "JobPosting",
-          "title": job.title,
-          "description": job.description,
-          "datePosted": job.datePosted,
-          "employmentType": "FULL_TIME", // Assume full-time; customize if needed
-          "hiringOrganization": {
-            "@type": "Organization",
-            "name": job.company,
-            "sameAs": "https://www.example.com" // Replace with company URL if available
-          },
-          "jobLocation": {
-            "@type": "Place",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Remote",
-              "addressCountry": "US"
+  <!-- Dynamic Schema Generation -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Job Listings | Tech Job Finder",
+        "description": "Browse high-paying tech job listings with easy filtering options to find your perfect role in the technology industry.",
+        "url": "https://www.yourdomain.com/job-listings.html",
+        "author": {
+          "@type": "Organization",
+          "name": "Tech Job Finder"
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": jobListings.map((job, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "item": {
+              "@type": "JobPosting",
+              "title": job.title,
+              "description": job.description,
+              "hiringOrganization": {
+                "@type": "Organization",
+                "name": job.company
+              },
+              "url": job.link
             }
-          },
-          "url": job.link
-        };
+          }))
+        }
+      };
 
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.textContent = JSON.stringify(schema, null, 2);
-        head.appendChild(script);
-      });
-    }
+      const scriptTag = document.createElement('script');
+      scriptTag.type = 'application/ld+json';
+      scriptTag.textContent = JSON.stringify(schema, null, 2);
+      document.head.appendChild(scriptTag);
+    });
   </script>
 </body>
 </html>
