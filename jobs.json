@@ -144,6 +144,36 @@
     "link": "https://jobs.apple.com/en-us/details/200579886/software-development-engineer-in-test-software-updates?team=SFTWR"
   },
   {
+    "title": "Software Development Engineer V (Fullstack) - Developer Portal",
+    "company": "ID.Me",
+    "description": "ID.me is looking for a Software Development Engineer V (Fullstack)",
+    "tags": ["Full Stack Engineer", "Mid-Senior level"],
+    "datePosted": "2025-01-27",
+    "baseSalary": "$217,565—$260,000",
+    "jobLocation": "Mountain View, CA",
+    "link": "https://jobs.apple.com/en-us/details/200579886/software-development-engineer-in-test-software-updates?team=SFTWR"
+  },
+  {
+    "title": "Senior Software Development Engineer",
+    "company": "Expedia",
+    "description": "Expedia is hiring for looking for a Senior Engineer",
+    "tags": ["Senior level"],
+    "datePosted": "2025-01-27",
+    "baseSalary": "$173,000.00-$242,500",
+    "jobLocation": "Seattle, WA",
+    "link": "https://expedia.wd5.myworkdayjobs.com/search/job/Washington---Seattle-Campus/Senior-Software-Development-Engineer_R-93574-1/?source=LinkedInRecruiter"
+  },
+  {
+    "title": "Software Engineer, Backend",
+    "company": "DoorDash",
+    "description": "Software Engineer, Backend (All Teams)",
+    "tags": ["Backend Engineer", "Mid-Senior level"],
+    "datePosted": "2025-01-27",
+    "baseSalary": "$130,600-$285000",
+    "jobLocation": "Sunnyvale, CA; San Francisco, CA; New York, NY; Seattle, WA",
+    "link": "https://boards.greenhouse.io/doordashusa/jobs/5630445?gh_src=52cae1891us"
+  },
+  {
     "title": "Technical Manager",
     "company": "Aircall",
     "description": "Lead a team of engineers to build robust systems.",
