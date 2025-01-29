@@ -174,6 +174,46 @@
     "link": "https://boards.greenhouse.io/doordashusa/jobs/5630445?gh_src=52cae1891us"
   },
   {
+    "title": "Staff Software Engineer",
+    "company": "Circle",
+    "description": "Staff Engineer role at Circle",
+    "tags": ["Staff level", "Financial Technology"],
+    "datePosted": "2025-01-28",
+    "baseSalary": "$172.5K-$227.5K",
+    "location": "New York, NY",
+    "link": "https://www.linkedin.com/jobs/view/4078036736/"
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Circle",
+    "description": "Senior Software Engineer at Circle",
+    "tags": ["Senior level", "Financial Technology"],
+    "datePosted": "2025-01-28",
+    "baseSalary": "$147,500-$195,000",
+    "location": "New York, NY",
+    "link": "https://www.linkedin.com/jobs/view/4078035751"
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "LinkedIn",
+    "description": "Senior Software Engineer at LinkedIn",
+    "tags": ["Senior level"],
+    "datePosted": "2025-01-28",
+    "baseSalary": "$121K-$198K",
+    "location": "Mountain View, CA",
+    "link": "https://www.linkedin.com/jobs/view/4108494924"
+  },
+  {
+    "title": "Senior Staff Software Engineer",
+    "company": "Reddit",
+    "description": "Senior Staff Software Engineer at Reddit",
+    "tags": ["Staff level"],
+    "datePosted": "2025-01-28",
+    "baseSalary": "$232.5K-$325.5K",
+    "location": "Remote",
+    "link": "https://www.linkedin.com/jobs/view/3865323926"
+  },
+  {
     "title": "Technical Manager",
     "company": "Aircall",
     "description": "Lead a team of engineers to build robust systems.",
