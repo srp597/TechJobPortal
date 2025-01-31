@@ -1,0 +1,38 @@
+name: Fetch Remote Jobs Daily
+
+on:
+  schedule:
+    - cron: "0 12 * * *"  # Runs at 7 AM EST (12:00 UTC)
+  workflow_dispatch:  # Allows manual execution
+
+jobs:
+  update-jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set Up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Fetch and Update Jobs
+        run: python fetch_jobs.py
+
+      - name: Save Logs
+        run: cat fetch_jobs.log
+
+      - name: Commit & Push Changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add jobs.json fetch_jobs.log
+          git commit -m "Updated job listings from RemoteOK (Last 24 Hours) at $(date -u)" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
