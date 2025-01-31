@@ -35,4 +35,4 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add jobs.json fetch_jobs.log
           git commit -m "Updated job listings from RemoteOK (Last 24 Hours) at $(date -u)" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.PAT_GITHUB }}@github.com/YOUR_USERNAME/YOUR_REPO.git
+          git push https://x-access-token:${{ secrets.PAT_GITHUB }}@github.com/srp597/TechJobPortal.git
