@@ -2,6 +2,7 @@ import requests
 import json
 import logging
 from datetime import datetime, timedelta
+from dateutil import parser  # Add this import to handle various date formats
 import os
 import re
 
@@ -10,6 +11,8 @@ logging.basicConfig(filename="fetch_jobs.log", level=logging.INFO, format="%(asc
 
 # RemoteOK API Endpoint
 REMOTEOK_API_URL = "https://remoteok.io/api"
+# Remotive API Endpoint
+REMOTIVE_API_URL = "https://remotive.io/api/remote-jobs"
 
 # Get today's date and the past 24 hours
 TODAY = datetime.utcnow()
@@ -66,6 +69,50 @@ def fetch_remoteok_jobs():
     except Exception as e:
         logging.error(f"❌ Error fetching jobs from RemoteOK: {e}")
         return []
+    
+def fetch_remotive_jobs():
+    """Fetch jobs from Remotive API and filter those posted in the last 24 hours."""
+    try:
+        logging.info("Fetching jobs from Remotive...")
+        response = requests.get(REMOTIVE_API_URL, headers={"User-Agent": "Mozilla/5.0"})
+
+        if response.status_code != 200:
+            logging.error(f"❌ Failed to fetch jobs from Remotive (HTTP {response.status_code})")
+            return []
+
+        jobs_data = response.json().get("jobs", [])
+        new_jobs = []
+
+        for job in jobs_data:
+            posted_date_str = job.get("publication_date", "")
+
+            try:
+                # Automatically parse any valid date format
+                posted_date = parser.parse(posted_date_str)
+            except ValueError:
+                logging.warning(f"⚠ Skipping job due to invalid date format: {posted_date_str}")
+                continue
+
+            if posted_date >= ONE_DAY_AGO:
+                formatted_job = {
+                    "title": job.get("title", "Unknown Title"),
+                    "company": job.get("company_name", "Unknown Company"),
+                    "location": job.get("candidate_required_location", "Remote"),
+                    "datePosted": posted_date.strftime("%Y-%m-%d"),
+                    "baseSalary": job.get("salary", "Not specified"),
+                    "link": job.get("url", ""),
+                    "description": clean_description(job.get("description", "No description available.")),
+                    "source": "Remotive"
+                }
+                new_jobs.append(formatted_job)
+
+        logging.info(f"✅ Fetched {len(new_jobs)} new jobs from Remotive.")
+        return new_jobs
+
+    except Exception as e:
+        logging.error(f"❌ Error fetching jobs from Remotive: {e}")
+        return []
+
 
 def save_jobs(updated_jobs):
     """Save updated jobs list to jobs.json."""
@@ -78,7 +125,9 @@ def main():
     logging.info("🚀 Starting job fetching process...")
     
     existing_jobs = load_existing_jobs()
-    new_jobs = fetch_remoteok_jobs()
+    new_jobs = []
+    new_jobs.extend(fetch_remoteok_jobs())
+    new_jobs.extend(fetch_remotive_jobs())
 
     if new_jobs:
         # Remove duplicates based on job title and company
