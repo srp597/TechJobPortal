@@ -28,11 +28,11 @@ jobs:
         run: cat fetch_jobs.log
 
       - name: Commit & Push Changes
+        env:
+          PAT_GITHUB: ${{ secrets.PAT_GITHUB }}
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add jobs.json fetch_jobs.log
           git commit -m "Updated job listings from RemoteOK (Last 24 Hours) at $(date -u)" || echo "No changes to commit"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git push https://x-access-token:${{ secrets.PAT_GITHUB }}@github.com/YOUR_USERNAME/YOUR_REPO.git
