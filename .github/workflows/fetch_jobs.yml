@@ -19,7 +19,8 @@ jobs:
           python-version: '3.x'
 
       - name: Install Dependencies
-        run: pip install requests
+        run: |
+          pip install requests python-dateutil  # Ensure dateutil is installed
 
       - name: Fetch and Update Jobs
         run: python fetch_jobs.py
@@ -34,5 +35,5 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add jobs.json fetch_jobs.log
-          git commit -m "Updated job listings from RemoteOK (Last 24 Hours) at $(date -u)" || echo "No changes to commit"
+          git commit -m "Updated job listings from RemoteOK & Remotive at $(date -u)" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.PAT_GITHUB }}@github.com/srp597/TechJobPortal.git
