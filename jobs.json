@@ -214,6 +214,46 @@
     "link": "https://www.linkedin.com/jobs/view/3865323926"
   },
   {
+    "title": "Staff Software Engineer",
+    "company": "Temporal",
+    "description": "Temporal is an open source programming model that can simplify code...",
+    "tags": ["Staff level"],
+    "datePosted": "2025-01-30",
+    "baseSalary": "$170,000-$240,000",
+    "location": "Remote, USA",
+    "link": "https://job-boards.greenhouse.io/temporaltechnologies/jobs/4163457007"
+  },
+  {
+    "title": "Principal Software Engineer",
+    "company": "Dropbox",
+    "description": "Dropbox is a special place where we are all seeking to fulfill our mission...",
+    "tags": ["Principal level"],
+    "datePosted": "2025-01-30",
+    "baseSalary": "$248,600—$336,400",
+    "location": "Remote, USA",
+    "link": "https://jobs.dropbox.com/listing/6563291"
+  },
+  {
+    "title": "Senior Engineering Manager",
+    "company": "LinkedIn",
+    "description": "This Sr. Manager role is part of the Developer Platforms and Experience...",
+    "tags": ["Engineering Manager"],
+    "datePosted": "2025-01-30",
+    "baseSalary": "$175K-$288K",
+    "location": "Mountain View, CA, USA",
+    "link": "https://www.linkedin.com/jobs/view/4093850052/"
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "LinkedIn",
+    "description": "This role is part of the Core Developer Experiences (CDE) organization...",
+    "tags": ["Senior level"],
+    "datePosted": "2025-01-30",
+    "baseSalary": "$121K-$198K",
+    "location": "Mountain View, CA, USA",
+    "link": "https://www.linkedin.com/jobs/view/4127847711/"
+  },
+  {
     "title": "Technical Manager",
     "company": "Aircall",
     "description": "Lead a team of engineers to build robust systems.",
