@@ -268,8 +268,22 @@
     "tags": ["Senior level", "i OS"],
     "datePosted": "2025-01-31",
     "baseSalary": "$190,800-$267,100",
-    "location": "Remote, USA",
+    "workType": "Remote",
+    "location": "USA",
+    "country": "USA",
     "link": "https://job-boards.greenhouse.io/reddit/jobs/6389375"
+  },
+  {
+    "title": "Engineering Manager",
+    "company": "Airbnb",
+    "description": "The Guest Displays & Platforms team owns the main product details page...",
+    "tags": ["Engineering Manager"],
+    "datePosted": "2025-01-31",
+    "baseSalary": "$204,000—$259,000",
+    "workType": "Remote",
+    "location": "USA",
+    "country": "USA",
+    "link": "https://careers.airbnb.com/positions/6447820"
   },
   {
     "title": "Senior Software Engineer",
@@ -278,7 +292,9 @@
     "tags": ["Senior level", "Borrow"],
     "datePosted": "2025-01-31",
     "baseSalary": "$128K-$240K",
-    "location": "Seattle, WA, USA",
+    "workType": "Remote",
+    "location": "Seattle, WA",
+    "country": "USA",
     "link": "https://www.linkedin.com/jobs/view/4132143148"
   },
   {
@@ -288,17 +304,9 @@
     "tags": ["Staff level", "AI/ML"],
     "datePosted": "2025-01-31",
     "baseSalary": "$192,000—$243,000",
-    "location": "Remote, USA",
-    "link": "https://careers.airbnb.com/positions/6272029"
-  },
-  {
-    "title": "Engineering Manager",
-    "company": "Airbnb",
-    "description": "The Guest Displays & Platforms team owns the main product details page...",
-    "tags": ["Engineering Manager"],
-    "datePosted": "2025-01-31",
-    "baseSalary": "$204,000—$259,000",
+    "workType": "Remote",
     "location": "USA",
-    "link": "https://careers.airbnb.com/positions/6447820"
+    "country": "USA",
+    "link": "https://careers.airbnb.com/positions/6272029"
   }
 ]
