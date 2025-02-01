@@ -2,6 +2,7 @@ import praw
 import json
 import os
 import logging
+from datetime import datetime
 
 # Setup logging
 logging.basicConfig(filename="reddit_post.log", level=logging.INFO, format="%(asctime)s - %(message)s")
@@ -22,7 +23,7 @@ reddit = praw.Reddit(
 )
 
 def post_latest_job(subreddit_name):
-    """Posts the latest job from jobs.json to Reddit."""
+    """Posts the latest job from jobs.json to Reddit following r/techjobs' title format."""
     try:
         with open("jobs.json", "r") as f:
             jobs = json.load(f)
@@ -33,26 +34,40 @@ def post_latest_job(subreddit_name):
 
         latest_job = jobs[-1]  # Get the most recent job
 
-        # ✅ Fix: Ensure the title follows subreddit rules
-        title = f"[HIRING] {latest_job['title']} at {latest_job['company']} ({latest_job['location']})"
+        # Extract job details
+        job_title = latest_job["title"]
+        company = latest_job["company"]
+        location = latest_job["location"]
+        job_link = latest_job["link"]
+        date_posted = latest_job["datePosted"]
 
+        # 🛠️ Ensure correct format for location
+        location_tag = "[Remote]" if "Remote" in location else f"[{location}]"
+
+        # ✅ Fix: Title follows r/techjobs format
+        today = datetime.today().strftime("%b %d, %Y")  # Example: Jan 30, 2025
+        title = f"[Hiring] {location_tag} - {job_title} at {company} - {today}"
+
+        # 📝 Format Reddit post body
         body = f"""
 🚀 **New Job Alert!**  
-**Position:** {latest_job['title']}  
-**Company:** {latest_job['company']}  
-**Location:** {latest_job['location']}  
-**Date Posted:** {latest_job['datePosted']}  
+**Position:** {job_title}  
+**Company:** {company}  
+**Location:** {location}  
+**Date Posted:** {date_posted}  
 
-🔗 **Apply Here:** [Click to Apply]({latest_job['link']})  
+🔗 **Apply Here:** [Click to Apply]({job_link})  
 
-🌍 See More Tech Jobs: [https://www.swejobpostings.com](https://www.swejobpostings.com/job-listings)  
+🌍 See More Tech Jobs: [https://swejobpostings.com](https://www.swejobpostings.com/job-listings)  
 
+---  
 """
 
+        # 🛠️ Submit the post to Reddit
         subreddit = reddit.subreddit(subreddit_name)
         subreddit.submit(title, selftext=body)
 
-        logging.info(f"✅ Successfully posted job: {latest_job['title']} to r/{subreddit_name}.")
+        logging.info(f"✅ Successfully posted job: {job_title} to r/{subreddit_name}.")
 
     except Exception as e:
         logging.error(f"❌ Error posting to Reddit: {e}")
