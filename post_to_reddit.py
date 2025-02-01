@@ -124,8 +124,8 @@ if __name__ == "__main__":
     
     general_subreddits = ["techjobs"]
     remote_subreddits = ["remotework"]
-    #Add this subreddit back after fixing the flair permissions issue
-    #remote_subreddits = ["remotework", "remotejobs"]
+    #Add this subreddits back after fixing the flair permissions issue after testing them
+    #remote_subreddits = ["remotework", "remotejobs", "forhire", "digitalnomad"]
     
     
     logging.info(f"✅ Posting to general_subreddits.")
