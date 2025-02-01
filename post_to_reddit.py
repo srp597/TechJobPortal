@@ -18,7 +18,7 @@ reddit = praw.Reddit(
     client_secret=CLIENT_SECRET,
     username=USERNAME,
     password=PASSWORD,
-    user_agent="TechJobBot/1.0 (by u/{srp597})".format(USERNAME)
+    user_agent="TechJobBot/1.0 (by u/{})".format(USERNAME)
 )
 
 def post_latest_job(subreddit_name):
