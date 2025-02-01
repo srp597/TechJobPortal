@@ -106,7 +106,7 @@ def post_job(subreddits, job, posted_jobs):
         for subreddit in subreddits:
             subreddit_instance = reddit.subreddit(subreddit)
             submission = subreddit_instance.submit(title, selftext=body)
-            if subreddit in subreddit_flairs:
+            if subreddit in SUBREDDIT_FLAIRS:
                 flair_text = SUBREDDIT_FLAIRS[subreddit]
                 submission.flair.select(flair_text=flair_text)
             logging.info(f"✅ Successfully posted job: {job_title} to r/{subreddit}.")
