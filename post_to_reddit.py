@@ -108,10 +108,9 @@ def post_job(subreddits, job, posted_jobs):
             
             subreddit_instance = reddit.subreddit(subreddit)
             submission = subreddit_instance.submit(title, selftext=body)
-            if subreddit in SUBREDDIT_FLAIRS:
-                flair_text = SUBREDDIT_FLAIRS[subreddit]
-                submission.flair.select(flair_text)
-            
+            #if subreddit in SUBREDDIT_FLAIRS:
+                #flair_text = SUBREDDIT_FLAIRS[subreddit]
+                #submission.flair.select(flair_text)
             logging.info(f"✅ Successfully posted job: {job_title} to r/{subreddit}.")
 
         # Save posted job identifier in the new structured format
@@ -130,8 +129,10 @@ if __name__ == "__main__":
     latest_remote_job = find_latest_valid_job(jobs, posted_jobs, work_type_filter="Remote")
     
     general_subreddits = ["techjobs"]
+    remote_subreddits = ["remotework"]
+    #Add this subreddit back after fixing the flair permissions issue
     #remote_subreddits = ["remotework", "remotejobs"]
-    remote_subreddits = ["remotejobs"]
+    
     
     logging.info(f"✅ Posting to general_subreddits.")
     if latest_general_job:
