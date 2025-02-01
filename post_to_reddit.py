@@ -103,10 +103,9 @@ def post_job(subreddits, job, posted_jobs):
 ---  
 *If you're looking for exciting job opportunities, follow us for daily updates!*  
 """
-    
-    logging.info(f"Posting the job: {job_title} to r/{subreddit}.")
-    
         for subreddit in subreddits:
+            logging.info(f"Posting the job: {job_title} to r/{subreddit}.")
+            
             subreddit_instance = reddit.subreddit(subreddit)
             submission = subreddit_instance.submit(title, selftext=body)
             if subreddit in SUBREDDIT_FLAIRS:
