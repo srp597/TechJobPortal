@@ -1,8 +1,8 @@
-import praw
 import json
 import os
+import praw
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # Setup logging
 logging.basicConfig(filename="reddit_post.log", level=logging.INFO, format="%(asctime)s - %(message)s")
@@ -22,56 +22,104 @@ reddit = praw.Reddit(
     user_agent="TechJobBot/1.0 (by u/{})".format(USERNAME)
 )
 
-def post_latest_job(subreddit_name):
-    """Posts the latest job from jobs.json to Reddit following r/techjobs' title format."""
+POSTED_JOBS_FILE = "posted_jobs.json"
+
+# Load previously posted jobs from JSON file
+def load_posted_jobs():
+    if os.path.exists(POSTED_JOBS_FILE):
+        with open(POSTED_JOBS_FILE, "r") as f:
+            try:
+                return json.load(f)
+            except json.JSONDecodeError:
+                logging.warning("Invalid JSON format in posted_jobs.json. Resetting file.")
+                return []
+    return []
+
+# Save updated posted jobs list to JSON file
+def save_posted_jobs(posted_jobs):
+    existing_jobs = load_posted_jobs()  # Load existing jobs
+    updated_jobs = existing_jobs + [job for job in posted_jobs if job not in existing_jobs]  # Append new unique jobs
+    
+    with open(POSTED_JOBS_FILE, "w") as f:
+        json.dump(updated_jobs, f, indent=4)
+
+
+# Function to find the latest valid job
+def find_latest_valid_job(jobs, posted_jobs, work_type_filter=None):
+    cutoff_date = datetime.today() - timedelta(weeks=2)
+    for job in reversed(jobs):
+        job_identifier = job['link']
+        job_date = datetime.strptime(job["datePosted"], "%Y-%m-%d")
+        work_type = job.get("workType", "hybrid").lower()
+        
+        if not any(posted_job['link'] == job_identifier for posted_job in posted_jobs) and job_date >= cutoff_date:
+            if work_type_filter is None or work_type == work_type_filter:
+                return job
+    return None
+
+# Function to post a job to Reddit with enhanced visibility
+def post_job(subreddits, job, posted_jobs):
     try:
-        with open("jobs.json", "r") as f:
-            jobs = json.load(f)
+        job_identifier = job['link']
+        job_title = job["title"]
+        company = job["company"]
+        location = job["location"]
+        country = job.get("country", "USA and Others")
+        job_link = job["link"]
+        date_posted = job["datePosted"]
+        salary_range = job.get("salaryRange", "Not specified")
+        work_type = job.get("workType", "Hybrid").lower()
 
-        if not jobs:
-            logging.info("No jobs available to post.")
-            return
-
-        latest_job = jobs[-1]  # Get the most recent job
-
-        # Extract job details
-        job_title = latest_job["title"]
-        company = latest_job["company"]
-        location = latest_job["location"]
-        country = latest_job["country"]
-        job_link = latest_job["link"]
-        date_posted = latest_job["datePosted"]
-        salary_range = latest_job["baseSalary"]
-        work_type = latest_job["workType"]
-
-        # ✅ Fix: Title follows r/techjobs format
+        location_tag = "[Remote]" if work_type == "remote" else "[Hybrid]" if work_type == "hybrid" else "[On-Site]"
         today = datetime.today().strftime("%b %d, %Y")
         title = f"[Hiring] [{work_type}] [{country}] - {job_title} - {today}"
-        logging.info(f"Generated the title to post: {title}")
 
-        # 📝 Format Reddit post body
+        # Format Reddit post body with engagement strategies
         body = f"""
-🚀 **New Job Alert!**  
-**Position:** {job_title}  
-**Company:** {company}  
-**Location:** {location}  
-**Date Posted:** {date_posted}
-**Salary Range Per Annum:** {salary_range} 
+🔥 **Exciting Career Opportunity!** 🔥  
+🚀 **{job_title} at {company}** is hiring now!  
+📍 **Location:** {location}  
+📅 **Date Posted:** {date_posted}  
+💰 **Salary Range Per Annum:** {salary_range}  
 
-🔗 **Apply Here:** [Click to Apply]({job_link})  
+🔗 **Apply Now:** [Click Here]({job_link})  
 
-🌍 See More Tech Jobs: [https://swejobpostings.com](https://swejobpostings.com/job-listings)  
+🌟 **Why Join?**  
+✅ Work with cutting-edge technology  
+✅ Great team culture and work-life balance  
+✅ Competitive salary and growth opportunities  
 
+🌍 **Explore More Tech Jobs:** [https://swejobpostings.com](https://swejobpostings.com/job-listings)  
+💬 **Discuss the opportunity and tag your friends!**  
+
+---  
+*If you're looking for exciting job opportunities, follow us for daily updates!*  
 """
+        for subreddit in subreddits:
+            subreddit_instance = reddit.subreddit(subreddit)
+            subreddit_instance.submit(title, selftext=body)
+            logging.info(f"✅ Successfully posted job: {job_title} to r/{subreddit}.")
 
-        # 🛠️ Submit the post to Reddit
-        subreddit = reddit.subreddit(subreddit_name)
-        subreddit.submit(title, selftext=body)
-
-        logging.info(f"✅ Successfully posted job: {job_title} to r/{subreddit_name}.")
-
+        # Save posted job identifier in the new structured format
+        posted_jobs.append({"link": job_identifier, "datePosted": date_posted})
+        save_posted_jobs(posted_jobs)
     except Exception as e:
         logging.error(f"❌ Error posting to Reddit: {e}")
 
 if __name__ == "__main__":
-    post_latest_job("techjobs")
+    posted_jobs = load_posted_jobs()
+    
+    with open("jobs.json", "r") as f:
+        jobs = json.load(f)
+    
+    latest_general_job = find_latest_valid_job(jobs, posted_jobs)
+    latest_remote_job = find_latest_valid_job(jobs, posted_jobs, work_type_filter="remote")
+    
+    general_subreddits = ["techjobs", "forhire"]
+    remote_subreddits = ["remotework", "digitalnomad", "remotejobs"]
+    
+    if latest_general_job:
+        post_job(general_subreddits, latest_general_job, posted_jobs)
+    
+    if latest_remote_job:
+        post_job(remote_subreddits, latest_remote_job, posted_jobs)
