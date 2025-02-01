@@ -58,7 +58,7 @@ def find_latest_valid_job(jobs, posted_jobs, work_type_filter=None):
     for job in reversed(jobs):
         job_identifier = job['link']
         job_date = datetime.strptime(job["datePosted"], "%Y-%m-%d")
-        work_type = job.get("workType", "hybrid").lower()
+        work_type = job.get("workType", "Hybrid")
         
         if not any(posted_job['link'] == job_identifier for posted_job in posted_jobs) and job_date >= cutoff_date:
             if work_type_filter is None or work_type == work_type_filter:
@@ -76,7 +76,7 @@ def post_job(subreddits, job, posted_jobs):
         job_link = job["link"]
         date_posted = job["datePosted"]
         salary_range = job.get("salaryRange", "Not specified")
-        work_type = job.get("workType", "Hybrid").lower()
+        work_type = job.get("workType", "Hybrid")
 
         today = datetime.today().strftime("%b %d, %Y")
         title = f"[Hiring] [{work_type}] [{country}] - {job_title} - {today}"
@@ -124,7 +124,7 @@ if __name__ == "__main__":
         jobs = json.load(f)
     
     latest_general_job = find_latest_valid_job(jobs, posted_jobs)
-    latest_remote_job = find_latest_valid_job(jobs, posted_jobs, work_type_filter="remote")
+    latest_remote_job = find_latest_valid_job(jobs, posted_jobs, work_type_filter="Remote")
     
     general_subreddits = ["techjobs"]
     remote_subreddits = ["remotework", "remotejobs"]
