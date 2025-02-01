@@ -4,7 +4,10 @@
     "company": "Tesla",
     "description": "Entry level and internship positions at Tesla.",
     "tags": ["Entry Level", "Internships", "Tesla"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-25",
+    "country": "USA",
+    "workType": "On-Site",
     "link": "https://www.linkedin.com/posts/raj-vaibhaav_internship-earlycareer-students-activity-7288951752790290432-FkGc"
   },
   {
@@ -12,7 +15,10 @@
     "company": "Aircall",
     "description": "Lead a team of engineers to build robust systems.",
     "tags": ["Manager", "Leadership", "Aircall"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-25",
+    "country": "USA",
+    "workType": "On-Site",
     "link": "https://www.linkedin.com/posts/markschwerm_aircall-manager-software-engineering-activity-7288652948782358528-6NFG"
   },
   {
@@ -20,7 +26,10 @@
     "company": "Microsoft",
     "description": "Senior Software Engineer position at Microsoft",
     "tags": ["Senior Level", "Azure", "Microsoft"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-25",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://www.linkedin.com/posts/mariammalik1_senior-software-engineer-in-austin-texas-activity-7286128232519684096-58B0"
   },
   {
@@ -28,7 +37,10 @@
     "company": "Salesforce",
     "description": "Hiring Software Engineer positions at Salesforce",
     "tags": ["Senior Level", "Mid Level"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-25",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://www.linkedin.com/posts/venkatakrishnanjayapal_salesforce-hiring-platformengineering-activity-7288791809932021760-g0k_"
   },
   {
@@ -36,7 +48,10 @@
     "company": "Netflix",
     "description": "Oversee product roadmaps and development cycles.",
     "tags": ["Entry Level", "Mid-Senior Level"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-24",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://www.linkedin.com/in/michaelburdenjr?utm_source=share&utm_campaign=share_via&utm_content=profile"
   },
   {
@@ -44,7 +59,10 @@
     "company": "OpenAI",
     "description": "Hiring for security software engineers",
     "tags": ["Entry Level", "Mid-Senior Level"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-24",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://www.linkedin.com/posts/haroldnguyen_software-engineer-defensive-security-agent-activity-7288743827790577664-Nv2F"
   },
   {
@@ -52,7 +70,10 @@
     "company": "Google",
     "description": "Hiring for software engineers Google USA",
     "tags": ["Mid-Senior Level", "Google"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-24",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://www.linkedin.com/posts/coachshreyamehta_google-us-is-hiring-here-are-the-7-roles-activity-7288596731619856384-ryLx"
   },
    {
@@ -60,7 +81,10 @@
     "company": "Harmon",
     "description": "Hiring for Principal backend engineers at Harmon",
     "tags": ["Principal", "Harmon"],
+     "baseSalary": "Not Available",
     "datePosted": "2025-01-24",
+     "country": "USA",
+     "workType": "Remote",
     "link": "https://jobsearch.harman.com/en_US/careers/JobDetail/Principal-Backend-Software-Engineer-Data-Team-ROON/24676?li_fat_id=899b0f69-2e21-44b0-b6ee-bd3ae0985466&CREATIVE_ID=552361784&CAMPAIGN_NAME=Backend-2-Jan&utm_medium=cpc&CAMPAIGN_GROUP_NAME=Roon2-Traffic&utm_source=linkedin"
   },
   {
@@ -68,7 +92,10 @@
     "company": "Lowe's",
     "description": "Hiring for Principal software engineers at Lowe's",
     "tags": ["Principal", "Lowe's"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-24",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://www.linkedin.com/posts/tobypace_principal-software-engineer-in-lowes-charlotte-activity-7288634698111541248-DOtr?utm_source=share&utm_medium=member_ios"
   },
   {
@@ -76,7 +103,10 @@
     "company": "Zillow",
     "description": "Hiring for Principal software engineers at Zillow",
     "tags": ["Principal", "AI", "Zillow"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-23",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-WA/Principal-Software-Development-Engineer---AI-Platform_P745426"
   },
   {
@@ -84,7 +114,10 @@
     "company": "Netflix",
     "description": "Hiring for software engineers at Netflix",
     "tags": ["Mid-Senior Level", "Streaming Algorithms", "Netflix"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-22",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://www.linkedin.com/posts/huangty_software-engineer-4-streaming-algorithms-activity-7287692917702303744-ntRD"
   },
   {
@@ -92,7 +125,10 @@
     "company": "CGI",
     "description": "Junior software engineer hiring at CGI",
     "tags": ["Mid-Level", "Remote", "C#"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-26",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://cgi.njoyn.com/corp/xweb/xweb.asp?page=jobdetails&jobid=j0125-0298&brid=1182519&clid=021001&_ccid=1737943101912dam1yozl5"
   },
   {
@@ -100,7 +136,10 @@
     "company": "CGI",
     "description": "Full Stack software engineer hiring at CGI",
     "tags": ["Mid-Level", "Remote", "Full Stack"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-26",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://cgi.njoyn.com/corp/xweb/xweb.asp?page=jobdetails&jobid=j0125-1842&brid=1187132&clid=021001&_ccid=1737943101912dam1yozl5"
   },
   {
@@ -108,7 +147,10 @@
     "company": "CGI",
     "description": "Hiring for a test engineer",
     "tags": ["Remote", "Testing"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-26",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://cgi.njoyn.com/corp/xweb/xweb.asp?page=jobdetails&jobid=j0125-0619&brid=1182826&clid=021001&_ccid=1737943101912dam1yozl5"
   },
   {
@@ -116,7 +158,10 @@
     "company": "Netflix",
     "description": "Hiring for an engineering manager",
     "tags": ["Manager", "Netflix"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-26",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://explore.jobs.netflix.net/careers/job/790300307476"
   },
   {
@@ -124,7 +169,10 @@
     "company": "SoFi",
     "description": "Sofi is hiring for Staff Software Engineer",
     "tags": ["Staff Engineer", "SoFi"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-26",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://www.linkedin.com/jobs/view/staff-software-engineer-chat-at-sofi-4133656902?trk=public_post_feed-job-posting-content"
   },
   {
@@ -132,7 +180,10 @@
     "company": "Atlassian",
     "description": "Atlassian is hiring for Machine Learning Engineer",
     "tags": ["Machine Learning Engineer", "Remote"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-26",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://www.linkedin.com/jobs/view/machine-learning-engineer-at-atlassian-4124958939?trk=public_post_feed-job-posting-content"
   },
   {
@@ -140,7 +191,10 @@
     "company": "Apple",
     "description": "Apple is hiring for junior test engineer",
     "tags": ["Test Engineer", "Entry-Mid Level"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-26",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://jobs.apple.com/en-us/details/200579886/software-development-engineer-in-test-software-updates?team=SFTWR"
   },
   {
@@ -148,7 +202,10 @@
     "company": "Apple",
     "description": "Apple is hiring for senior test engineer",
     "tags": ["Test Engineer", "Senior Level"],
+    "baseSalary": "Not Available",
     "datePosted": "2025-01-26",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://jobs.apple.com/en-us/details/200579886/software-development-engineer-in-test-software-updates?team=SFTWR"
   },
   {
@@ -159,6 +216,8 @@
     "datePosted": "2025-01-27",
     "baseSalary": "$217,565—$260,000",
     "location": "Mountain View, CA",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://jobs.apple.com/en-us/details/200579886/software-development-engineer-in-test-software-updates?team=SFTWR"
   },
   {
@@ -169,6 +228,8 @@
     "datePosted": "2025-01-27",
     "baseSalary": "$173,000.00-$242,500",
     "location": "Seattle, WA",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://expedia.wd5.myworkdayjobs.com/search/job/Washington---Seattle-Campus/Senior-Software-Development-Engineer_R-93574-1/?source=LinkedInRecruiter"
   },
   {
@@ -179,6 +240,8 @@
     "datePosted": "2025-01-27",
     "baseSalary": "$130,600-$285000",
     "location": "Sunnyvale, CA; San Francisco, CA; New York, NY; Seattle, WA",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://boards.greenhouse.io/doordashusa/jobs/5630445?gh_src=52cae1891us"
   },
   {
@@ -189,6 +252,8 @@
     "datePosted": "2025-01-28",
     "baseSalary": "$172.5K-$227.5K",
     "location": "New York, NY",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://www.linkedin.com/jobs/view/4078036736/"
   },
   {
@@ -199,6 +264,8 @@
     "datePosted": "2025-01-28",
     "baseSalary": "$147,500-$195,000",
     "location": "New York, NY",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://www.linkedin.com/jobs/view/4078035751"
   },
   {
@@ -209,6 +276,8 @@
     "datePosted": "2025-01-28",
     "baseSalary": "$121K-$198K",
     "location": "Mountain View, CA",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://www.linkedin.com/jobs/view/4108494924"
   },
   {
@@ -218,7 +287,9 @@
     "tags": ["Staff level"],
     "datePosted": "2025-01-28",
     "baseSalary": "$232.5K-$325.5K",
-    "location": "Remote",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://www.linkedin.com/jobs/view/3865323926"
   },
   {
@@ -228,7 +299,9 @@
     "tags": ["Staff level"],
     "datePosted": "2025-01-30",
     "baseSalary": "$170,000-$240,000",
-    "location": "Remote, USA",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://job-boards.greenhouse.io/temporaltechnologies/jobs/4163457007"
   },
   {
@@ -238,7 +311,9 @@
     "tags": ["Principal level"],
     "datePosted": "2025-01-30",
     "baseSalary": "$248,600—$336,400",
-    "location": "Remote, USA",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://jobs.dropbox.com/listing/6563291"
   },
   {
@@ -249,6 +324,8 @@
     "datePosted": "2025-01-30",
     "baseSalary": "$175K-$288K",
     "location": "Mountain View, CA, USA",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://www.linkedin.com/jobs/view/4093850052/"
   },
   {
@@ -259,6 +336,8 @@
     "datePosted": "2025-01-30",
     "baseSalary": "$121K-$198K",
     "location": "Mountain View, CA, USA",
+    "country": "USA",
+    "workType": "Remote",
     "link": "https://www.linkedin.com/jobs/view/4127847711/"
   },
   {
@@ -308,5 +387,29 @@
     "location": "USA",
     "country": "USA",
     "link": "https://careers.airbnb.com/positions/6272029"
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Salesforce",
+    "description": "The Senior Software Engineer, Application Administrator, Salesforce is responsible for the administration...",
+    "tags": ["Senior level"],
+    "datePosted": "2025-02-01",
+    "baseSalary": "$100K+",
+    "workType": "Remote",
+    "location": "USA",
+    "country": "USA",
+    "link": "https://recruiting.ultipro.com/AME1070/JobBoard/b66d4325-6be5-4691-ab44-c96532dee1ff/OpportunityDetail?opportunityId=8e2d5f6e-d169-49d9-aee7-216beff38f54"
+  },
+  {
+    "title": "Principal Software Engineer",
+    "company": "Walmart",
+    "description": "Our team is growing, and we are looking for a highly motivated Principal Software Engineer...",
+    "tags": ["Principal level", "Java", "Python"],
+    "datePosted": "2025-02-01",
+    "baseSalary": "$143,000.00-$286,000.00",
+    "workType": "On-Site",
+    "location": "Sunnyvale, CA",
+    "country": "USA",
+    "link": "https://walmart.wd5.myworkdayjobs.com/WalmartExternal/job/Sunnyvale-CA/XMLNAME--USA--Principal--Software-Engineer_R-2035209"
   }
 ]
