@@ -18,7 +18,7 @@ reddit = praw.Reddit(
     client_secret=CLIENT_SECRET,
     username=USERNAME,
     password=PASSWORD,
-    user_agent="TechJobBot/1.0 (by u/{})".format(USERNAME)
+    user_agent="TechJobBot/1.0 (by u/{srp597})".format(USERNAME)
 )
 
 def post_latest_job(subreddit_name):
@@ -33,7 +33,7 @@ def post_latest_job(subreddit_name):
 
         latest_job = jobs[-1]  # Get the most recent job
         title = f"💼 Hiring: {latest_job['title']} at {latest_job['company']} ({latest_job['location']})"
-        body = f"🚀 **New Job Alert!**\n\n**Position:** {latest_job['title']}\n**Company:** {latest_job['company']}\n**Location:** {latest_job['location']}\n**Date Posted:** {latest_job['datePosted']}\n\n🔗 **Apply Here:** [Click to Apply]({latest_job['link']})\n\n🌍 See More Tech Jobs: [Your Job Listings Page](https://yourdomain.com/jobs)\n\n---\n*This post was automatically generated.*"
+        body = f"🚀 **New Job Alert!**\n\n**Position:** {latest_job['title']}\n**Company:** {latest_job['company']}\n**Location:** {latest_job['location']}\n**Date Posted:** {latest_job['datePosted']}\n\n🔗 **Apply Here:** [Click to Apply]({latest_job['link']})\n\n🌍 See More Tech Jobs: [swejobpostings](https://www.swejobpostings.com/job-listings)\n\n---\n*This post was automatically generated.*"
 
         subreddit = reddit.subreddit(subreddit_name)
         subreddit.submit(title, selftext=body)
