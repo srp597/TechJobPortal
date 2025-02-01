@@ -47,7 +47,7 @@ def post_latest_job(subreddit_name):
         # ✅ Fix: Title follows r/techjobs format
         today = datetime.today().strftime("%b %d, %Y")
         title = f"[Hiring] {location_tag} [{location}] - {job_title} - {today}"
-        logging.info(f"✅ Successfully generated the title to post: {title}.")
+        logging.info(f"✅ Successfully generated the title to post: {title}")
 
         # 📝 Format Reddit post body
         body = f"""
