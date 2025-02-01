@@ -38,16 +38,16 @@ def post_latest_job(subreddit_name):
         job_title = latest_job["title"]
         company = latest_job["company"]
         location = latest_job["location"]
+        country = latest_job["country"]
         job_link = latest_job["link"]
         date_posted = latest_job["datePosted"]
-
-        # 🛠️ Ensure correct format for location
-        location_tag = "[Remote]" if "Remote" in location else "[Hybrid]"
+        salary_range = latest_job["baseSalary"]
+        work_type = latest_job["workType"]
 
         # ✅ Fix: Title follows r/techjobs format
         today = datetime.today().strftime("%b %d, %Y")
-        title = f"[Hiring] {location_tag} [{location}] - {job_title} - {today}"
-        logging.info(f"✅ Successfully generated the title to post: {title}")
+        title = f"[Hiring] [{work_type}] [{country}] - {job_title} - {today}"
+        logging.info(f"Generated the title to post: {title}")
 
         # 📝 Format Reddit post body
         body = f"""
@@ -55,13 +55,13 @@ def post_latest_job(subreddit_name):
 **Position:** {job_title}  
 **Company:** {company}  
 **Location:** {location}  
-**Date Posted:** {date_posted}  
+**Date Posted:** {date_posted}
+**Salary Range Per Annum:** {salary_range} 
 
 🔗 **Apply Here:** [Click to Apply]({job_link})  
 
-🌍 See More Tech Jobs: [swejobpostings](https://swejobpostings.com/job-listings)  
+🌍 See More Tech Jobs: [https://swejobpostings.com](https://swejobpostings.com/job-listings)  
 
----  
 """
 
         # 🛠️ Submit the post to Reddit
