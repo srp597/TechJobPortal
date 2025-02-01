@@ -8,6 +8,14 @@
     "link": "https://www.linkedin.com/posts/raj-vaibhaav_internship-earlycareer-students-activity-7288951752790290432-FkGc"
   },
   {
+    "title": "Technical Manager",
+    "company": "Aircall",
+    "description": "Lead a team of engineers to build robust systems.",
+    "tags": ["Manager", "Leadership", "Aircall"],
+    "datePosted": "2025-01-25",
+    "link": "https://www.linkedin.com/posts/markschwerm_aircall-manager-software-engineering-activity-7288652948782358528-6NFG"
+  },
+  {
     "title": "Senior Software Engineer",
     "company": "Microsoft",
     "description": "Senior Software Engineer position at Microsoft",
@@ -292,13 +300,5 @@
     "baseSalary": "$204,000—$259,000",
     "location": "Remote, USA",
     "link": "https://careers.airbnb.com/positions/6447820"
-  },
-  {
-    "title": "Technical Manager",
-    "company": "Aircall",
-    "description": "Lead a team of engineers to build robust systems.",
-    "tags": ["Manager", "Leadership", "Aircall"],
-    "datePosted": "2025-01-25",
-    "link": "https://www.linkedin.com/posts/markschwerm_aircall-manager-software-engineering-activity-7288652948782358528-6NFG"
   }
 ]
