@@ -3,7 +3,11 @@ name: Post Job to Reddit
 on:
   schedule:
     - cron: "30 11 * * *"  # Runs at 6:30 AM EST
-  workflow_dispatch:  # Allows manual execution
+    - cron: "30 17 * * *"  # Runs at 12:30 PM EST
+  workflow_dispatch:
+
+permissions:
+  contents: write  # Allow writing to the repository
 
 jobs:
   reddit-post:
@@ -12,6 +16,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true  # Ensures it can push changes
 
       - name: Set Up Python
         uses: actions/setup-python@v4
@@ -21,7 +27,10 @@ jobs:
       - name: Install Dependencies
         run: pip install praw
 
-      - name: Post Latest Job to Reddit
+      - name: Save Logs
+        run: cat reddit_post.log
+
+      - name: Post Job to Reddit
         env:
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
@@ -29,5 +38,12 @@ jobs:
           REDDIT_PASSWORD: ${{ secrets.REDDIT_PASSWORD }}
         run: python post_to_reddit.py
 
-      - name: Save Logs
-        run: cat reddit_post.log
+      - name: Commit & Push Changes
+      - env:
+          PAT_GITHUB: ${{ secrets.PAT_GITHUB }}
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add posted_jobs.json
+          git commit -m "Updated posted_jobs.json with new job postings" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.PAT_GITHUB }}@github.com/srp597/TechJobPortal.git
