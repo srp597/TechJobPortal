@@ -45,8 +45,8 @@ def post_latest_job(subreddit_name):
         location_tag = "[Remote]" if "Remote" in location else "[Hybrid]"
 
         # ✅ Fix: Title follows r/techjobs format
-        today = datetime.today().strftime("%b %d, %Y")  # Example: Jan 30, 2025
-        title = f"[Hiring] {location_tag} {location} - {job_title}"
+        today = datetime.today().strftime("%b %d, %Y")
+        title = f"[Hiring] {location_tag} [{location}] - {job_title} - {today}"
 
         # 📝 Format Reddit post body
         body = f"""
