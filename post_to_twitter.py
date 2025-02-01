@@ -13,7 +13,7 @@ ACCESS_TOKEN = os.getenv("TWITTER_ACCESS_TOKEN")
 ACCESS_SECRET = os.getenv("TWITTER_ACCESS_SECRET")
 
 # Your job listings page URL
-JOBS_PAGE_URL = "https://yourdomain.com/jobs"
+JOBS_PAGE_URL = "https://www.swejobpostings.com/job-listings"
 
 # Authenticate with Twitter API
 auth = tweepy.OAuth1UserHandler(API_KEY, API_SECRET, ACCESS_TOKEN, ACCESS_SECRET)
