@@ -1,0 +1,7 @@
+2025-02-01 22:01:47,522 - ✅ Posting to general_subreddits.
+2025-02-01 22:01:47,522 - ✅ Generating post title: [Hiring] [onsite] [USA] - Principal Software Engineer - Feb 01, 2025
+2025-02-01 22:01:48,439 - ❌ Error posting to Reddit: SUBMIT_VALIDATION_TITLE_REGEX_REQUIREMENT: 'Your title does not meet the requirements for this community. See the rules for more details.' on field 'title'
+2025-02-01 22:01:48,439 - ✅ Posting to remote_subreddits.
+2025-02-01 22:01:48,439 - ✅ Generating post title: [Hiring] [remote] [USA] - Senior Software Engineer - Feb 01, 2025
+2025-02-01 22:01:48,658 - ❌ Error posting to Reddit: name 'subreddit_flairs' is not defined
+2025-02-01 22:01:48,658 - ✅ Script run complete.
