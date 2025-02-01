@@ -24,6 +24,12 @@ reddit = praw.Reddit(
 
 POSTED_JOBS_FILE = "posted_jobs.json"
 
+# Select flairs
+SUBREDDIT_FLAIRS = {
+    "techjobs": "Hiring",
+    "remotejobs": "Job Posts"
+}
+
 # Load previously posted jobs from JSON file
 def load_posted_jobs():
     if os.path.exists(POSTED_JOBS_FILE):
@@ -37,6 +43,7 @@ def load_posted_jobs():
 
 # Save updated posted jobs list to JSON file
 def save_posted_jobs(posted_jobs):
+    logging.info(f"Saving posted_jobs: {posted_jobs}")
     existing_jobs = load_posted_jobs()  # Load existing jobs
     updated_jobs = existing_jobs + [job for job in posted_jobs if job not in existing_jobs]  # Append new unique jobs
     
@@ -98,7 +105,10 @@ def post_job(subreddits, job, posted_jobs):
 """
         for subreddit in subreddits:
             subreddit_instance = reddit.subreddit(subreddit)
-            subreddit_instance.submit(title, selftext=body)
+            submission = subreddit_instance.submit(title, selftext=body)
+            if subreddit in subreddit_flairs:
+                flair_text = SUBREDDIT_FLAIRS[subreddit]
+                submission.flair.select(flair_text=flair_text)
             logging.info(f"✅ Successfully posted job: {job_title} to r/{subreddit}.")
 
         # Save posted job identifier in the new structured format
@@ -116,8 +126,8 @@ if __name__ == "__main__":
     latest_general_job = find_latest_valid_job(jobs, posted_jobs)
     latest_remote_job = find_latest_valid_job(jobs, posted_jobs, work_type_filter="remote")
     
-    general_subreddits = ["techjobs", "forhire"]
-    remote_subreddits = ["remotework", "digitalnomad", "remotejobs"]
+    general_subreddits = ["techjobs"]
+    remote_subreddits = ["remotework", "remotejobs"]
     
     logging.info(f"✅ Posting to general_subreddits.")
     if latest_general_job:
