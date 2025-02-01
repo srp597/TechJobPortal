@@ -1,0 +1,33 @@
+name: Post Job to Reddit
+
+on:
+  schedule:
+    - cron: "30 13 * * *"  # Runs at 8:30 AM EST (13:30 UTC)
+  workflow_dispatch:  # Allows manual execution
+
+jobs:
+  reddit-post:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set Up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: pip install praw
+
+      - name: Post Latest Job to Reddit
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USERNAME: ${{ secrets.REDDIT_USERNAME }}
+          REDDIT_PASSWORD: ${{ secrets.REDDIT_PASSWORD }}
+        run: python post_to_reddit.py
+
+      - name: Save Logs
+        run: cat reddit_post.log
