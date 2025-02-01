@@ -27,9 +27,6 @@ jobs:
       - name: Install Dependencies
         run: pip install praw
 
-      - name: Save Logs
-        run: cat reddit_post.log
-
       - name: Post Job to Reddit
         env:
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
@@ -37,6 +34,9 @@ jobs:
           REDDIT_USERNAME: ${{ secrets.REDDIT_USERNAME }}
           REDDIT_PASSWORD: ${{ secrets.REDDIT_PASSWORD }}
         run: python post_to_reddit.py
+
+      - name: Save Logs
+        run: cat reddit_post.log
 
       - name: Commit & Push Changes
         env:
