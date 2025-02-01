@@ -254,6 +254,46 @@
     "link": "https://www.linkedin.com/jobs/view/4127847711/"
   },
   {
+    "title": "Senior iOS Software Engineer",
+    "company": "Reddit",
+    "description": "The Media Foundation’s mission is simple: Delivering seamless, high-performance media...",
+    "tags": ["Senior level", "i OS"],
+    "datePosted": "2025-01-31",
+    "baseSalary": "$190,800-$267,100",
+    "location": "Remote, USA",
+    "link": "https://job-boards.greenhouse.io/reddit/jobs/6389375"
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "SoFi",
+    "description": "At SoFi, we're redefining the future of finance...",
+    "tags": ["Senior level", "Borrow"],
+    "datePosted": "2025-01-31",
+    "baseSalary": "$128K-$240K",
+    "location": "Seattle, WA, USA",
+    "link": "https://www.linkedin.com/jobs/view/4132143148"
+  },
+  {
+    "title": "Staff Data Scientist",
+    "company": "Airbnb",
+    "description": "The Marketing Technology team is responsible for driving host and guest growth...",
+    "tags": ["Staff level", "AI/ML"],
+    "datePosted": "2025-01-31",
+    "baseSalary": "$192,000—$243,000",
+    "location": "Remote, USA",
+    "link": "https://careers.airbnb.com/positions/6272029"
+  },
+  {
+    "title": "Engineering Manager",
+    "company": "Airbnb",
+    "description": "The Guest Displays & Platforms team owns the main product details page...",
+    "tags": ["Engineering Manager"],
+    "datePosted": "2025-01-31",
+    "baseSalary": "$204,000—$259,000",
+    "location": "Remote, USA",
+    "link": "https://careers.airbnb.com/positions/6447820"
+  },
+  {
     "title": "Technical Manager",
     "company": "Aircall",
     "description": "Lead a team of engineers to build robust systems.",
