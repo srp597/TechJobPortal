@@ -65,7 +65,7 @@ def post_job(subreddits, job, posted_jobs):
         job_title = job["title"]
         company = job["company"]
         location = job["location"]
-        country = job.get("country", "USA and Others")
+        country = job.get("country", "Anywhere")
         job_link = job["link"]
         date_posted = job["datePosted"]
         salary_range = job.get("salaryRange", "Not specified")
@@ -73,6 +73,7 @@ def post_job(subreddits, job, posted_jobs):
 
         today = datetime.today().strftime("%b %d, %Y")
         title = f"[Hiring] [{work_type}] [{country}] - {job_title} - {today}"
+        logging.info(f"✅ Generating post title: {title}")
 
         # Format Reddit post body with engagement strategies
         body = f"""
@@ -118,9 +119,11 @@ if __name__ == "__main__":
     general_subreddits = ["techjobs", "forhire"]
     remote_subreddits = ["remotework", "digitalnomad", "remotejobs"]
     
+    logging.info(f"✅ Posting to general_subreddits.")
     if latest_general_job:
         post_job(general_subreddits, latest_general_job, posted_jobs)
-    
+
+    logging.info(f"✅ Posting to remote_subreddits.")
     if latest_remote_job:
         post_job(remote_subreddits, latest_remote_job, posted_jobs)
         
