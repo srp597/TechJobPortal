@@ -50,7 +50,6 @@ def fetch_remoteok_jobs():
 
         for job in jobs_data:
             posted_date = datetime.utcfromtimestamp(job.get("epoch", 0))
-            logging.info(job)
 
             if posted_date >= TWO_WEEKS_AGO:  # Only keep jobs from the last 24 hours
                 formatted_job = {
