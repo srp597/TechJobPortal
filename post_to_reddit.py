@@ -123,7 +123,7 @@ if __name__ == "__main__":
     latest_remote_job = find_latest_valid_job(jobs, posted_jobs, work_type_filter="Remote")
     
     general_subreddits = ["techjobs"]
-    remote_subreddits = ["remotework"]
+    remote_subreddits = ["forhire"]
     #Add this subreddits back after fixing the flair permissions issue after testing them
     #remote_subreddits = ["remotework", "remotejobs", "forhire", "digitalnomad"]
     
