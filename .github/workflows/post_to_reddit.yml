@@ -2,7 +2,7 @@ name: Post Job to Reddit
 
 on:
   schedule:
-    - cron: "30 13 * * *"  # Runs at 8:30 AM EST (13:30 UTC)
+    - cron: "30 11 * * *"  # Runs at 6:30 AM EST
   workflow_dispatch:  # Allows manual execution
 
 jobs:
