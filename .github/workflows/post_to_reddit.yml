@@ -39,7 +39,7 @@ jobs:
         run: python post_to_reddit.py
 
       - name: Commit & Push Changes
-      - env:
+        env:
           PAT_GITHUB: ${{ secrets.PAT_GITHUB }}
         run: |
           git config --global user.name "github-actions"
