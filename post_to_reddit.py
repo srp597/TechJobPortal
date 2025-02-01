@@ -91,17 +91,11 @@ def post_job(subreddits, job, posted_jobs):
 💰 **Salary Range Per Annum:** {salary_range}  
 
 🔗 **Apply Now:** [Click Here]({job_link})  
-
-🌟 **Why Join?**  
-✅ Work with cutting-edge technology  
-✅ Great team culture and work-life balance  
-✅ Competitive salary and growth opportunities  
-
 🌍 **Explore More Tech Jobs:** [https://swejobpostings.com](https://swejobpostings.com/job-listings)  
 💬 **Discuss the opportunity and tag your friends!**  
 
 ---  
-*If you're looking for exciting job opportunities, follow us for daily updates!*  
+*If you're looking for exciting and active job opportunities, follow us for daily updates!*  
 """
         for subreddit in subreddits:
             logging.info(f"Posting the job: {job_title} to r/{subreddit}.")
