@@ -42,6 +42,7 @@ def save_posted_jobs(posted_jobs):
     
     with open(POSTED_JOBS_FILE, "w") as f:
         json.dump(updated_jobs, f, indent=4)
+    logging.info(f"✅ Successfully updated posted_jobs.json with {len(updated_jobs)} total jobs.")
 
 
 # Function to find the latest valid job
@@ -70,7 +71,6 @@ def post_job(subreddits, job, posted_jobs):
         salary_range = job.get("salaryRange", "Not specified")
         work_type = job.get("workType", "Hybrid").lower()
 
-        location_tag = "[Remote]" if work_type == "remote" else "[Hybrid]" if work_type == "hybrid" else "[On-Site]"
         today = datetime.today().strftime("%b %d, %Y")
         title = f"[Hiring] [{work_type}] [{country}] - {job_title} - {today}"
 
@@ -123,3 +123,5 @@ if __name__ == "__main__":
     
     if latest_remote_job:
         post_job(remote_subreddits, latest_remote_job, posted_jobs)
+        
+    logging.info(f"✅ Script run complete.")
