@@ -32,8 +32,22 @@ def post_latest_job(subreddit_name):
             return
 
         latest_job = jobs[-1]  # Get the most recent job
-        title = f"💼 Hiring: {latest_job['title']} at {latest_job['company']} ({latest_job['location']})"
-        body = f"🚀 **New Job Alert!**\n\n**Position:** {latest_job['title']}\n**Company:** {latest_job['company']}\n**Location:** {latest_job['location']}\n**Date Posted:** {latest_job['datePosted']}\n\n🔗 **Apply Here:** [Click to Apply]({latest_job['link']})\n\n🌍 See More Tech Jobs: [swejobpostings](https://www.swejobpostings.com/job-listings)\n\n---\n*This post was automatically generated.*"
+
+        # ✅ Fix: Ensure the title follows subreddit rules
+        title = f"[HIRING] {latest_job['title']} at {latest_job['company']} ({latest_job['location']})"
+
+        body = f"""
+🚀 **New Job Alert!**  
+**Position:** {latest_job['title']}  
+**Company:** {latest_job['company']}  
+**Location:** {latest_job['location']}  
+**Date Posted:** {latest_job['datePosted']}  
+
+🔗 **Apply Here:** [Click to Apply]({latest_job['link']})  
+
+🌍 See More Tech Jobs: [https://www.swejobpostings.com](https://www.swejobpostings.com/job-listings)  
+
+"""
 
         subreddit = reddit.subreddit(subreddit_name)
         subreddit.submit(title, selftext=body)
@@ -44,4 +58,4 @@ def post_latest_job(subreddit_name):
         logging.error(f"❌ Error posting to Reddit: {e}")
 
 if __name__ == "__main__":
-    post_latest_job("techjobs")  # Change subreddit if needed
+    post_latest_job("techjobs")
