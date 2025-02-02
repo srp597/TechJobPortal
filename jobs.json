@@ -411,5 +411,41 @@
     "location": "Sunnyvale, CA",
     "country": "USA",
     "link": "https://walmart.wd5.myworkdayjobs.com/WalmartExternal/job/Sunnyvale-CA/XMLNAME--USA--Principal--Software-Engineer_R-2035209"
+  },
+  {
+    "title": "Principal Engineer",
+    "company": "Amazon",
+    "description": "At Amazon, Principal Engineers are both visionary leaders and hands-on builders...",
+    "tags": ["Principal Engineer", "Java"],
+    "datePosted": "2025-02-01",
+    "baseSalary": "$180,100-$311,200",
+    "workType": "Onsite",
+    "location": "Austin, Tx; Boston, MA; Palo alto, CA; San francisco, CA; Cupertino, CA; Seattle, WA",
+    "country": "USA",
+    "link": "https://amazon.jobs/en/jobs/2741847/principal-engineer-amazon-multiple-locations-usa"
+  },
+  {
+    "title": "Engineering Manager",
+    "company": "DoorDash",
+    "description": "Merchandising & New Verticals Discovery...",
+    "tags": ["Engineering Manager"],
+    "datePosted": "2025-02-01",
+    "baseSalary": "$193,800—$285,000",
+    "workType": "Hybrid",
+    "location": "Sunnyvale, CA; San francisco, CA",
+    "country": "USA",
+    "link": "https://boards.greenhouse.io/doordashusa/jobs/6566342"
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Reddit",
+    "description": "ML & Search Infrastructure multiple levels...",
+    "tags": ["mid-senior level"],
+    "datePosted": "2025-02-01",
+    "baseSalary": "$185,800-$322,000",
+    "workType": "Remote",
+    "location": "USA",
+    "country": "USA",
+    "link": "https://job-boards.greenhouse.io/reddit/jobs/6475985"
   }
 ]
