@@ -34,14 +34,14 @@ SUBREDDIT_FLAIRS = {
 
 # Optimized Reddit CTA Formatting with Variations
 cta_options = [
-    "🚀 **Looking for high-paying tech jobs?** Browse the latest roles here: [SITE_URL]",
-    "💡 **Tech hiring is booming!** Find remote & on-site jobs now: [SITE_URL]",
-    "🔥 **Top Tech Jobs Today!** Apply now before they're gone: [SITE_URL]",
-    "🌍 **Want a remote tech job?** See who's hiring: [SITE_URL]",
-    "🎯 **Level up your career with top tech jobs!** Explore now: [SITE_URL]",
-    "📈 **Fast-growing tech companies are hiring!** See the best offers: [SITE_URL]",
-    "👩‍💻 **Dreaming of a better tech job?** Apply to top roles here: [SITE_URL]",
-    "🛠️ **The best tech jobs curated for you!** Start applying today: [SITE_URL]"
+    "🚀 **Looking for high-paying tech jobs?** Browse the latest roles here: [{SITE_URL}]",
+    "💡 **Tech hiring is booming!** Find remote & on-site jobs now: [{SITE_URL}]",
+    "🔥 **Top Tech Jobs Today!** Apply now before they're gone: [{SITE_URL}]",
+    "🌍 **Want a remote tech job?** See who's hiring: [{SITE_URL}]",
+    "🎯 **Level up your career with top tech jobs!** Explore now: [{SITE_URL}]",
+    "📈 **Fast-growing tech companies are hiring!** See the best offers: [{SITE_URL}]",
+    "👩‍💻 **Dreaming of a better tech job?** Apply to top roles here: [{SITE_URL}]",
+    "🛠️ **The best tech jobs curated for you!** Start applying today: [{SITE_URL}]"
 ]
 
 # Load previously posted jobs from JSON file
