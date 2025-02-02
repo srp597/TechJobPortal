@@ -2,6 +2,7 @@ import json
 import os
 import praw
 import logging
+import random
 from datetime import datetime, timedelta
 
 # Setup logging
@@ -23,12 +24,25 @@ reddit = praw.Reddit(
 )
 
 POSTED_JOBS_FILE = "posted_jobs.json"
+SITE_URL = "https://swejobpostings.com"
 
 # Select flairs
 SUBREDDIT_FLAIRS = {
     "techjobs": "Hiring",
     "remotejobs": "Job Posts"
 }
+
+# Optimized Reddit CTA Formatting with Variations
+cta_options = [
+    "🚀 **Looking for high-paying tech jobs?** Browse the latest roles here: [SITE_URL]",
+    "💡 **Tech hiring is booming!** Find remote & on-site jobs now: [SITE_URL]",
+    "🔥 **Top Tech Jobs Today!** Apply now before they're gone: [SITE_URL]",
+    "🌍 **Want a remote tech job?** See who's hiring: [SITE_URL]",
+    "🎯 **Level up your career with top tech jobs!** Explore now: [SITE_URL]",
+    "📈 **Fast-growing tech companies are hiring!** See the best offers: [SITE_URL]",
+    "👩‍💻 **Dreaming of a better tech job?** Apply to top roles here: [SITE_URL]",
+    "🛠️ **The best tech jobs curated for you!** Start applying today: [SITE_URL]"
+]
 
 # Load previously posted jobs from JSON file
 def load_posted_jobs():
@@ -67,6 +81,8 @@ def find_latest_valid_job(jobs, posted_jobs, work_type_filter=None):
 
 # Function to post a job to Reddit with enhanced visibility
 def post_job(subreddits, job, posted_jobs):
+    #select call to action from the options
+    selected_cta = random.choice(cta_options)
     try:
         job_identifier = job['link']
         job_title = job["title"]
@@ -90,12 +106,13 @@ def post_job(subreddits, job, posted_jobs):
 📅 **Date Posted:** {date_posted}  
 💰 **Salary Range Per Annum:** {salary_range}  
 
-🔗 **Apply Now:** [Click Here]({job_link})  
-🌍 **Explore More Tech Jobs:** [https://swejobpostings.com](https://swejobpostings.com/job-listings)  
-💬 **Discuss the opportunity and tag your friends!**  
+🔗 **Apply Now:** [Click Here]({job_link})
 
+{selected_cta}
+ 
+💬 **Discuss the opportunity and tag your friends!**  
 ---  
-*If you're looking for exciting and active job opportunities, follow us for daily updates!*  
+*Follow for daily tech job updates & career tips!* 
 """
         for subreddit in subreddits:
             logging.info(f"Posting the job: {job_title} to r/{subreddit}.")
