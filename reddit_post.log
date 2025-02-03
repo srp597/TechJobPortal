@@ -54,3 +54,9 @@
 2025-02-03 01:59:21,171 - Posting the job: Senior Backend Engineer to r/remotejobs.
 2025-02-03 01:59:22,124 - ❌ Error posting to Reddit: SUBMIT_VALIDATION_FLAIR_REQUIRED: 'Your post must contain post flair.' on field 'flair'
 2025-02-03 01:59:22,124 - ✅ Script run complete.
+2025-02-03 02:11:45,046 - ✅ Posting to remote_subreddits.
+2025-02-03 02:11:45,046 - ✅ Generating post title: [Hiring] [Remote] [USA and others] - Senior Backend Engineer - Feb 03, 2025
+2025-02-03 02:11:45,046 - Posting the job: Senior Backend Engineer to r/remotejobs.
+2025-02-03 02:11:45,046 - flair_text: Job Posts
+2025-02-03 02:11:45,046 - ❌ Error posting to Reddit: cannot access local variable 'subreddit_instance' where it is not associated with a value
+2025-02-03 02:11:45,046 - ✅ Script run complete.
