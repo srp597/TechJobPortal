@@ -146,12 +146,12 @@ if __name__ == "__main__":
     latest_general_job = find_latest_valid_job(jobs, posted_jobs)
     latest_remote_job = find_latest_valid_job(jobs, posted_jobs, work_type_filter="Remote")
     
-    #general_subreddits = ["techjobs"]
+    general_subreddits = ["techjobs"]
     remote_subreddits = ["remotejobs"]
     
-    logging.info(f"✅ Posting to general_subreddits.")
-    if latest_general_job:
-        post_job(general_subreddits, latest_general_job, posted_jobs)
+    #logging.info(f"✅ Posting to general_subreddits.")
+    #if latest_general_job:
+        #post_job(general_subreddits, latest_general_job, posted_jobs)
 
     logging.info(f"✅ Posting to remote_subreddits.")
     if latest_remote_job:
