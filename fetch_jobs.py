@@ -16,8 +16,7 @@ REMOTIVE_API_URL = "https://remotive.com/api/remote-jobs"
 
 # Get today's date and the past 24 hours
 TODAY = datetime.utcnow()
-# Change to timedelta(days=1) after catching up with the latest jobs
-TWO_WEEKS_AGO = TODAY - timedelta(days=14)
+ONE_DAY_AGO = TODAY - timedelta(days=1)
 
 def load_existing_jobs():
     """Load existing jobs from jobs.json if available."""
@@ -51,7 +50,7 @@ def fetch_remoteok_jobs():
         for job in jobs_data:
             posted_date = datetime.utcfromtimestamp(job.get("epoch", 0))
 
-            if posted_date >= TWO_WEEKS_AGO:  # Only keep jobs from the last 24 hours
+            if posted_date >= ONE_DAY_AGO:  # Only keep jobs from the last 24 hours
                 formatted_job = {
                     "title": job["position"],
                     "company": job["company"],
@@ -96,7 +95,7 @@ def fetch_remotive_jobs():
                 logging.warning(f"⚠ Skipping job due to invalid date format: {posted_date_str}")
                 continue
 
-            if posted_date >= TWO_WEEKS_AGO:
+            if posted_date >= ONE_DAY_AGO:
                 formatted_job = {
                     "title": job.get("title", "Unknown Title"),
                     "company": job.get("company_name", "Unknown Company"),
