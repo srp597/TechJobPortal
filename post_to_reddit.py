@@ -114,7 +114,7 @@ def post_job(subreddits, job, posted_jobs):
 """
         for subreddit in subreddits:
             logging.info(f"Posting the job: {job_title} to r/{subreddit}.")
-            
+            subreddit_instance = reddit.subreddit(subreddit)
             flair_id = None
             if subreddit in SUBREDDIT_FLAIRS:
                 flair_text = SUBREDDIT_FLAIRS[subreddit]
@@ -128,7 +128,6 @@ def post_job(subreddits, job, posted_jobs):
             else:
                 logging.info(f"No predefined flair for r/{subreddit}, skipping flair selection.")
 
-            subreddit_instance = reddit.subreddit(subreddit)
             submission = subreddit_instance.submit(title, selftext=body, flair_id=flair_id)
             print(f"Post submitted with flair ID: {flair_id}") 
                 
