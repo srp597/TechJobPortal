@@ -24,24 +24,22 @@ reddit = praw.Reddit(
 )
 
 POSTED_JOBS_FILE = "posted_jobs.json"
-SITE_URL = "https://swejobpostings.com"
 
 # Select flairs
 SUBREDDIT_FLAIRS = {
-    "techjobs": "Hiring",
     "remotejobs": "Job Posts"
 }
 
 # Optimized Reddit CTA Formatting with Variations
 cta_options = [
-    "🚀 **Looking for high-paying tech jobs?** Browse the latest roles here: [{SITE_URL}]",
-    "💡 **Tech hiring is booming!** Find remote & on-site jobs now: [{SITE_URL}]",
-    "🔥 **Top Tech Jobs Today!** Apply now before they're gone: [{SITE_URL}]",
-    "🌍 **Want a remote tech job?** See who's hiring: [{SITE_URL}]",
-    "🎯 **Level up your career with top tech jobs!** Explore now: [{SITE_URL}]",
-    "📈 **Fast-growing tech companies are hiring!** See the best offers: [{SITE_URL}]",
-    "👩‍💻 **Dreaming of a better tech job?** Apply to top roles here: [{SITE_URL}]",
-    "🛠️ **The best tech jobs curated for you!** Start applying today: [{SITE_URL}]"
+    "🚀 **Looking for high-paying tech jobs?** Browse the latest roles here: https://swejobpostings.com",
+    "💡 **Tech hiring is booming!** Find remote & on-site jobs now: https://swejobpostings.com",
+    "🔥 **Top Tech Jobs Today!** Apply now before they're gone: https://swejobpostings.com",
+    "🌍 **Want a remote tech job?** See who's hiring: https://swejobpostings.com",
+    "🎯 **Level up your career with top tech jobs!** Explore now: https://swejobpostings.com",
+    "📈 **Fast-growing tech companies are hiring!** See the best offers: https://swejobpostings.com",
+    "👩‍💻 **Dreaming of a better tech job?** Apply to top roles here: https://swejobpostings.com",
+    "🛠️ **The best tech jobs curated for you!** Start applying today: https://swejobpostings.com"
 ]
 
 # Load previously posted jobs from JSON file
@@ -119,9 +117,18 @@ def post_job(subreddits, job, posted_jobs):
             
             subreddit_instance = reddit.subreddit(subreddit)
             submission = subreddit_instance.submit(title, selftext=body)
-            #if subreddit in SUBREDDIT_FLAIRS:
-                #flair_text = SUBREDDIT_FLAIRS[subreddit]
-                #submission.flair.select(flair_text)
+            if subreddit in subreddit_flairs:
+                flair_text = subreddit_flairs[subreddit]
+                flair_templates = subreddit_instance.flair.link_templates
+                flair_id = None
+                for template in flair_templates:
+                    if template['text'] == flair_text:
+                        flair_id = template['id']
+                        break
+                if flair_id:
+                    submission.flair.select(flair_id)
+                else:
+                    logging.info(f"No predefined flair for r/{subreddit}, skipping flair selection.")
             logging.info(f"✅ Successfully posted job: {job_title} to r/{subreddit}.")
 
         # Save posted job identifier in the new structured format
@@ -139,11 +146,8 @@ if __name__ == "__main__":
     latest_general_job = find_latest_valid_job(jobs, posted_jobs)
     latest_remote_job = find_latest_valid_job(jobs, posted_jobs, work_type_filter="Remote")
     
-    general_subreddits = ["techjobs"]
-    remote_subreddits = ["forhire"]
-    #Fix flair permissions issue with remotejobs
-    #remote_subreddits = ["remotejobs"]
-    
+    #general_subreddits = ["techjobs"]
+    remote_subreddits = ["remotejobs"]
     
     logging.info(f"✅ Posting to general_subreddits.")
     if latest_general_job:
