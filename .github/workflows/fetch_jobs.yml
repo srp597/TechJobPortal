@@ -2,7 +2,7 @@ name: Fetch Remote Jobs Daily
 
 on:
   schedule:
-    - cron: "0 12 * * *"  # Runs at 7 AM EST (12:00 UTC)
+    - cron: "0 23 * * *"  # Runs at 6 PM EST (11 PM UTC)
   workflow_dispatch:  # Allows manual execution
 
 jobs:
