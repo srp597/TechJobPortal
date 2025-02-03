@@ -89,7 +89,7 @@ def post_job(subreddits, job, posted_jobs):
         country = job.get("country", "Anywhere")
         job_link = job["link"]
         date_posted = job["datePosted"]
-        salary_range = job.get("salaryRange", "Not specified")
+        salary_range = job.get("baseSalary", "Not specified")
         work_type = job.get("workType", "Hybrid")
 
         today = datetime.today().strftime("%b %d, %Y")
