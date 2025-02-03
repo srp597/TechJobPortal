@@ -69,3 +69,18 @@
 2025-02-03 02:15:12,683 - Saving posted_jobs: [{'link': 'https://job-boards.greenhouse.io/reddit/jobs/6475985', 'datePosted': '2025-02-01'}, {'link': 'https://remotive.com/remote-jobs/software-dev/senior-platform-engineer-postgres-specialist-1964453', 'datePosted': '2025-01-20'}, {'link': 'https://remotive.com/remote-jobs/software-dev/senior-backend-engineer-1964227', 'datePosted': '2025-01-21'}]
 2025-02-03 02:15:12,683 - ✅ Successfully updated posted_jobs.json with 3 total jobs.
 2025-02-03 02:15:12,683 - ✅ Script run complete.
+2025-02-03 11:37:23,147 - ✅ Posting to general_subreddits.
+2025-02-03 11:37:23,147 - ✅ Generating post title: [Hiring] [Hybrid] [USA] - Staff Machine Learning Engineer, Runtime & Optimization - Feb 03, 2025
+2025-02-03 11:37:23,147 - Posting the job: Staff Machine Learning Engineer, Runtime & Optimization to r/techjobs.
+2025-02-03 11:37:23,147 - No predefined flair for r/techjobs, skipping flair selection.
+2025-02-03 11:37:23,997 - ✅ Successfully posted job: Staff Machine Learning Engineer, Runtime & Optimization to r/techjobs.
+2025-02-03 11:37:23,997 - Saving posted_jobs: [{'link': 'https://job-boards.greenhouse.io/reddit/jobs/6475985', 'datePosted': '2025-02-01'}, {'link': 'https://remotive.com/remote-jobs/software-dev/senior-platform-engineer-postgres-specialist-1964453', 'datePosted': '2025-01-20'}, {'link': 'https://remotive.com/remote-jobs/software-dev/senior-backend-engineer-1964227', 'datePosted': '2025-01-21'}, {'link': 'https://careers.withwaymo.com/jobs/staff-machine-learning-engineer-runtime-optimization-mountain-view-california-united-states-18c4a31f-6597-47a8-b1c6-6dd819d85dae', 'datePosted': '2025-02-02'}]
+2025-02-03 11:37:23,998 - ✅ Successfully updated posted_jobs.json with 4 total jobs.
+2025-02-03 11:37:23,998 - ✅ Posting to remote_subreddits.
+2025-02-03 11:37:23,998 - ✅ Generating post title: [Hiring] [Remote] [USA and others] - Head of Software Product - Feb 03, 2025
+2025-02-03 11:37:23,998 - Posting the job: Head of Software Product to r/remotejobs.
+2025-02-03 11:37:23,998 - flair_text: Job Posts
+2025-02-03 11:37:24,297 - ✅ Successfully posted job: Head of Software Product to r/remotejobs.
+2025-02-03 11:37:24,297 - Saving posted_jobs: [{'link': 'https://job-boards.greenhouse.io/reddit/jobs/6475985', 'datePosted': '2025-02-01'}, {'link': 'https://remotive.com/remote-jobs/software-dev/senior-platform-engineer-postgres-specialist-1964453', 'datePosted': '2025-01-20'}, {'link': 'https://remotive.com/remote-jobs/software-dev/senior-backend-engineer-1964227', 'datePosted': '2025-01-21'}, {'link': 'https://careers.withwaymo.com/jobs/staff-machine-learning-engineer-runtime-optimization-mountain-view-california-united-states-18c4a31f-6597-47a8-b1c6-6dd819d85dae', 'datePosted': '2025-02-02'}, {'link': 'https://remotive.com/remote-jobs/product/head-of-software-product-1964282', 'datePosted': '2025-01-21'}]
+2025-02-03 11:37:24,298 - ✅ Successfully updated posted_jobs.json with 5 total jobs.
+2025-02-03 11:37:24,298 - ✅ Script run complete.
