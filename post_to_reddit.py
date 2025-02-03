@@ -119,16 +119,21 @@ def post_job(subreddits, job, posted_jobs):
             submission = subreddit_instance.submit(title, selftext=body)
             if subreddit in subreddit_flairs:
                 flair_text = subreddit_flairs[subreddit]
+                logging.info(f"flair_text: {flair_text}")
                 flair_templates = subreddit_instance.flair.link_templates
+                logging.info(f"flair_templates: {flair_templates}")
                 flair_id = None
                 for template in flair_templates:
-                    if template['text'] == flair_text:
+                    if template['text'].lower() == flair_text.lower():
                         flair_id = template['id']
                         break
                 if flair_id:
                     submission.flair.select(flair_id)
                 else:
-                    logging.info(f"No predefined flair for r/{subreddit}, skipping flair selection.")
+                    logging.warning(f"⚠ Flair '{flair_text}' not found in subreddit {subreddit}. Using default flair.")
+            else:
+                logging.info(f"No predefined flair for r/{subreddit}, skipping flair selection.")
+                
             logging.info(f"✅ Successfully posted job: {job_title} to r/{subreddit}.")
 
         # Save posted job identifier in the new structured format
