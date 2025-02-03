@@ -120,7 +120,6 @@ def post_job(subreddits, job, posted_jobs):
                 flair_text = SUBREDDIT_FLAIRS[subreddit]
                 logging.info(f"flair_text: {flair_text}")
                 flair_templates = subreddit_instance.flair.link_templates
-                logging.info(f"flair_templates: {flair_templates}")
                 for template in flair_templates:
                     if template['text'].lower() == flair_text.lower():
                         flair_id = template['id']
@@ -151,9 +150,9 @@ if __name__ == "__main__":
     general_subreddits = ["techjobs"]
     remote_subreddits = ["remotejobs"]
     
-    #logging.info(f"✅ Posting to general_subreddits.")
-    #if latest_general_job:
-        #post_job(general_subreddits, latest_general_job, posted_jobs)
+    logging.info(f"✅ Posting to general_subreddits.")
+    if latest_general_job:
+        post_job(general_subreddits, latest_general_job, posted_jobs)
 
     logging.info(f"✅ Posting to remote_subreddits.")
     if latest_remote_job:
