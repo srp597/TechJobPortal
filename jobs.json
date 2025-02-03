@@ -7405,7 +7405,7 @@
     "country": "USA and others",
     "workType": "Remote",
     "datePosted": "2025-01-19",
-    "baseSalary": "base salary: $146,000 - $196,250, plus bonus and equity",
+    "baseSalary": "$146,000-$196,250",
     "link": "https://remotive.com/remote-jobs/product/senior-product-manager-1963972",
     "description": "You + Helix\nHelix is a place where innovators and doers gather in order to drive significant progress in population genomics. We have come together to work at the intersection of clinical care, resear...",
     "source": "Remotive"
@@ -7417,9 +7417,42 @@
     "country": "USA and others",
     "workType": "Remote",
     "datePosted": "2025-01-19",
-    "baseSalary": "up to \u00a3110k p.a. + option package",
+    "baseSalary": "$3110k",
     "link": "https://remotive.com/remote-jobs/design/staff-product-designer-1964087",
     "description": "About TranslucentTranslucent is revolutionising the accounting landscape by addressing the financial challenges faced by 5-7% of companies globally. Founded by seasoned entrepreneurs who sold a succes...",
     "source": "Remotive"
+  },
+  {
+    "title": "Staff Data Engineer - Lead",
+    "company": "DAT",
+    "location": "Colorado, USA",
+    "country": "USA",
+    "workType": "Hybrid",
+    "datePosted": "2025-02-02",
+    "baseSalary": "$160,000",
+    "link": "https://www.linkedin.com/jobs/view/staff-data-engineer-lead-at-dat-freight-analytics-4089590687",
+    "description": "As a Staff Data Engineer - Lead, you will be responsible for developing data engineering patterns and practices..."
+  },
+  {
+    "title": "Product Manager",
+    "company": "Netflix",
+    "location": "Los Gatos, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-02",
+    "baseSalary": "$240,000-$725,000",
+    "link": "https://explore.jobs.netflix.net/careers/job/790301010943",
+    "description": "You combine a product background with a strong ability to guide both creative and technical partners..."
+  },
+  {
+    "title": "Staff Machine Learning Engineer, Runtime & Optimization",
+    "company": "Waymo",
+    "location": "Mountain View, CA",
+    "country": "USA",
+    "workType": "Hybrid",
+    "datePosted": "2025-02-02",
+    "baseSalary": "$226,000—$286,000",
+    "link": "https://careers.withwaymo.com/jobs/staff-machine-learning-engineer-runtime-optimization-mountain-view-california-united-states-18c4a31f-6597-47a8-b1c6-6dd819d85dae",
+    "description": "Waymo is an autonomous driving technology company with the mission to be the most trusted driver. Since its start as the Google Self-Driving Car Project..."
   }
 ]
