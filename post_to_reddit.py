@@ -115,24 +115,22 @@ def post_job(subreddits, job, posted_jobs):
         for subreddit in subreddits:
             logging.info(f"Posting the job: {job_title} to r/{subreddit}.")
             
-            subreddit_instance = reddit.subreddit(subreddit)
-            submission = subreddit_instance.submit(title, selftext=body)
-            if subreddit in subreddit_flairs:
-                flair_text = subreddit_flairs[subreddit]
+            flair_id = None
+            if subreddit in SUBREDDIT_FLAIRS:
+                flair_text = SUBREDDIT_FLAIRS[subreddit]
                 logging.info(f"flair_text: {flair_text}")
                 flair_templates = subreddit_instance.flair.link_templates
                 logging.info(f"flair_templates: {flair_templates}")
-                flair_id = None
                 for template in flair_templates:
                     if template['text'].lower() == flair_text.lower():
                         flair_id = template['id']
                         break
-                if flair_id:
-                    submission.flair.select(flair_id)
-                else:
-                    logging.warning(f"⚠ Flair '{flair_text}' not found in subreddit {subreddit}. Using default flair.")
             else:
                 logging.info(f"No predefined flair for r/{subreddit}, skipping flair selection.")
+
+            subreddit_instance = reddit.subreddit(subreddit)
+            submission = subreddit_instance.submit(title, selftext=body, flair_id=flair_id)
+            print(f"Post submitted with flair ID: {flair_id}") 
                 
             logging.info(f"✅ Successfully posted job: {job_title} to r/{subreddit}.")
 
