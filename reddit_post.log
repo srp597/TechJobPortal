@@ -60,3 +60,12 @@
 2025-02-03 02:11:45,046 - flair_text: Job Posts
 2025-02-03 02:11:45,046 - ❌ Error posting to Reddit: cannot access local variable 'subreddit_instance' where it is not associated with a value
 2025-02-03 02:11:45,046 - ✅ Script run complete.
+2025-02-03 02:15:11,031 - ✅ Posting to remote_subreddits.
+2025-02-03 02:15:11,031 - ✅ Generating post title: [Hiring] [Remote] [USA and others] - Senior Backend Engineer - Feb 03, 2025
+2025-02-03 02:15:11,031 - Posting the job: Senior Backend Engineer to r/remotejobs.
+2025-02-03 02:15:11,031 - flair_text: Job Posts
+2025-02-03 02:15:11,031 - flair_templates: <praw.models.reddit.subreddit.SubredditLinkFlairTemplates object at 0x7f0654bbe270>
+2025-02-03 02:15:12,682 - ✅ Successfully posted job: Senior Backend Engineer to r/remotejobs.
+2025-02-03 02:15:12,683 - Saving posted_jobs: [{'link': 'https://job-boards.greenhouse.io/reddit/jobs/6475985', 'datePosted': '2025-02-01'}, {'link': 'https://remotive.com/remote-jobs/software-dev/senior-platform-engineer-postgres-specialist-1964453', 'datePosted': '2025-01-20'}, {'link': 'https://remotive.com/remote-jobs/software-dev/senior-backend-engineer-1964227', 'datePosted': '2025-01-21'}]
+2025-02-03 02:15:12,683 - ✅ Successfully updated posted_jobs.json with 3 total jobs.
+2025-02-03 02:15:12,683 - ✅ Script run complete.
