@@ -44,3 +44,8 @@
 2025-02-02 17:35:34,023 - Posting the job: Senior Platform Engineer - Postgres Specialist to r/forhire.
 2025-02-02 17:35:34,250 - ❌ Error posting to Reddit: SUBMIT_VALIDATION_FLAIR_REQUIRED: 'Your post must contain post flair.' on field 'flair'
 2025-02-02 17:35:34,250 - ✅ Script run complete.
+2025-02-03 01:50:14,207 - ✅ Posting to remote_subreddits.
+2025-02-03 01:50:14,207 - ✅ Generating post title: [Hiring] [Remote] [USA and others] - Senior Backend Engineer - Feb 03, 2025
+2025-02-03 01:50:14,207 - Posting the job: Senior Backend Engineer to r/remotejobs.
+2025-02-03 01:50:15,136 - ❌ Error posting to Reddit: SUBMIT_VALIDATION_FLAIR_REQUIRED: 'Your post must contain post flair.' on field 'flair'
+2025-02-03 01:50:15,136 - ✅ Script run complete.
