@@ -7498,5 +7498,38 @@
     "baseSalary": "$172,000-$246,000",
     "link": "https://job-boards.greenhouse.io/tubitv/jobs/6589031",
     "description": "Google's software engineers develop the next-generation technologies..."
+  },
+  {
+    "title": "Senior Software Engineer - Data Platform",
+    "company": "Disney",
+    "location": "Santa Monica, CA; Seattle, WA; San Francisco, CA; New York, NY",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-04",
+    "baseSalary": "$138,900-$195,000",
+    "link": "https://disney.wd5.myworkdayjobs.com/disneycareer/job/Santa-Monica-CA-USA/Senior-Software-Engineer_10110235",
+    "description": "On any given day at Disney Entertainment & ESPN Technology, we’re reimagining ways..."
+  },
+  {
+    "title": "Director, Engineering ",
+    "company": "Splice",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-04",
+    "baseSalary": "$235,000-$255,0000",
+    "link": "https://job-boards.greenhouse.io/splice/jobs/7844890002",
+    "description": "At Splice, DISCO is a rallying cry for collaboration, accountability and unity within our organization..."
+  },
+  {
+    "title": "Principal Software Engineer",
+    "company": "Capital One",
+    "location": "Richmond, VA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-04",
+    "baseSalary": "$144,200-$164,600",
+    "link": "https://capitalone.wd12.myworkdayjobs.com/Capital_One/job/Richmond-VA/Principal-Software-Engineer--Rust---Capital-One-Software--Remote-_R206725",
+    "description": "We are seeking top tier talent to join our pioneering team and propel us towards our destination..."
   }
 ]
