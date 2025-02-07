@@ -7586,5 +7586,82 @@
     "baseSalary": "$185,200—$277,800",
     "link": "https://block.xyz/careers/jobs/4521186008",
     "description": "The Onboarding team is responsible for the experiences within our mobile apps..."
+  },
+  {
+    "title": "Technical Program Manager, Senior Lead",
+    "company": "Salesforce",
+    "location": "California, USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-06",
+    "baseSalary": "$162,600-$223,700",
+    "link": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---Remote/Technical-Program-Manager--Senior-Lead_JR281099",
+    "description": "As the Sr. Lead Technical Program Manager for Heroku, you will play a pivotal role in orchestrating..."
+  },
+  {
+    "title": "Sr. Backend Software Engineer, Data Services",
+    "company": "Quizlet",
+    "location": "Seattle, WA",
+    "country": "USA",
+    "workType": "Hybrid",
+    "datePosted": "2025-02-06",
+    "baseSalary": "$145,000-$190,000",
+    "link": "https://www.linkedin.com/jobs/view/4142053069",
+    "description": "You will help accelerate and amplify the work of our Product Engineers..."
+  },
+  {
+    "title": "Software Engineer, Backend (All Teams)",
+    "company": "Doordash",
+    "location": "New York, NY",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-06",
+    "baseSalary": "$130,600—$192,000",
+    "link": "https://www.linkedin.com/jobs/view/3999823822",
+    "description": "We’re looking for Backend Engineers to work on both Product and Product Platform based teams..."
+  },
+  {
+    "title": "Senior Software Engineer, ML Inference",
+    "company": "Apple",
+    "location": "Cupertino, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-06",
+    "baseSalary": "$175,800-$312,200",
+    "link": "https://jobs.apple.com/en-us/details/200588778/senior-software-engineer-ml-inference",
+    "description": "Implement and enhance large language models for real-time and batch inference..."
+  },
+  {
+    "title": "Senior Software Engineer I, Integrations",
+    "company": "Axon",
+    "location": "Seattle, WA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-06",
+    "baseSalary": "$120K-$210K",
+    "link": "https://www.linkedin.com/jobs/view/4143878436",
+    "description": "Build exciting new 3rd party integrations within the Axon Fusus platform by working with our partners..."
+  },
+  {
+    "title": "Senior Software Engineer, ML Inference",
+    "company": "Apple",
+    "location": "Cupertino, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-06",
+    "baseSalary": "$175,800-$312,200",
+    "link": "https://jobs.apple.com/en-us/details/200588778/senior-software-engineer-ml-inference",
+    "description": "Implement and enhance large language models for real-time and batch inference..."
+  },
+  {
+    "title": "Engineering Manager, Production Inference",
+    "company": "OpenAI",
+    "location": "Sanfrancisco, CA",
+    "country": "USA",
+    "workType": "Hybrid",
+    "datePosted": "2025-02-06",
+    "baseSalary": "$440K–$530K",
+    "link": "https://openai.com/careers/engineering-manager-production-inference",
+    "description": "The Production Inference team is responsible for delivering scalable, efficient, and reliable inference systems for OpenAI's production models..."
   }
 ]
