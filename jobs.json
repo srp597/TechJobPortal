@@ -7663,5 +7663,49 @@
     "baseSalary": "$440K–$530K",
     "link": "https://openai.com/careers/engineering-manager-production-inference",
     "description": "The Production Inference team is responsible for delivering scalable, efficient, and reliable inference systems for OpenAI's production models..."
+  },
+  {
+    "title": "New Grad Roles and internships",
+    "company": "Salesforce",
+    "location": "Sanfrancisco, CA",
+    "country": "USA",
+    "workType": "Hybrid",
+    "datePosted": "2025-02-08",
+    "baseSalary": "$100K+",
+    "link": "https://careers.salesforce.com/en/university/tech",
+    "description": "With CRM + AI + Data + Trust, we are defining the future of cloud computing, delivering a secure..."
+  },
+  {
+    "title": "Full-Stack Software Engineer",
+    "company": "Rippling",
+    "location": "New York, NY; Sanfrancisco, CA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-08",
+    "baseSalary": "$130,000-$150,000",
+    "link": "https://ats.rippling.com/theinformation-jobs/jobs/b9f88929-191a-427d-82db-29c16a1291c3",
+    "description": "Our engineering team, within our business division, is looking for a driven and collaborative product engineer..."
+  },
+  {
+    "title": "Software Engineer - Database Engineering",
+    "company": "Snowflake",
+    "location": "San Mateo, California; Bellevue, Washington",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-08",
+    "baseSalary": "$157,000-$230,000",
+    "link": "https://careers.snowflake.com/us/en/job/SNCOUS1765E102554A42B1A2389D13DEB3F1FBEXTERNALENUSDB1375F0EA5D404AB640259F94DBC995/Software-Engineer-Database-Engineering",
+    "description": "We’re hiring talented Software Engineers to join the Snowflake Database Engineering team!..."
+  },
+  {
+    "title": "Principal Engineer - Autonomous Vehicle Initiatives",
+    "company": "Uber",
+    "location": "Seattle, Washington; San Francisco, California; Sunnyvale, California",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-08",
+    "baseSalary": "$324,000-$360,000",
+    "link": "https://www.uber.com/global/en/careers/list/134817/",
+    "description": "A Principal Engineer at Uber, has a profound impact across a wide spectrum of businesses and technological domains..."
   }
 ]
