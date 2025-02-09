@@ -7707,5 +7707,27 @@
     "baseSalary": "$324,000-$360,000",
     "link": "https://www.uber.com/global/en/careers/list/134817/",
     "description": "A Principal Engineer at Uber, has a profound impact across a wide spectrum of businesses and technological domains..."
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Imagine Learning",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-09",
+    "baseSalary": "$106,557-$140,000",
+    "link": "https://jobs.jobvite.com/careers/imagine-learning/job/owqSufw2",
+    "description": "The Senior Software Engineer builds data pipelines, APIs, and reporting frontends for Teachers and Administrators..."
+  },
+  {
+    "title": "Software Engineer-III",
+    "company": "Nike",
+    "location": "Beaverton, Oregon",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-09",
+    "baseSalary": "$100,000+",
+    "link": "https://careers.nike.com/software-engineer-iii/job/R-50078",
+    "description": "We are looking for a high-potential SE III Engineer with strong techno-functional expertise in supply chain...."
   }
 ]
