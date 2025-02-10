@@ -7728,6 +7728,50 @@
     "datePosted": "2025-02-09",
     "baseSalary": "$100,000+",
     "link": "https://careers.nike.com/software-engineer-iii/job/R-50078",
-    "description": "We are looking for a high-potential SE III Engineer with strong techno-functional expertise in supply chain...."
+    "description": "We are looking for a high-potential SE III Engineer with strong techno-functional expertise in supply chain..."
+  },
+  {
+    "title": "Machine Learning Manager - Ads Targeting Modeling",
+    "company": "Reddit",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-10",
+    "baseSalary": "$230,000-$322,000",
+    "link": "https://job-boards.greenhouse.io/reddit/jobs/6318048",
+    "description": "In this role, you will own the Ads engineering strategy for Ads Targeting products..."
+  },
+  {
+    "title": "Principal Associate, Cyber Risk & Analysis",
+    "company": "CapitalOne",
+    "location": "Richmond, VA; McLean, VA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-10",
+    "baseSalary": "$127,500-$145,500",
+    "link": "https://capitalone.wd12.myworkdayjobs.com/Capital_One/job/Richmond-VA/Principal-Associate--Cyber-Risk---Analysis_R207818-1",
+    "description": "The Accelerator is seeking an elite problem solver to support the development and delivery of high-priority projects..."
+  },
+  {
+    "title": "Consulting Member of Technical Staff",
+    "company": "Oracle",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-10",
+    "baseSalary": "$96.8K-$251.6K",
+    "link": "https://www.linkedin.com/jobs/view/4136245908",
+    "description": "We’re looking for hands-on engineers with expertise and passion for solving complex problems in distributed database systems, storage infrastructure, transaction processing, and highly available services..."
+  },
+  {
+    "title": "Senior Lead Software Engineer - Front End UI- React/Typescript",
+    "company": "JPMorganChase",
+    "location": "McLean, VA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-10",
+    "baseSalary": "$100K+",
+    "link": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210581055",
+    "description": "As a Senior Lead Software Front End / Full Stack Engineer JPMorgan Chase within the Corporate Sector, specifically the AIML Technology division..."
   }
 ]
