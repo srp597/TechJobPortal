@@ -7773,5 +7773,82 @@
     "baseSalary": "$100K+",
     "link": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210581055",
     "description": "As a Senior Lead Software Front End / Full Stack Engineer JPMorgan Chase within the Corporate Sector, specifically the AIML Technology division..."
+  },
+  {
+    "title": "Mobile Engineer III, Android",
+    "company": "Expedia",
+    "location": "Washington - Seattle Campus",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-11",
+    "baseSalary": "$137,500.00-$192,500",
+    "link": "https://expedia.wd5.myworkdayjobs.com/search/job/Washington---Seattle-Campus/Mobile-Engineer-III--Android_R-93575",
+    "description": "You will solve complex technology problems in a fast-paced agile environment, constantly learning and adapting to rapidly evolving customer needs...."
+  },
+  {
+    "title": "Distributed Systems Engineer (L4) - Data Platform",
+    "company": "Netflix",
+    "location": "Washington - Seattle Campus",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-11",
+    "baseSalary": "$170K-$720K",
+    "link": "https://www.linkedin.com/jobs/view/3993679179",
+    "description": "The mission of the Gen AI Platform team is to boost the productivity of the data science and engineering community at Netflix..."
+  },
+  {
+    "title": "Sr. Product Marketing Manager, Stream Processing",
+    "company": "Confluent",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-11",
+    "baseSalary": "$178,500-$209,700 ",
+    "link": "https://careers.confluent.io/jobs/15366692-sr-product-marketing-manager-stream-processing",
+    "description": "Confluent is seeking a strategic Senior Product Marketing Manager to lead the marketing efforts for our stream processing portfolio..."
+  },
+  {
+    "title": "Senior Software Engineer - Matching Platform",
+    "company": "Uber",
+    "location": "Seattle, Washington; San Francisco, California",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-11",
+    "baseSalary": "$198,000-$220,000",
+    "link": "https://www.uber.com/global/en/careers/list/139987",
+    "description": "Design, develop, and deploy systems/platform/algorithms to solve complex business problems and improve product performance..."
+  },
+  {
+    "title": "Senior Product Manager - Apple Cloud Infrastructure",
+    "company": "Apple",
+    "location": "Cupertino, California",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-11",
+    "baseSalary": "$165,500-$293,800",
+    "link": "https://jobs.apple.com/en-us/details/200559037/senior-product-manager-apple-cloud-infrastructure",
+    "description": "At least 10+ years product management experience in enterprise products, preferably cloud-based..."
+  },
+  {
+    "title": "Software Engineer - Traffic (ASE)",
+    "company": "Apple",
+    "location": "Seattle, Washington",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-11",
+    "baseSalary": "$197,400-$296,300",
+    "link": "https://jobs.apple.com/en-us/details/200575960/software-engineer-traffic-ase?team=SFTWR",
+    "description": "As a Traffic Engineer you will orchestrate the design and development of cutting-edge traffic proxies, libraries, and services that power Apple services at an unprecedented scale, serving hundreds of millions of users globally..."
+  },
+  {
+    "title": "Senior Build and Release Automation Engineer",
+    "company": "Adobe",
+    "location": "San Jose, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-11",
+    "baseSalary": "$133,900-$242,000",
+    "link": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/Senior-Build-and-Release-Automation-Engineer_R152754",
+    "description": "Join the Adobe Digital Imaging group, the team behind world-class products Photoshop and Lightroom..."
   }
 ]
