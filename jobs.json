@@ -7916,5 +7916,60 @@
     "baseSalary": "$214,000-$327,750",
     "link": "https://careers.snowflake.com/us/en/job/SNCOUS03DB2D4CCE6E4FF1B707AEE2CBF8A1C1EXTERNALENUS0E070677C9B44DB0989D225F6E1F6A3A/Senior-Software-Engineer-Data-Lake",
     "description": "The Snowflake Data Lake team’s mission is to power open standards with Snowflake innovation..."
+  },
+  {
+    "title": "Lead Software Engineer - Backend",
+    "company": "Lowe's",
+    "location": "Charlotte, NC",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-13",
+    "baseSalary": "$100K+",
+    "link": "https://talent.lowes.com/us/en/job/JR-02000146",
+    "description": "The Enterprise Customer team is looking for a Lead Software Engineer who will be responsible for delivering..."
+  },
+  {
+    "title": "Senior ML Manager",
+    "company": "Apple",
+    "location": "Cupertino, California",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-13",
+    "baseSalary": "$252,400-$378,700",
+    "link": "https://jobs.apple.com/en-us/details/200591214/senior-ml-manager",
+    "description": "As a Senior Manager of our ML team, you will lead all aspects of ML architecture, technology selection..."
+  },
+  {
+    "title": "Product Manager / Senior Product Manager, Customer Care",
+    "company": "Soda Health",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-13",
+    "baseSalary": "$124,200-$155,250",
+    "link": "https://job-boards.greenhouse.io/sodahealth/jobs/4443285006",
+    "description": "Reporting to the Senior Director of Customer Care, you will help define and build new products at a fast-growing health-tech startup..."
+  },
+  {
+    "title": "Director, Engineering, Cloud Compute",
+    "company": "Google",
+    "location": "Kirkland, WA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-13",
+    "baseSalary": "$278,000-$399,000",
+    "link": "https://www.google.com/about/careers/applications/jobs/results/85401412883620550-director-engineering-cloud-compute",
+    "description": "In this role, you will utilize a background in and passion for compelling and simple user interface design and engineering, and a solid understanding of distributed systems..."
+  },
+  {
+    "title": "Senior Frontend Engineer - Design System",
+    "company": "Mercury",
+    "location": "San Francisco, CA, New York, NY; Portland; Remote within Canada or United States",
+    "country": "USA and Canada",
+    "workType": "Remote",
+    "datePosted": "2025-02-13",
+    "baseSalary": "$173,600–$204,200",
+    "link": "https://job-boards.greenhouse.io/mercury/jobs/5437079004",
+    "description": "Mercury is growing rapidly, and as we expand beyond the limits of our architecture today we must build..."
   }
 ]
