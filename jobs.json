@@ -7971,5 +7971,60 @@
     "baseSalary": "$173,600–$204,200",
     "link": "https://job-boards.greenhouse.io/mercury/jobs/5437079004",
     "description": "Mercury is growing rapidly, and as we expand beyond the limits of our architecture today we must build..."
+  },
+  {
+    "title": "Software Development Engineer, Amazon Connect Cases (AWS)",
+    "company": "Amazon",
+    "location": "New York, NY",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-14",
+    "baseSalary": "$129,300-$223,600",
+    "link": "https://www.amazon.jobs/en-gb/jobs/2900037/software-development-engineer-amazon-connect-cases-aws",
+    "description": "Amazon Connect is a highly disruptive cloud-based contact center that enables businesses to deliver engaging, dynamic, and personal customer service experiences..."
+  },
+  {
+    "title": "Senior Backend Product Software Engineer, Dash",
+    "company": "Dropbox",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-14",
+    "baseSalary": "$174,100—$235,500",
+    "link": "https://jobs.dropbox.com/listing/6498088",
+    "description": "As a Product Engineer at OTC, you will play a crucial role in designing, developing, and maintaining AI-powered software applications..."
+  },
+  {
+    "title": "Lead Software Engineer, Android",
+    "company": "CapitalOne",
+    "location": "McLean, VA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-14",
+    "baseSalary": "$193,400-$220,700",
+    "link": "https://capitalone.wd12.myworkdayjobs.com/Capital_One/job/McLean-VA/Lead-Software-Engineer--Android_R205686-1",
+    "description": "On this team we are building new capabilities to detect and report credit card fraud..."
+  },
+  {
+    "title": "FullStack-Staff Software Engineer",
+    "company": "Intuit",
+    "location": "New York, NY",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-14",
+    "baseSalary": "$100K+",
+    "link": "https://www.linkedin.com/jobs/view/4075716381",
+    "description": "We're cultivating a culture that prioritizes innovators, risk-takers, and imaginative thinkers..."
+  },
+  {
+    "title": "Senior Staff Software Engineer, Ads Formats",
+    "company": "Reddit",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-14",
+    "baseSalary": "$232.5K-$325.5K",
+    "link": "https://www.linkedin.com/jobs/view/4075716381",
+    "description": "The Ads Formats Org is committed to enhancing our already thriving Ad formats by improving user experiences that align with advertisers’ marketing goals..."
   }
 ]
