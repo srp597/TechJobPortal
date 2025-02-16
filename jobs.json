@@ -8059,5 +8059,27 @@
     "baseSalary": "$154.9K-$241.2K",
     "link": "https://www.linkedin.com/jobs/view/4149070715",
     "description": "The Senior Backend Software Engineer is a critical member of the Calm Engineering Team..."
+  },
+  {
+    "title": "Principal Software Engineer",
+    "company": "Dropbox",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-16",
+    "baseSalary": "$221,000—$299,000",
+    "link": "https://jobs.dropbox.com/listing/6563294",
+    "description": "We are seeking a highly skilled and visionary Principal Engineer to play a central role in shaping the data infrastructure and strategy..."
+  },
+  {
+    "title": "Senior Principal Software Developer, Cloud Performance",
+    "company": "Oracle",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-16",
+    "baseSalary": "$96.8K-$251.6K",
+    "link": "https://www.linkedin.com/jobs/view/4133475811",
+    "description": "As Oracle Cloud Infrastructure (OCI) continues its rapid expansion, we are seeking a skilled Software Engineer to join our newly established Cloud Performance Organization...."
   }
 ]
