@@ -8080,6 +8080,50 @@
     "datePosted": "2025-02-16",
     "baseSalary": "$96.8K-$251.6K",
     "link": "https://www.linkedin.com/jobs/view/4133475811",
-    "description": "As Oracle Cloud Infrastructure (OCI) continues its rapid expansion, we are seeking a skilled Software Engineer to join our newly established Cloud Performance Organization...."
+    "description": "As Oracle Cloud Infrastructure (OCI) continues its rapid expansion, we are seeking a skilled Software Engineer to join our newly established Cloud Performance Organization..."
+  },
+  {
+    "title": "QA Engineer, Tools & SDK - Apple Vision Pro",
+    "company": "Apple",
+    "location": "Sunnyvale, California",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-17",
+    "baseSalary": "$136,300-$248,700",
+    "link": "https://jobs.apple.com/en-us/details/200588569",
+    "description": "This position requires a self-motivated individual with strong technical and communication skills..."
+  },
+  {
+    "title": "Engineering Director, Data Ecosystem",
+    "company": "Garner Health",
+    "location": "New York, NY",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-17",
+    "baseSalary": "$250K-$270K",
+    "link": "https://www.linkedin.com/jobs/view/4137747905",
+    "description": "Garner's mission is to transform the healthcare economy, delivering high-quality and affordable care for all..."
+  },
+  {
+    "title": "Staff Software Engineer, Community Support Platform",
+    "company": "Airbnb",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-17",
+    "baseSalary": "$204,000—$259,000",
+    "link": "https://careers.airbnb.com/positions/6366081",
+    "description": "The Resolution Platform team empowers users to self-resolve issues, reducing the need for customer service intervention while ensuring seamless..."
+  },
+  {
+    "title": "Site Reliability Developer 5",
+    "company": "Oracle",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-17",
+    "baseSalary": "$104.2K-$251.6K",
+    "link": "https://www.linkedin.com/jobs/view/4133479607",
+    "description": "As a member of the software engineering and reliability, you will apply intermediate to advanced knowledge..."
   }
 ]
