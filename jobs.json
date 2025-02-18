@@ -8125,5 +8125,49 @@
     "baseSalary": "$104.2K-$251.6K",
     "link": "https://www.linkedin.com/jobs/view/4133479607",
     "description": "As a member of the software engineering and reliability, you will apply intermediate to advanced knowledge..."
+  },
+  {
+    "title": "Senior Director Colocation Infrastructure Construction Delivery",
+    "company": "Oracle",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-18",
+    "baseSalary": "$161.7K-$338.5K",
+    "link": "https://www.linkedin.com/jobs/view/4150649451",
+    "description": "As the Senior Director of Colocation Infrastructure Construction Delivery, you will be at the forefront of shaping the future of our data infrastructure..."
+  },
+  {
+    "title": "Staff Software Engineer",
+    "company": "Roadie",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-18",
+    "baseSalary": "$100K+",
+    "link": "https://job-boards.greenhouse.io/roadie/jobs/7781908002",
+    "description": "As a Staff Software Engineer, you will design and build systems to solve large-scale logistics challenges..."
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Walmart",
+    "location": "Bentonville, AK; Sunnyvale, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-18",
+    "baseSalary": "$117K-$234K",
+    "link": "https://walmart.wd5.myworkdayjobs.com/WalmartExternal/job/Bentonville-AR/Senior--Software-Engineer_R-2080027-1",
+    "description": "As a Senior Software Engineer, you will have demonstrated expertise in designing and developing web and cross-platform applications using React, Node.js and React Native and apply it to the development..."
+  },
+  {
+    "title": "Senior Software Engineer - Data Platform, Apple Services Engineering",
+    "company": "Apple",
+    "location": "Cupertino, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-18",
+    "baseSalary": "$175,800-$312,200",
+    "link": "https://jobs.apple.com/en-us/details/200591563/senior-software-engineer-data-platform-apple-services-engineering",
+    "description": "We are building and supporting services like Spark in our Data platform which is used by various teams within Apple to enable critical use-cases..."
   }
 ]
