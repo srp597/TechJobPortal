@@ -8181,7 +8181,7 @@
     "link": "https://explore.jobs.netflix.net/careers/job/790300185891",
     "description": "The Platform Networking organization plays a pivotal role in how Netflix’s Cloud Infrastructure operates to provide a safe and seamless streaming experience..."
   },
-   {
+  {
     "title": "Senior Software Engineer, Frontend - Consumer Products",
     "company": "Coinbase",
     "location": "USA",
@@ -8191,5 +8191,38 @@
     "baseSalary": "$186,005—$218,900",
     "link": "https://www.coinbase.com/careers/positions/5949437",
     "description": "The Consumer Product Group engineers strive to make the Coinbase retail app the easiest-to-use..."
+  },
+  {
+    "title": "Principal Product Manager - Artificial Intelligence",
+    "company": "Splunk",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-19",
+    "baseSalary": "$145K-$249.2K",
+    "link": "https://www.linkedin.com/jobs/view/4153183912",
+    "description": "You will use your understanding and experience building products using Gen AI, LLMs and deep learning..."
+  },
+  {
+    "title": "Senior Software Development Engineer, Media Solutions",
+    "company": "Expedia",
+    "location": "Washington - Seattle Campus",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-19",
+    "baseSalary": "$173,000-$242,500",
+    "link": "https://expedia.wd5.myworkdayjobs.com/search/job/Washington---Seattle-Campus/Senior-Software-Development-Engineer--Media-Solutions_R-93845-1/?source=LinkedInRecruiter",
+    "description": "Expedia Media Solutions Engineering is dedicated to building innovative solutions for travel advertisers enabling..."
+  },
+  {
+    "title": "Senior Backend Engineer, User Economy (Payments)",
+    "company": "Reddit",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-19",
+    "baseSalary": "$190.8K-$267.1K",
+    "link": "https://www.linkedin.com/jobs/view/4153750177",
+    "description": "As a key member of our small, fast-moving engineering team, you'll drive high-impact projects..."
   }
 ]
