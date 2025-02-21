@@ -8224,5 +8224,49 @@
     "baseSalary": "$190.8K-$267.1K",
     "link": "https://www.linkedin.com/jobs/view/4153750177",
     "description": "As a key member of our small, fast-moving engineering team, you'll drive high-impact projects..."
+  },
+  {
+    "title": "Senior Software Development Engineer",
+    "company": "Zillow",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-20",
+    "baseSalary": "$158.2K-$252.8K",
+    "link": "https://www.linkedin.com/jobs/view/4160341943",
+    "description": "We are looking for a strong Senior Engineer who is used to taking on and driving initiatives and bringing new ideas..."
+  },
+  {
+    "title": "Software Engineer II",
+    "company": "Uber",
+    "location": "Toronto, Canada;New York, New York",
+    "country": "USA and Canada",
+    "workType": "Onsite",
+    "datePosted": "2025-02-20",
+    "baseSalary": "$167,000-$185,500",
+    "link": "https://www.uber.com/global/en/careers/list/140221",
+    "description": "We're looking for engineers to join our team to help UberEats build a new ads business that enables eaters to discover..."
+  },
+  {
+    "title": "Product Manager, Data Platform - Data Discovery & Governance",
+    "company": "Netflix",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-20",
+    "baseSalary": "$240,000-$725,000",
+    "link": "https://explore.jobs.netflix.net/careers/job/790301000319",
+    "description": "We are looking for a technical product manager to help drive the next evolution of Netflix's Data Discovery and Governance platform..."
+  },
+  {
+    "title": "Senior Manager, Software Engineering, Front End",
+    "company": "CapitalOne",
+    "location": "McLean, VA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-20",
+    "baseSalary": "$225,400-$257,200",
+    "link": "https://capitalone.wd12.myworkdayjobs.com/Capital_One/job/McLean-VA/Senior-Manager--Software-Engineering--Front-End_R208778-2",
+    "description": "Do you love building and pioneering in the technology space? Do you enjoy solving complex business problems in a fast-paced..."
   }
 ]
