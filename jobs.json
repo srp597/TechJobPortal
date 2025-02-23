@@ -8312,5 +8312,27 @@
     "baseSalary": "$320,000—$405,000",
     "link": "https://boards.greenhouse.io/anthropic/jobs/4549507008",
     "description": "Have worked with NLP and ML models and understand their capabilities and limitations..."
+  },
+  {
+    "title": "Senior Server/Backend Software Engineer, Spry Fox Studio",
+    "company": "Netflix",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-22",
+    "baseSalary": "$100,000-$350,000",
+    "link": "https://explore.jobs.netflix.net/careers/job/790301329166",
+    "description": "You have worked on one or more shipped online multiplayer games with persisted game state and have a deep understanding of the entire tech stack..."
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Compound",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-22",
+    "baseSalary": "$110K–$200K",
+    "link": "https://jobs.ashbyhq.com/compound/cc720738-cc92-43cb-a7ae-d021ea7757d7",
+    "description": "At Compound Planning, we’re building the next-generation financial planning platform..."
   }
 ]
