@@ -8334,5 +8334,49 @@
     "baseSalary": "$110K–$200K",
     "link": "https://jobs.ashbyhq.com/compound/cc720738-cc92-43cb-a7ae-d021ea7757d7",
     "description": "At Compound Planning, we’re building the next-generation financial planning platform..."
+  },
+  {
+    "title": "Sr. Backend Engineer - Cloud",
+    "company": "CrowdStrike",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-23",
+    "baseSalary": "$135K-$215K",
+    "link": "https://www.linkedin.com/jobs/view/4154035711",
+    "description": "We are building the next generation of our UI foundation for CrowdStrike's platform called Kestrel..."
+  },
+  {
+    "title": "Senior Software Engineer - Backend/Python",
+    "company": "Close",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-23",
+    "baseSalary": "$140K-$210K",
+    "link": "https://www.linkedin.com/jobs/view/4157077278",
+    "description": "You will be joining one of our six cross-functional teams. These are the CRM, Admin & Onboarding, Conversations, Messaging & Scheduling, Automations & Integrations and Data Insights teams..."
+  },
+  {
+    "title": "Senior Data Engineer",
+    "company": "CaptialOne",
+    "location": "New York, NY;McLean, VA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-23",
+    "baseSalary": "$158,600-$181,000",
+    "link": "https://capitalone.wd12.myworkdayjobs.com/Capital_One/job/New-York-NY/Senior-Data-Engineer_R209058-2",
+    "description": "This team provides a single source of accurate and reliable business data for the entire enterprise allowing multiple business..."
+  },
+  {
+    "title": "Senior Software Engineer - Distributed Data Systems",
+    "company": "Databricks",
+    "location": "Mountain View, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-02-23",
+    "baseSalary": "$166,000—$225,000",
+    "link": "https://www.linkedin.com/jobs/view/3644436781",
+    "description": "At Databricks, we are passionate about enabling data teams to solve the world's toughest problems..."
   }
 ]
