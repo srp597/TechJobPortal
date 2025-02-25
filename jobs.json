@@ -8378,5 +8378,27 @@
     "baseSalary": "$166,000—$225,000",
     "link": "https://www.linkedin.com/jobs/view/3644436781",
     "description": "At Databricks, we are passionate about enabling data teams to solve the world's toughest problems..."
+  },
+  {
+    "title": "Site Reliability Engineer L5 - Open Connect",
+    "company": "Netflix",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-24",
+    "baseSalary": "$100K-$720K",
+    "link": "https://www.linkedin.com/jobs/view/4149761613",
+    "description": "Drive continual improvement in resilience, security, observability, quality of experience (QoE)..."
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Snapsheet",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-02-24",
+    "baseSalary": "$100K+",
+    "link": "https://snapsheet.applytojob.com/apply/KqEGTE6XL4/Senior-Software-Engineer",
+    "description": "Snapsheet exists to simplify claims. We leverage our expertise in virtual estimating and innovative claims management technology..."
   }
 ]
