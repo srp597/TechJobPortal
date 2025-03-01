@@ -658,5 +658,38 @@
     "baseSalary": "$135,400-$250,600",
     "link": "https://jobs.apple.com/en-us/details/200581993",
     "description": "We are looking for a strong ML applied scientists and engineers to build ground breaking AI infrastructures to power the infrastructures that Apple in-house ML..."
+  },
+  {
+    "title": "Senior Site Reliability Engineer - Observability (FedRAMP)",
+    "company": "Splunk",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-01",
+    "baseSalary": "$174,800-$240,350",
+    "link": "https://www.splunk.com/en_us/careers/jobs/senior-site-reliability-engineer-31237.html",
+    "description": "As part of our world-class traffic infrastructure team, you will be at the forefront of managing every HTTP request that reaches LinkedIn..."
+  },
+  {
+    "title": "Machine Learning Scientist (L4/5) - Media Understanding, Content & Media ML Foundations",
+    "company": "Netflix",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-01",
+    "baseSalary": "$150,000-$750,000",
+    "link": "https://explore.jobs.netflix.net/careers/job/790301382990",
+    "description": "The Content & Media ML Foundations team within Data Science and Engineering, builds and delivers high-leverage foundational ML solutions using Netflix’s unique media data..."
+  },
+  {
+    "title": "Sr. Staff Software Engineer, Traffic Infrastructure",
+    "company": "LinkedIn",
+    "location": "Mountain View, CA",
+    "country": "USA",
+    "workType": "Hybrid",
+    "datePosted": "2025-03-01",
+    "baseSalary": "$191K-$315K",
+    "link": "https://www.linkedin.com/jobs/view/4170320741",
+    "description": "As part of our world-class traffic infrastructure team, you will be at the forefront of managing every HTTP request that reaches LinkedIn..."
   }
 ]
