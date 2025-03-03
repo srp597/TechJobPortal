@@ -438,5 +438,49 @@
     "baseSalary": "$175,000—$200,000",
     "link": "https://boards.greenhouse.io/drivewealth/jobs/6117239003",
     "description": "We seek enthusiastic professionals to contribute diverse perspectives and experiences to our Brokerage-as-a-Service platform. Our culture blends the pace and opportunity of a tech start-up with the impact, stability, and significance of Wall Street..."
+  },
+  {
+    "title": "Staff Software & Platform Engineer",
+    "company": "Kale",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-03",
+    "baseSalary": "$210K-$250K",
+    "link": "https://www.linkedin.com/jobs/view/4143450036",
+    "description": "Flexa is the leading retail payments network for digital assets..."
+  },
+  {
+    "title": "Staff Software & Platform Engineer",
+    "company": "Flexa",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-03",
+    "baseSalary": "$210K-$250K",
+    "link": "https://www.linkedin.com/jobs/view/4143450036",
+    "description": "Flexa is the leading retail payments network for digital assets..."
+  },
+  {
+    "title": "Staff Software Engineer",
+    "company": "Skale",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-03",
+    "baseSalary": "$200K-$250K",
+    "link": "https://www.linkedin.com/jobs/view/4144917057",
+    "description": "This machine learning / LLM startup has secured a $multi-million Series A investment..."
+  },
+  {
+    "title": "FullStack-Staff Software Engineer",
+    "company": "Intuit",
+    "location": "New York, New York",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-03",
+    "baseSalary": "$210K-$250K",
+    "link": "https://www.linkedin.com/jobs/view/4075716381",
+    "description": "At Intuit, we hold a global leadership position in financial management solutions..."
   }
 ]
