@@ -273,5 +273,27 @@
     "baseSalary": "$100K+",
     "link": "https://www.linkedin.com/jobs/view/4075716381",
     "description": "At Intuit, we hold a global leadership position in financial management solutions..."
+  },
+  {
+    "title": "Senior Product Manager",
+    "company": "Haven",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-04",
+    "baseSalary": "$140,000‒$185,000",
+    "link": "https://haven-energy.rippling-ats.com/job/900158/senior-product-manager",
+    "description": "Haven is seeking a Senior Product Manager to lead product for the company. You will own the strategy, roadmap, prioritization and delivery of Haven’s digital offering to homeowners, installers, partners and internal users..."
+  },
+  {
+    "title": "Senior Software Cloud Fullstack Developer (Self Driving)",
+    "company": "Rivian",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-04",
+    "baseSalary": "$100,000+",
+    "link": "https://www.linkedin.com/jobs/view/4174438584",
+    "description": "Experience with GraphQL, Docker, Python, and UI Automation..."
   }
 ]
