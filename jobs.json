@@ -1,104 +1,5 @@
 [
   {
-    "title": "Senior Software Engineer - Distributed Data Systems",
-    "company": "Databricks",
-    "location": "Mountain View, CA",
-    "country": "USA",
-    "workType": "Onsite",
-    "datePosted": "2025-02-23",
-    "baseSalary": "$166,000—$225,000",
-    "link": "https://www.linkedin.com/jobs/view/3644436781",
-    "description": "At Databricks, we are passionate about enabling data teams to solve the world's toughest problems..."
-  },
-  {
-    "title": "Site Reliability Engineer L5 - Open Connect",
-    "company": "Netflix",
-    "location": "USA",
-    "country": "USA",
-    "workType": "Remote",
-    "datePosted": "2025-02-24",
-    "baseSalary": "$100K-$720K",
-    "link": "https://www.linkedin.com/jobs/view/4149761613",
-    "description": "Drive continual improvement in resilience, security, observability, quality of experience (QoE)..."
-  },
-  {
-    "title": "Senior Software Engineer",
-    "company": "Snapsheet",
-    "location": "USA",
-    "country": "USA",
-    "workType": "Remote",
-    "datePosted": "2025-02-24",
-    "baseSalary": "$100K+",
-    "link": "https://snapsheet.applytojob.com/apply/KqEGTE6XL4/Senior-Software-Engineer",
-    "description": "Snapsheet exists to simplify claims. We leverage our expertise in virtual estimating and innovative claims management technology..."
-  },
-  {
-    "title": "Distributed Systems Software Engineer - Public Cloud (Mid/Senior/Lead/Principal)",
-    "company": "Salesforce",
-    "location": "San Francisco, CA;Bellevue, WA",
-    "country": "USA",
-    "workType": "Hybrid",
-    "datePosted": "2025-02-24",
-    "baseSalary": "$125,700-$306,600",
-    "link": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---San-Francisco/Distributed-Systems-Software-Engineer---Public-Cloud--Senior-Lead-Principal-_JR249834",
-    "description": "Our Public Cloud engineering teams are responsible for innovating and maintaining a large scale distributed systems engineering..."
-  },
-  {
-    "title": "Lead Product Manager - Databases",
-    "company": "Fivetran",
-    "location": "USA",
-    "country": "USA",
-    "workType": "Remote",
-    "datePosted": "2025-02-25",
-    "baseSalary": "$203.3K-$254.1K",
-    "link": "https://www.linkedin.com/jobs/view/4159845388",
-    "description": "As Lead Product Manager of Databases, you will own a strategic database replication portfolio..."
-  },
-  {
-    "title": "Senior Software Engineer, Identity Platform-Payment Onboarding",
-    "company": "Square",
-    "location": "USA",
-    "country": "USA",
-    "workType": "Remote",
-    "datePosted": "2025-02-25",
-    "baseSalary": "$185,200—$277,800",
-    "link": "https://www.linkedin.com/jobs/view/4158699644",
-    "description": "We are looking for a Software Engineer, for the Accounts & Security team within Identity Platform..."
-  },
-  {
-    "title": "Software Engineer, Backend (All Teams)",
-    "company": "Doordash",
-    "location": "New York, NY",
-    "country": "USA",
-    "workType": "Hybrid",
-    "datePosted": "2025-02-25",
-    "baseSalary": "$130,600—$285,000",
-    "link": "https://www.linkedin.com/jobs/view/3999823822",
-    "description": "We’re looking for Backend Engineers to work on both Product and Product Platform based teams..."
-  },
-  {
-    "title": "Senior Software Development Engineer",
-    "company": "Blue Origin",
-    "location": "Seattle, WA",
-    "country": "USA",
-    "workType": "Onsite",
-    "datePosted": "2025-02-25",
-    "baseSalary": "$177.6K-$248.6K",
-    "link": "https://www.linkedin.com/jobs/view/4028602138",
-    "description": "At Blue Origin, we envision millions of people living and working in space for the benefit of Earth..."
-  },
-  {
-    "title": "Engineering Manager, Platform Infrastructure",
-    "company": "Alma",
-    "location": "USA",
-    "country": "USA",
-    "workType": "Remote",
-    "datePosted": "2025-02-26",
-    "baseSalary": "$170,000-$200,000",
-    "link": "https://www.linkedin.com/jobs/view/4160548052",
-    "description": "In this role, you will lead a team that builds services and tools that solve real problems for Alma’s engineering team..."
-  },
-  {
     "title": "Elasticsearch - Java Engineer II - Distributed Systems",
     "company": "Elastic",
     "location": "USA",
@@ -295,5 +196,49 @@
     "baseSalary": "$100,000+",
     "link": "https://www.linkedin.com/jobs/view/4174438584",
     "description": "Experience with GraphQL, Docker, Python, and UI Automation..."
+  },
+  {
+    "title": "Analytics Engineer",
+    "company": "Warp",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-05",
+    "baseSalary": "$165K-$175K",
+    "link": "https://www.linkedin.com/jobs/view/4169640224",
+    "description": "We're hiring the second member of our data team, reporting to the Data Lead..."
+  },
+  {
+    "title": "Machine Learning Scientist (L5) - Payments DSE",
+    "company": "Netflix",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-05",
+    "baseSalary": "$360,000-$920,000",
+    "link": "https://explore.jobs.netflix.net/careers/job/790301370738",
+    "description": "As a Senior Machine Learning Scientist, you will join this team of stunning Data Scientists, Analytics Engineers, and Research Engineers..."
+  },
+  {
+    "title": "Backend Software Development Engineer - Mid/Senior/Lead/Principal",
+    "company": "Salesforce",
+    "location": "California - San Francisco;Washington - Seattle;Washington - Bellevue",
+    "country": "USA",
+    "workType": "Hybrid",
+    "datePosted": "2025-03-05",
+    "baseSalary": "$125,700-$306,600",
+    "link": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---San-Francisco/Backend-Software-Development-Engineer---Senior-Lead-Principal_JR249832",
+    "description": "Salesforce has opportunities for experienced software developers who want their lines of code to have significant and measurable positive impact for users..."
+  },
+  {
+    "title": "Senior Product Manager – Trust Platform",
+    "company": "Remitly",
+    "location": "Seattle, WA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-05",
+    "baseSalary": "$152,000-$190,000",
+    "link": "https://careers.remitly.com/job/21505249",
+    "description": "As the Senior Product Manager for the Trust Platform, you will define and drive the vision, roadmap, and execution for orchestration, risk verification, case creation, and reporting tools..."
   }
 ]
