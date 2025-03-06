@@ -240,5 +240,49 @@
     "baseSalary": "$152,000-$190,000",
     "link": "https://careers.remitly.com/job/21505249",
     "description": "As the Senior Product Manager for the Trust Platform, you will define and drive the vision, roadmap, and execution for orchestration, risk verification, case creation, and reporting tools..."
+  },
+  {
+    "title": "Machine Learning Engineer (Device Identification)",
+    "company": "Sardine",
+    "location": "USA and Canada",
+    "country": "USA and Canada",
+    "workType": "Remote",
+    "datePosted": "2025-03-06",
+    "baseSalary": "$180K–$220K",
+    "link": "https://jobs.ashbyhq.com/sardine/2c8f0342-b8af-4cc2-85cd-67bc48275568",
+    "description": "We are seeking a highly skilled Machine Learning Engineer to lead the development of our device identification and fingerprinting system..."
+  },
+  {
+    "title": "Staff Software Engineer, Emerging Defenses",
+    "company": "Airbnb",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-06",
+    "baseSalary": "$204K-$260K",
+    "link": "https://www.linkedin.com/jobs/view/4168481987",
+    "description": "our work on the Emerging Defenses team will directly provide safety and privacy to Airbnb users worldwide..."
+  },
+  {
+    "title": "Staff Software Engineer, Google Cloud Compute",
+    "company": "Google",
+    "location": "Kirkland, WA; Sunnyvale, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-06",
+    "baseSalary": "$189,000-$284,000",
+    "link": "https://www.google.com/about/careers/applications/jobs/results/84820561204519622",
+    "description": "Google Cloud accelerates every organization’s ability to digitally transform its business and industry..."
+  },
+  {
+    "title": "Mid-Level Full Stack Engineer",
+    "company": "Farmshare",
+    "location": "Denver, CO",
+    "country": "USA",
+    "workType": "Hybrid",
+    "datePosted": "2025-03-06",
+    "baseSalary": "$80K-$120K",
+    "link": "https://www.linkedin.com/jobs/view/4176447850",
+    "description": "This is a hands-on engineering role, perfect for someone who thrives in an entrepreneurial environment where they can take ownership and drive impact..."
   }
 ]
