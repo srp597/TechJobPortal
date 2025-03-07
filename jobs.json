@@ -284,5 +284,27 @@
     "baseSalary": "$80K-$120K",
     "link": "https://www.linkedin.com/jobs/view/4176447850",
     "description": "This is a hands-on engineering role, perfect for someone who thrives in an entrepreneurial environment where they can take ownership and drive impact..."
+  },
+  {
+    "title": "Mid-Level Full Stack Engineer",
+    "company": "Snowflake",
+    "location": "Menlo Park, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-07",
+    "baseSalary": "$100K+",
+    "link": "https://jobs.ashbyhq.com/snowflake/893e9340-e675-47ee-a1b3-9d047589f916",
+    "description": "The Growth Platform team is committed to expanding our business and ensuring that all our customers, from small startups to large enterprises..."
+  },
+  {
+    "title": "Lead Machine Learning Engineer",
+    "company": "Disney",
+    "location": "New York, NY;Santa Monica, CA;San Francisco, CA;Seattle, Wa",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-07",
+    "baseSalary": "$167,700-$224,900",
+    "link": "https://jobs.disneycareers.com/job/santa-monica/lead-machine-learning-engineer/391/71021346976",
+    "description": "As a Lead Machine Learning Engineer, you will collaborate closely with engineers, project managers, and product managers to find the best solution for our viewers..."
   }
 ]
