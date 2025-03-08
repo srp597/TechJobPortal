@@ -306,5 +306,27 @@
     "baseSalary": "$167,700-$224,900",
     "link": "https://jobs.disneycareers.com/job/santa-monica/lead-machine-learning-engineer/391/71021346976",
     "description": "As a Lead Machine Learning Engineer, you will collaborate closely with engineers, project managers, and product managers to find the best solution for our viewers..."
+  },
+  {
+    "title": "Lead Software Engineer, CGX",
+    "company": "Disney",
+    "location": "San Francisco, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-08",
+    "baseSalary": "$163,500-$219,200",
+    "link": "https://www.disneycareers.com/en/job/san-francisco/lead-software-engineer-cgx/391/73918757472",
+    "description": "As a Lead Software Engineer on the CGX Team, you will focus on designing and executing impactful growth and commerce features across Disney’s flagship brands..."
+  },
+  {
+    "title": "Principal Product Manager, Agentic & AI-powered Experiences, QBL",
+    "company": "Intuit",
+    "location": "Mountain View, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-08",
+    "baseSalary": "$226500-$307000",
+    "link": "https://jobs.intuit.com/job/mountain-view/principal-product-manager-agentic-and-ai-powered-experiences-qbl/27595/78074484944",
+    "description": "We are seeking a highly skilled, innovative, and experienced Principal Product Manager to lead the QuickBooks Live AI team, focusing on Agentic AI, AI-powered Experts, and ML to drive our vision..."
   }
 ]
