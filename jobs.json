@@ -328,5 +328,27 @@
     "baseSalary": "$226500-$307000",
     "link": "https://jobs.intuit.com/job/mountain-view/principal-product-manager-agentic-and-ai-powered-experiences-qbl/27595/78074484944",
     "description": "We are seeking a highly skilled, innovative, and experienced Principal Product Manager to lead the QuickBooks Live AI team, focusing on Agentic AI, AI-powered Experts, and ML to drive our vision..."
+  },
+  {
+    "title": "Senior Backend Engineer",
+    "company": "Haven",
+    "location": "San Francisco, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-09",
+    "baseSalary": "$100,000+",
+    "link": "https://www.linkedin.com/jobs/view/4175208299",
+    "description": "As our first engineering hire beyond our CTO, you'll have an outsized impact on both our technology and culture..."
+  },
+  {
+    "title": "Lead Software Engineer (Front End)",
+    "company": "Chase",
+    "location": "Plano, TX",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-09",
+    "baseSalary": "$100,000+",
+    "link": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1002/job/210597158",
+    "description": "As our first engineering hire beyond our CTO, you'll have an outsized impact on both our technology and culture..."
   }
 ]
