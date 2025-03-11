@@ -350,5 +350,27 @@
     "baseSalary": "$100,000+",
     "link": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1002/job/210597158",
     "description": "As our first engineering hire beyond our CTO, you'll have an outsized impact on both our technology and culture..."
+  },
+  {
+    "title": "Software Engineer II - Backend, Uber Health",
+    "company": "Uber",
+    "location": "San Francisco, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-10",
+    "baseSalary": "$158,000-USD$175,500",
+    "link": "https://www.uber.com/global/en/careers/list/138010",
+    "description": "Design, develop and optimize Uber Health and sister products backend systems to support growing business needs..."
+  },
+  {
+    "title": "Senior Network Engineer",
+    "company": "Expedia",
+    "location": "Seattle, WA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-10",
+    "baseSalary": "$146K-$204.5K",
+    "link": "https://www.linkedin.com/jobs/view/4174919932",
+    "description": "The Network Engineering function at Expedia Group falls within our Enterprise Technology, Security & Privacy (ETSP) organization..."
   }
 ]
