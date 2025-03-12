@@ -372,5 +372,27 @@
     "baseSalary": "$146K-$204.5K",
     "link": "https://www.linkedin.com/jobs/view/4174919932",
     "description": "The Network Engineering function at Expedia Group falls within our Enterprise Technology, Security & Privacy (ETSP) organization..."
+  },
+  {
+    "title": "Sr Software Engineer",
+    "company": "Disney",
+    "location": "New York,NY; Santa Monica, CA; Bristol, CT; Raleigh, NC; San Francisco, CA; Seattle, WA; Morrisville, NC",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-11",
+    "baseSalary": "$132,200-$177,300",
+    "link": "https://www.disneycareers.com/en/job/new-york/sr-software-engineer/391/71270972592",
+    "description": "Design and implement caching software for the delivery of streaming media and API responses..."
+  },
+  {
+    "title": "Staff Software Engineer - Onboarding",
+    "company": "Datadog",
+    "location": "Boston, MA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-11",
+    "baseSalary": "$234K-$300K",
+    "link": "https://www.linkedin.com/jobs/view/4174538806",
+    "description": "As a Staff Engineer on the Onboarding team you will play a key role in shaping the first impression of users on our platform..."
   }
 ]
