@@ -394,5 +394,49 @@
     "baseSalary": "$234K-$300K",
     "link": "https://www.linkedin.com/jobs/view/4174538806",
     "description": "As a Staff Engineer on the Onboarding team you will play a key role in shaping the first impression of users on our platform..."
+  },
+  {
+    "title": "Head Of Product",
+    "company": "Huckleberry labs",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-12",
+    "baseSalary": "$205,000-$255,000",
+    "link": "https://jobs.lever.co/Huckleberrylabs/db7fe0d1-a1c0-4a35-bb29-d9e846f0d981",
+    "description": "The Head of Product at Huckleberry is a high-impact leadership role that will shape the future of how families are supported around the world..."
+  },
+  {
+    "title": "Sr. Manager, Practice Development - Customer Success",
+    "company": "Gitlabs",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-12",
+    "baseSalary": "$208,100-$367,200",
+    "link": "https://job-boards.greenhouse.io/gitlab/jobs/7898791002",
+    "description": "As the Sr. Manager, Practice Development, Customer Success at GitLab, you will be responsible for the practice development of our paid Success Tiers..."
+  },
+  {
+    "title": "Senior Software Engineer, Full Stack",
+    "company": "CaptialOne",
+    "location": "Chicago, IL",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-12",
+    "baseSalary": "$144,200-$164,600",
+    "link": "https://capitalone.wd12.myworkdayjobs.com/Capital_One/job/Chicago-IL/Senior-Software-Engineer--Full-Stack_R209152",
+    "description": "Collaborate with and across Agile teams to design, develop, test, implement, and support technical solutions in full-stack development tools and technologies..."
+  },
+  {
+    "title": "Engineering Manager, Billing Platform",
+    "company": "Anthropic",
+    "location": "San Francisco, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-12",
+    "baseSalary": "$320,000—$405,000 USD",
+    "link": "https://boards.greenhouse.io/anthropic/jobs/4556617008",
+    "description": "We're looking for an engineering manager to lead our billing platform team..."
   }
 ]
