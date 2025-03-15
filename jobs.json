@@ -438,5 +438,49 @@
     "baseSalary": "$320,000—$405,000 USD",
     "link": "https://boards.greenhouse.io/anthropic/jobs/4556617008",
     "description": "We're looking for an engineering manager to lead our billing platform team..."
+  },
+  {
+    "title": "Sr AI Engineer - Computer Vision",
+    "company": "Lowes",
+    "location": "Charlotte, NC",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-13",
+    "baseSalary": "$100K+",
+    "link": "https://talent.lowes.com/us/en/job/JR-02013739/Sr-AI-Engineer-Computer-Vision",
+    "description": "Scales the platform for high performance and integrates new AI capabilities as application programming interfaces to ensure the platform remains adaptable and efficient in hosting a variety of ML models..."
+  },
+  {
+    "title": "Sr AI Engineer - Computer Vision",
+    "company": "Lowes",
+    "location": "Charlotte, NC",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-13",
+    "baseSalary": "$100K+",
+    "link": "https://talent.lowes.com/us/en/job/JR-02013739/Sr-AI-Engineer-Computer-Vision",
+    "description": "Scales the platform for high performance and integrates new AI capabilities as application programming interfaces to ensure the platform remains adaptable and efficient in hosting a variety of ML models..."
+  },
+  {
+    "title": "Lead Machine Learning Engineer, Personalization & Recommendations",
+    "company": "Disney",
+    "location": "Seattle, WA;Santa Monica, CA;San Francisco, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-13",
+    "baseSalary": "$172,300-$231,100",
+    "link": "https://www.linkedin.com/posts/jjschalhamer_lead-machine-learning-engineer-personalization-activity-7306357003272994816-5ata",
+    "description": "Developing and prototyping state-of-the-art Deep Neural Net algorithms for recommendation systems..."
+  },
+  {
+    "title": "Lead Software Engineer, Payment Platform",
+    "company": "Roku",
+    "location": "San Jose, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-13",
+    "baseSalary": "$186K-$388K",
+    "link": "https://www.linkedin.com/jobs/view/4010674894",
+    "description": "Lead the evaluation and implementation of new technologies and designs..."
   }
 ]
