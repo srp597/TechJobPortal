@@ -1,71 +1,5 @@
 [
   {
-    "title": "Elasticsearch - Java Engineer II - Distributed Systems",
-    "company": "Elastic",
-    "location": "USA",
-    "country": "USA",
-    "workType": "Remote",
-    "datePosted": "2025-02-26",
-    "baseSalary": "$133.1K-$252.9K",
-    "link": "https://www.linkedin.com/jobs/view/4166957240",
-    "description": "Elastic, the Search AI Company, enables everyone to find the answers they need in real time..."
-  },
-  {
-    "title": "Software Engineer - Backend",
-    "company": "Uber",
-    "location": "New York, New York;Seattle, Washington;San Francisco, California;Sunnyvale, California",
-    "country": "USA",
-    "workType": "Onsite",
-    "datePosted": "2025-02-26",
-    "baseSalary": "$167,000-$185,500",
-    "link": "https://www.uber.com/global/en/careers/list/140632",
-    "description": "As a backend engineer on the Home Feed team you will drive the implementation of a variety of products and systematic improvements while working closely with cross functional folks..."
-  },
-  {
-    "title": "Staff Software Engineer, Cloud Platform",
-    "company": "Sofi",
-    "location": "San Francisco, CA",
-    "country": "USA",
-    "workType": "Onsite",
-    "datePosted": "2025-02-26",
-    "baseSalary": "$153.6K-$264K/yr",
-    "link": "https://www.linkedin.com/jobs/view/4168040937",
-    "description": "We are seeking a highly skilled and experienced Staff Software Engineer to join our Cloud Platform team to create high-quality solutions that simplify complex tasks..."
-  },
-  {
-    "title": "Backend Engineer",
-    "company": "Mindbloom",
-    "location": "USA",
-    "country": "USA",
-    "workType": "Remote",
-    "datePosted": "2025-02-27",
-    "baseSalary": "$110K- $175K",
-    "link": "https://www.linkedin.com/jobs/view/4163025049",
-    "description": "As Backend Engineer, you’ll literally transform and save lives by raising the bar in the speed and quality..."
-  },
-  {
-    "title": "Software Engineer, Frontend (Consumer - CETI)",
-    "company": "Coinbase",
-    "location": "USA",
-    "country": "USA",
-    "workType": "Remote",
-    "datePosted": "2025-02-27",
-    "baseSalary": "$152,405—$179,300",
-    "link": "https://www.coinbase.com/careers/positions/6644130",
-    "description": "The CETI team focuses on accelerating the development of high quality products by enabling validation of product behaviors at scale through automated test infrastructure..."
-  },
-  {
-    "title": "Large Language Model Machine Learning Engineer",
-    "company": "Apple",
-    "location": "Seattle, WA",
-    "country": "USA",
-    "workType": "Onsite",
-    "datePosted": "2025-02-27",
-    "baseSalary": "$135,400-$250,600",
-    "link": "https://jobs.apple.com/en-us/details/200581993",
-    "description": "We are looking for a strong ML applied scientists and engineers to build ground breaking AI infrastructures to power the infrastructures that Apple in-house ML..."
-  },
-  {
     "title": "Senior Site Reliability Engineer - Observability (FedRAMP)",
     "company": "Splunk",
     "location": "USA",
@@ -482,5 +416,49 @@
     "baseSalary": "$186K-$388K",
     "link": "https://www.linkedin.com/jobs/view/4010674894",
     "description": "Lead the evaluation and implementation of new technologies and designs..."
+  },
+  {
+    "title": "Staff Data Engineer, Commerce Data",
+    "company": "Dropbox",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-14",
+    "baseSalary": "$171,400—$231,800",
+    "link": "https://jobs.dropbox.com/listing/6563314",
+    "description": "Dropbox seeks a highly skilled and motivated Staff Data Engineer to join our Commerce Platform team..."
+  },
+  {
+    "title": "Principal Product Manager, Multimodal & Vision AI",
+    "company": "Zillow",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-14",
+    "baseSalary": "$186,700-$298,300",
+    "link": "https://www.linkedin.com/jobs/view/4185351896",
+    "description": "Are you passionate about using the latest Multimodal AI to reinvent and radically simplify home shopping..."
+  },
+  {
+    "title": "Senior Product Manager - Apple Cloud ML",
+    "company": "Apple",
+    "location": "Cupertino, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-14",
+    "baseSalary": "$165,500-$293,800",
+    "link": "https://jobs.apple.com/en-us/details/200595304/senior-product-manager-apple-cloud-ml",
+    "description": "We are building AI/ML tools for a wide group of ML researchers and engineers that build amazing features that power Apple Services and enables us to delight consumers around the world..."
+  },
+  {
+    "title": "Distinguished Engineer - Developer Experience Platform Modernization",
+    "company": "CapitalOne",
+    "location": "Plano, TX; Chicago, IL; New York, NY",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-14",
+    "baseSalary": "$239,900-$273,800",
+    "link": "https://capitalone.wd12.myworkdayjobs.com/Capital_One/job/Plano-TX/Distinguished-Engineer---Modernization_R209105-1",
+    "description": "As a Distinguished Engineer at Capital One, you will be a part of a community of technical experts working to define the future of banking in the cloud..."
   }
 ]
