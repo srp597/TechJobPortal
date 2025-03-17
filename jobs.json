@@ -460,5 +460,49 @@
     "baseSalary": "$239,900-$273,800",
     "link": "https://capitalone.wd12.myworkdayjobs.com/Capital_One/job/Plano-TX/Distinguished-Engineer---Modernization_R209105-1",
     "description": "As a Distinguished Engineer at Capital One, you will be a part of a community of technical experts working to define the future of banking in the cloud..."
+  },
+  {
+    "title": "Engineering Manager, Platform Infrastructure",
+    "company": "Alma",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-15",
+    "baseSalary": "$170K-$200K",
+    "link": "https://www.linkedin.com/jobs/view/4160548052",
+    "description": "Alma is seeking a mission-driven Engineering Manager to join our Platform Infrastructure team..."
+  },
+  {
+    "title": "Distributed Systems Engineer, GenAI Platform",
+    "company": "Netflix",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-15",
+    "baseSalary": "$170,000-$720,000",
+    "link": "The mission of the Data Platform’s GenAI Platform team is to boost the productivity of the data science and engineering community at Netflix",
+    "description": "Alma is seeking a mission-driven Engineering Manager to join our Platform Infrastructure team..."
+  },
+  {
+    "title": "Senior Developer Advocate - Cloud Partner",
+    "company": "Datadog",
+    "location": "New York, NY",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-15",
+    "baseSalary": "$170K-$200K",
+    "link": "https://www.linkedin.com/jobs/view/3979671235",
+    "description": "They own projects from beginning to end, facilitating collaboration and enabling Datadog's community to solve real-world problems..."
+  },
+  {
+    "title": "Engineering Manager, Continuous Integration Platform",
+    "company": "Apple",
+    "location": "Cupertino, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-15",
+    "baseSalary": "$190,700-$329,600",
+    "link": "https://jobs.apple.com/en-us/details/200594316/engineering-manager-continuous-integration-platform",
+    "description": "As the Manager of Apple’s CI Platform team, you’ll steer the evolution of our internal CI infrastructure..."
   }
 ]
