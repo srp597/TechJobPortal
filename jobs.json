@@ -504,5 +504,27 @@
     "baseSalary": "$190,700-$329,600",
     "link": "https://jobs.apple.com/en-us/details/200594316/engineering-manager-continuous-integration-platform",
     "description": "As the Manager of Apple’s CI Platform team, you’ll steer the evolution of our internal CI infrastructure..."
+  },
+  {
+    "title": "Senior Software Engineer (L5) — Build & Dependency Management Team (JVM Ecosystem)",
+    "company": "Netflix",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-16",
+    "baseSalary": "$100,000-$720,000",
+    "link": "https://www.linkedin.com/jobs/view/4184785488",
+    "description": "We are seeking an experienced Software Engineer to join our Build & Dependency Management team..."
+  },
+  {
+    "title": "Principal Engineer Software (AI Ops)",
+    "company": "Paloalto Networks",
+    "location": "Santa Clara, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-16",
+    "baseSalary": "$147000-$237500",
+    "link": "https://jobs.smartrecruiters.com/PaloAltoNetworks2/744000046311348-principal-engineer-software-ai-ops",
+    "description": "Are you ready to make a significant impact in the tech world? We are on the hunt for a Senior Staff Backend Engineer who thrives on pushing boundaries and creating innovative solutions..."
   }
 ]
