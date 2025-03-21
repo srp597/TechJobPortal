@@ -526,5 +526,38 @@
     "baseSalary": "$147000-$237500",
     "link": "https://jobs.smartrecruiters.com/PaloAltoNetworks2/744000046311348-principal-engineer-software-ai-ops",
     "description": "Are you ready to make a significant impact in the tech world? We are on the hunt for a Senior Staff Backend Engineer who thrives on pushing boundaries and creating innovative solutions..."
+  },
+  {
+    "title": "Senior Android Engineer, Chat",
+    "company": "Reddit",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-18",
+    "baseSalary": "$190,800-$267,100",
+    "link": "https://job-boards.greenhouse.io/reddit/jobs/6670448",
+    "description": "We are hiring a Senior Android Engineer who can help us innovate to create the next Reddit chat..."
+  },
+  {
+    "title": "Engineering Program Manager, Capacity Management, Apple Services Engineering",
+    "company": "Apple",
+    "location": "Seattle, WA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-19",
+    "baseSalary": "$157,000-$278,900",
+    "link": "https://jobs.apple.com/en-us/details/200593928",
+    "description": "The Apple Services Engineering team is one of the most exciting examples of Apple’s long-held passion for combining art and technology..."
+  },
+  {
+    "title": "Sr Manager, Data Science",
+    "company": "Fanatics",
+    "location": "San Mateo, CA",
+    "country": "USA",
+    "workType": "Hybrid",
+    "datePosted": "2025-03-20",
+    "baseSalary": "$212,000-$265,000",
+    "link": "https://fa-exki-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/22138",
+    "description": "We are seeking a Senior Manager to lead the Marketing Data Science team for Fanatics Commerce.  This is a high impact role within the company to directly influence growth of our marketing initiatives through data science..."
   }
 ]
