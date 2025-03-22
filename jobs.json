@@ -559,5 +559,60 @@
     "baseSalary": "$212,000-$265,000",
     "link": "https://fa-exki-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/22138",
     "description": "We are seeking a Senior Manager to lead the Marketing Data Science team for Fanatics Commerce.  This is a high impact role within the company to directly influence growth of our marketing initiatives through data science..."
+  },
+  {
+    "title": "Senior Staff Software Engineer, Advertiser Growth",
+    "company": "Reddit",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-21",
+    "baseSalary": "$232,500—$325,500",
+    "link": "https://www.linkedin.com/jobs/view/4187576949",
+    "description": "Reddit is seeking a Senior Staff Engineer as a technical leader for our Small to Medium Business (SMB) focused Advertiser Growth efforts..."
+  },
+  {
+    "title": "Staff Software Engineer – Feature Experimentation Platform",
+    "company": "Databricks",
+    "location": "San Francisco, CA",
+    "country": "USA",
+    "workType": "Hybrid",
+    "datePosted": "2025-03-21",
+    "baseSalary": "$192,000—$260,000",
+    "link": "https://www.linkedin.com/jobs/view/4188343477",
+    "description": "The Feature Experimentation team is building our next-generation Experimentation Platform to empower data-driven innovation and engineering at scale..."
+  },
+  {
+    "title": "Sr. Distinguished Engineer - Card Architecture",
+    "company": "CapitalOne",
+    "location": "Plano, TX;Richmond, McLean, VA;New York, NY;Chicago, IL",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-21",
+    "baseSalary": "$280,600-$320,200",
+    "link": "https://www.linkedin.com/jobs/view/4188343477",
+    "description": "The Feature Experimentation team is building our next-generation Experimentation Platform to empower data-driven innovation and engineering at scale..."
+  },
+  {
+    "title": "Senior Member of Technical Staff",
+    "company": "Oracle",
+    "location": "Redwood City, CA;Seattle, WA;Nashua, NH",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-21",
+    "baseSalary": "$79,000-$178,100",
+    "link": "https://eeho.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/jobsearch/job/283721",
+    "description": "The Oracle Cloud Infrastructure (OCI) team can provide you the opportunity to build and operate a suite of massive scale, integrated cloud services in a broadly distributed, multi-tenant cloud environment..."
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Netflix",
+    "location": "Los Gatos, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-21",
+    "baseSalary": "$100,000-$720,000",
+    "link": "https://www.linkedin.com/jobs/view/4187551496",
+    "description": "Netflix’s source code is distributed across tens of thousands of code repositories written in numerous programming languages developed by thousands of engineers..."
   }
 ]
