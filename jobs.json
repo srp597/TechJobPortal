@@ -614,5 +614,60 @@
     "baseSalary": "$100,000-$720,000",
     "link": "https://www.linkedin.com/jobs/view/4187551496",
     "description": "Netflix’s source code is distributed across tens of thousands of code repositories written in numerous programming languages developed by thousands of engineers..."
+  },
+  {
+    "title": "Principal Software Developer (PSD)",
+    "company": "BECU",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-03-25",
+    "baseSalary": "$184,300.00-$225,000",
+    "link": "https://www.linkedin.com/jobs/view/4181456174",
+    "description": "You will play a pivotal role in shaping the future of our digital experiences..."
+  },
+  {
+    "title": "Software QA Engineer, Dojo",
+    "company": "Tesla",
+    "location": "Palo Alto, California",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-25",
+    "baseSalary": "$133,440-$355,920",
+    "link": "https://www.tesla.com/careers/search/job/software-qa-engineer-dojo-236973",
+    "description": "As a member of the Dojo team, you will be responsible for enabling Tesla’s neural networks to train efficiently on our upcoming in-house custom-silicon supercomputer systems..."
+  },
+  {
+    "title": "Manager, Software Engineering/DevOps (Cortex DevOps Tooling)",
+    "company": "Paloalto Networks",
+    "location": "Santa Clara, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-25",
+    "baseSalary": "$215,000-$245,000",
+    "link": "https://jobs.smartrecruiters.com/PaloAltoNetworks2/744000049915385-manager-software-engineering-devops-cortex-devops-tooling-",
+    "description": "We are looking for a motivated leader in the capacity of a Manager for our team and you will be at the heart of our software-driven approach to infrastructure and operations..."
+  },
+  {
+    "title": "Senior Software Engineer I, Machine Learning",
+    "company": "Cisco Thousand Eyes",
+    "location": "San Francisco, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-25",
+    "baseSalary": "$177,600-225,900",
+    "link": "https://job-boards.greenhouse.io/thousandeyes/jobs/6722033",
+    "description": "Cisco ThousandEyes is a Digital Experience Assurance platform that empowers organizations to deliver flawless digital experiences across every network..."
+  },
+  {
+    "title": "Staff, Product Manager - Customer Data Privacy",
+    "company": "Walmart",
+    "location": "Sunnyvale, CA, Bentonville, AR",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-03-25",
+    "baseSalary": "$110,000-$220,000",
+    "link": "https://walmart.wd5.myworkdayjobs.com/WalmartExternal/job/Sunnyvale-CA/Staff--Product-Manager---Customer-Data-Privacy_R-2094933",
+    "description": "The Customer Data & Identity organization is enabling Walmart to better understand who the Walmart customer is..."
   }
 ]
