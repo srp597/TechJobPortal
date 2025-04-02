@@ -405,5 +405,38 @@
     "baseSalary": "$96,800-$223,400",
     "link": "https://eeho.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/jobsearch/job/273011",
     "description": "As a member of the software engineering division, you will apply basic to intermediate knowledge of software architecture to perform software development tasks associated with developing, debugging or designing software applications or operating systems according to provided design specifications..."
+  },
+  {
+    "title": "Engineering Manager, Software Products",
+    "company": "Reddit",
+    "location": "USA",
+    "country": "USA",
+    "workType": "Remote",
+    "datePosted": "2025-04-01",
+    "baseSalary": "$217,000-$303,900",
+    "link": "https://job-boards.greenhouse.io/reddit/jobs/6759626",
+    "description": "The SPACE (Security, Privacy and Corporate Engineering) Software Product team develops and maintains a set of mission critical, highly performant, and highly scalable systems that manage user data privacy, security and corporate engineering products for all of our millions of daily users and backend services..."
+  },
+  {
+    "title": "Principal, Software Engineer | Marketplace",
+    "company": "Walmart",
+    "location": "Sunnyvale, CA",
+    "country": "USA",
+    "workType": "Onsite",
+    "datePosted": "2025-04-01",
+    "baseSalary": "$143,000-$286,000",
+    "link": "https://walmart.wd5.myworkdayjobs.com/WalmartExternal/job/Sunnyvale-CA/Principal--Software-Engineer---Marketplace_R-2085325",
+    "description": "This hands-on role requires exceptional coding skills, a passion for technology and engineering excellence, and the ability to guide and mentor a team of engineers..."
+  },
+  {
+    "title": "Senior Staff Software Engineer - Platform",
+    "company": "Hinge Health",
+    "location": "San Francisco, CA",
+    "country": "USA",
+    "workType": "Hybrid",
+    "datePosted": "2025-04-01",
+    "baseSalary": "$209,600-$314,400",
+    "link": "https://careers.hingehealth.com/jobs/2043?lang=en-us&previousLocale=en-US",
+    "description": "The Senior Staff Engineer - Platform will guide and accelerate the evolution of Hinge Health’s platform initiatives..."
   }
 ]
